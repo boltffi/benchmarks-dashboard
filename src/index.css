@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Vercel / shadcn dev-console palette — pure-black with white alpha elevation */
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 4%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 4%;
+    --popover-foreground: 0 0% 100%;
+
+    /* Elevation surfaces */
+    --elevated: 0 0% 5%;
+    --subtle: 0 0% 3%;
+
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 4%;
+
+    --secondary: 0 0% 8%;
+    --secondary-foreground: 0 0% 90%;
+
+    --muted: 0 0% 6%;
+    --muted-foreground: 0 0% 55%;
+
+    --accent: 0 0% 10%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 12%;
+    --input: 0 0% 12%;
+    --ring: 0 0% 40%;
+
+    --radius: 0.375rem;
+
+    /* Tool accent hues — kept for colored dots on tool badges only */
+    --tool-boltffi: 214 100% 62%;
+    --tool-uniffi: 30 95% 60%;
+    --tool-wasm: 152 65% 50%;
+    --tool-default: 265 70% 65%;
+
+    --surface-hover: 0 0% 5%;
+    --surface-active: 0 0% 7%;
+
+    /* Sidebar tokens */
+    --sidebar-background: 0 0% 0%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 0 0% 4%;
+    --sidebar-accent: 0 0% 8%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 0 0% 12%;
+    --sidebar-ring: 0 0% 40%;
+
+    /* Retained brand stops (for any legacy text-gradient-brand usage) */
+    --brand-a: 0 0% 100%;
+    --brand-b: 0 0% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-background text-foreground font-mono antialiased;
+    font-feature-settings: "ss02", "ss03", "calt", "liga";
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    background-color: #000;
+    min-height: 100vh;
+  }
+
+  /* Subtle hairline grid — crisp developer-console feel, very low opacity */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background-image:
+      linear-gradient(to right, rgba(255,255,255,0.025) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,0.025) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: radial-gradient(ellipse 80% 70% at 50% 0%, black 30%, transparent 85%);
+    -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 0%, black 30%, transparent 85%);
+  }
+
+  #root {
+    position: relative;
+    z-index: 1;
+  }
+
+  code, .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-feature-settings: "ss02", "ss03", "calt", "liga";
+  }
+
+  .font-sans {
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  }
+
+  /* Focus ring — white hairline, no glow */
+  :focus-visible {
+    outline: 1px solid rgba(255,255,255,0.45);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background: rgba(255,255,255,0.18);
+    color: #fff;
+  }
+
+  /* Scrollbars — thin, flat, white-alpha */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.08);
+    border-radius: 999px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255,255,255,0.18);
+    background-clip: padding-box;
+    border: 2px solid transparent;
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,255,255,0.1) transparent;
+  }
+
+  .nums-tabular {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum", "zero";
+  }
+
+  /* Flat surfaces — no gradients, no inner highlights */
+  .surface-raised {
+    background: #0a0a0a;
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .surface-subtle {
+    background: #070707;
+    border: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .surface-glass {
+    background: rgba(0,0,0,0.72);
+    backdrop-filter: saturate(140%) blur(10px);
+    -webkit-backdrop-filter: saturate(140%) blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .ring-selected {
+    box-shadow:
+      0 0 0 1px rgba(255,255,255,0.18),
+      inset 0 1px 0 0 rgba(255,255,255,0.05);
+  }
+
+  /* Legacy text-gradient-brand — keep but flatten to near-white */
+  .text-gradient-brand {
+    background: linear-gradient(
+      110deg,
+      #ffffff 20%,
+      #e5e5e5 60%,
+      #a3a3a3 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* Hairline divider */
+  .hairline {
+    background: linear-gradient(
+      to right,
+      transparent,
+      rgba(255,255,255,0.08) 20%,
+      rgba(255,255,255,0.08) 80%,
+      transparent
+    );
+    height: 1px;
+  }
+
+  .shimmer {
+    background: linear-gradient(
+      110deg,
+      rgba(255,255,255,0.04) 30%,
+      rgba(255,255,255,0.08) 50%,
+      rgba(255,255,255,0.04) 70%
+    );
+    background-size: 200% 100%;
+    animation: shimmer-move 1.8s linear infinite;
+  }
+
+  @keyframes shimmer-move {
+    from { background-position: 200% 0; }
+    to   { background-position: -200% 0; }
+  }
+
+  /* Hover-lift kept, but without translate — only border/bg transitions */
+  .hover-lift {
+    transition:
+      background-color 180ms cubic-bezier(0.22, 1, 0.36, 1),
+      border-color 180ms ease,
+      box-shadow 180ms ease;
+  }
+
+  .dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background: currentColor;
+  }
+
+  /* Uppercase dev-label utility */
+  .devlabel {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+  }
+}

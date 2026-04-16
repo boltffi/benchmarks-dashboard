@@ -1,0 +1,6109 @@
+{
+  "schema_version": "benchmark_catalog_v1",
+  "generated_at": "2026-04-16T20:32:31Z",
+  "benchmarks": [
+    {
+      "id": "sum_user_scores_1k",
+      "group": "records.user_profiles.sum_user_scores",
+      "title": "Sum User Scores 1K",
+      "category": "records",
+      "sophistication": "complex",
+      "direction": "host_to_rust",
+      "parameters": {
+        "count": 1000
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 408009.8010322232,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 787691.4212430228,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 477983.92844916123,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 545991.0354637568,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 4139954.407407405,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 1223168.1476747494,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 422695.34336203075,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 703439.0181093276,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/sum-user-scores-1k.json"
+    },
+    {
+      "id": "sum_user_scores_100",
+      "group": "records.user_profiles.sum_user_scores",
+      "title": "Sum User Scores 100",
+      "category": "records",
+      "sophistication": "complex",
+      "direction": "host_to_rust",
+      "parameters": {
+        "count": 100
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 40188.282290485775,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 82020.82860651096,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 49741.74786045837,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 55844.61200998149,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 404315.76235007733,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 122188.89637359587,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 42991.97511172179,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 81918.8239455017,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/sum-user-scores-100.json"
+    },
+    {
+      "id": "sum_trade_volumes_1k",
+      "group": "records.trades.sum_trade_volumes",
+      "title": "Sum Trade Volumes 1K",
+      "category": "records",
+      "sophistication": "structured",
+      "direction": "host_to_rust",
+      "parameters": {
+        "count": 1000
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 29335.766928514306,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 22010.971487593284,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 3713.392842637546,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 65772.71544358185,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 179912.4015709368,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 206294.62171933666,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 12277.098950122694,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 39324.806428160526,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/sum-trade-volumes-1k.json"
+    },
+    {
+      "id": "sum_trade_volumes_10k",
+      "group": "records.trades.sum_trade_volumes",
+      "title": "Sum Trade Volumes 10K",
+      "category": "records",
+      "sophistication": "structured",
+      "direction": "host_to_rust",
+      "parameters": {
+        "count": 10000
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 107310.24267139674,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 200493.34479642063,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 39206.666179229665,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 691875.3921755726,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 2023771.1640211632,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 2189482.0036851857,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 113591.1675157566,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 394273.615524225,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/sum-trade-volumes-10k.json"
+    },
+    {
+      "id": "sum_ratings_1k",
+      "group": "records.locations.sum_ratings",
+      "title": "Sum Ratings 1K",
+      "category": "records",
+      "sophistication": "structured",
+      "direction": "host_to_rust",
+      "parameters": {
+        "count": 1000
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 8361.254876141507,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 14201.015187971308,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 2903.495762811456,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 45992.0260273519,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 134580.773262618,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 200966.04889225514,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 9250.941476692467,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 32901.975026100125,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/sum-ratings-1k.json"
+    },
+    {
+      "id": "sum_ratings_10k",
+      "group": "records.locations.sum_ratings",
+      "title": "Sum Ratings 10K",
+      "category": "records",
+      "sophistication": "structured",
+      "direction": "host_to_rust",
+      "parameters": {
+        "count": 10000
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 98880.24328888889,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 126099.73696703657,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 27371.508936542006,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 452151.1755505905,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 1299942.1963582751,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 2115849.3584108194,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 63894.79558657814,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 238621.15720864976,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/sum-ratings-10k.json"
+    },
+    {
+      "id": "sum_particle_masses_1k",
+      "group": "records.particles.sum_particle_masses",
+      "title": "Sum Particle Masses 1K",
+      "category": "records",
+      "sophistication": "structured",
+      "direction": "host_to_rust",
+      "parameters": {
+        "count": 1000
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 15241.743804916652,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 29820.13892594593,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 4591.575126913426,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 76305.46404628028,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 195866.64856528438,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 215715.9696606331,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 17900.74900339236,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 37378.502833238636,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/sum-particle-masses-1k.json"
+    },
+    {
+      "id": "sum_particle_masses_10k",
+      "group": "records.particles.sum_particle_masses",
+      "title": "Sum Particle Masses 10K",
+      "category": "records",
+      "sophistication": "structured",
+      "direction": "host_to_rust",
+      "parameters": {
+        "count": 10000
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 130672.60310982463,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 286141.83966109675,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 47563.1789723373,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 857847.2166768108,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 1964644.5342031885,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 2267158.735999528,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 149353.23600604307,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 282878.5024247721,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/sum-particle-masses-10k.json"
+    },
+    {
+      "id": "sum_i32_vec_10k",
+      "group": "collections.i32_vec.sum",
+      "title": "Sum I32 Vec 10K",
+      "category": "collections",
+      "sophistication": "structured",
+      "direction": "host_to_rust",
+      "parameters": {
+        "count": 10000
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 1984.8907024269222,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 13782.649822033753,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 849.040836,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 69320.25851179314,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 7200.481482933488,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 5981.913377172566,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 2120.312976674291,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 53795.77472307659,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/sum-i32-vec-10k.json"
+    },
+    {
+      "id": "sum_i32_vec_100k",
+      "group": "collections.i32_vec.sum",
+      "title": "Sum I32 Vec 100K",
+      "category": "collections",
+      "sophistication": "structured",
+      "direction": "host_to_rust",
+      "parameters": {
+        "count": 100000
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 15466.204231452955,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 115713.93446539591,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 9728.154333015396,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 729419.0495150588,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 66704.62116488029,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 60264.60471771421,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 16885.78638986219,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 461748.4029273484,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/sum-i32-vec-100k.json"
+    },
+    {
+      "id": "sum_f64_vec_10k",
+      "group": "collections.f64_vec.sum",
+      "title": "Sum F64 Vec 10K",
+      "category": "collections",
+      "sophistication": "structured",
+      "direction": "host_to_rust",
+      "parameters": {
+        "count": 10000
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 10504.125052548212,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 23770.261266221743,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 9256.223981179533,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 73177.74748224318,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 10185.078519211038,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 9435.369494160337,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 10566.441938111222,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 62156.51870964881,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/sum-f64-vec-10k.json"
+    },
+    {
+      "id": "simple_enum",
+      "group": "enums.direction.basic_ops",
+      "title": "Simple Enum",
+      "category": "enums",
+      "sophistication": "basic",
+      "direction": "mixed",
+      "parameters": {},
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 8.079583733663151,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 202.5879787209972,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 12.74977,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 543.946393,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 437.5127251533015,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 7.774387565202545,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 8.89021111100667,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 19976.52036434921,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/simple-enum.json"
+    },
+    {
+      "id": "process_locations_1k",
+      "group": "records.locations.process",
+      "title": "Process Locations 1K",
+      "category": "records",
+      "sophistication": "structured",
+      "direction": "host_to_rust",
+      "parameters": {
+        "count": 1000
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 7910.182148704903,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 13390.065690836613,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 1292.636719,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 44295.09293924466,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 124413.03997216075,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 193157.79617653822,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 8000.114366361208,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 32246.894354211458,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/process-locations-1k.json"
+    },
+    {
+      "id": "process_locations_10k",
+      "group": "records.locations.process",
+      "title": "Process Locations 10K",
+      "category": "records",
+      "sophistication": "structured",
+      "direction": "host_to_rust",
+      "parameters": {
+        "count": 10000
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 83613.14060063813,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 118744.392969352,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 14073.638138761944,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 464842.45772303594,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 1266912.215331908,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 2092654.333333333,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 67259.92636918424,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 227632.90854492807,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/process-locations-10k.json"
+    },
+    {
+      "id": "noop",
+      "group": "primitives.noop",
+      "title": "Noop",
+      "category": "primitives",
+      "sophistication": "basic",
+      "direction": "mixed",
+      "parameters": {},
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 3.1309786884310067,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 5.444091568568631,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 11.723231,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 12.902041,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 113.43642404213195,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 4.925817604720575,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 3.2291320294870105,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 2534.3362329074457,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/noop.json"
+    },
+    {
+      "id": "negate_bool",
+      "group": "primitives.negate_bool",
+      "title": "Negate Bool",
+      "category": "primitives",
+      "sophistication": "basic",
+      "direction": "mixed",
+      "parameters": {},
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 3.605425419239843,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 7.144188205679545,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 10.577918,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 13.718663,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 97.3826535160698,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 6.147589370139966,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 3.497966837987956,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 2851.68127932547,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/negate-bool.json"
+    },
+    {
+      "id": "multiply",
+      "group": "primitives.multiply",
+      "title": "Multiply",
+      "category": "primitives",
+      "sophistication": "basic",
+      "direction": "mixed",
+      "parameters": {},
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 3.8435057154340613,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 5.412819083508666,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 10.371254,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 12.570182,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 119.72195629167753,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 6.179053635291863,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 6.364172468201691,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 2538.429000782895,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/multiply.json"
+    },
+    {
+      "id": "inc_u64",
+      "group": "primitives.inc_u64.in_place",
+      "title": "Increment U64 In Place",
+      "category": "primitives",
+      "sophistication": "basic",
+      "direction": "mixed",
+      "parameters": {
+        "mutation_mode": "in_place"
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 3.6093426942586366,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 5.39619867209257,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 61.922209,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 12.216015,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 781.239660771357,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 114.7022483557553,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 108.16354878450898,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 2762.1344107066093,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/inc-u64.json"
+    },
+    {
+      "id": "inc_u64_value",
+      "group": "primitives.inc_u64.by_value",
+      "title": "Increment U64 By Value",
+      "category": "primitives",
+      "sophistication": "basic",
+      "direction": "mixed",
+      "parameters": {
+        "mutation_mode": "by_value"
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 3.7479102316634427,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 5.394943378098822,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 11.130161,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 12.189279,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 6.184450964801843,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 4.61484280347717,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 2542.552630599472,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/inc-u64-value.json"
+    },
+    {
+      "id": "generate_user_profiles_1k",
+      "group": "records.user_profiles.generate",
+      "title": "Generate User Profiles 1K",
+      "category": "records",
+      "sophistication": "complex",
+      "direction": "rust_to_host",
+      "parameters": {
+        "count": 1000
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 528391.250152689,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 604502.0391781488,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 960200.375,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 5573960.456349206,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 941424.3678692889,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 1330981.4570048917,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 499629.1815235506,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 550880.456980422,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/generate-user-profiles-1k.json"
+    },
+    {
+      "id": "generate_user_profiles_100",
+      "group": "records.user_profiles.generate",
+      "title": "Generate User Profiles 100",
+      "category": "records",
+      "sophistication": "complex",
+      "direction": "rust_to_host",
+      "parameters": {
+        "count": 100
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 58948.300168669804,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 118139.31893505245,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 93771.55251684503,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 549317.5823389022,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 89133.52398616614,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 132130.15778124752,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 56395.94600367154,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 73095.79528204688,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/generate-user-profiles-100.json"
+    },
+    {
+      "id": "generate_trades_1k",
+      "group": "records.trades.generate",
+      "title": "Generate Trades 1K",
+      "category": "records",
+      "sophistication": "structured",
+      "direction": "rust_to_host",
+      "parameters": {
+        "count": 1000
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 8570.861456070175,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 21870.67696781906,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 3118.2034735943957,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 3403491.5418381346,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 24734.279906648673,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 942391.5809646304,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 7748.742819169919,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 32920.19483962765,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/generate-trades-1k.json"
+    },
+    {
+      "id": "generate_trades_10k",
+      "group": "records.trades.generate",
+      "title": "Generate Trades 10K",
+      "category": "records",
+      "sophistication": "structured",
+      "direction": "rust_to_host",
+      "parameters": {
+        "count": 10000
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 68279.71930153592,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 228953.3741438839,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 32837.151097015456,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 19797652.328125,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 237491.40143897902,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 12672972.710597826,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 66789.43261312983,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 157064.6307104853,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/generate-trades-10k.json"
+    },
+    {
+      "id": "generate_string_1k",
+      "group": "strings.generate",
+      "title": "Generate String 1K",
+      "category": "strings",
+      "sophistication": "basic",
+      "direction": "rust_to_host",
+      "parameters": {
+        "string_length": 1000
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 299.07326850452733,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 195.6691597403583,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 325.098813,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 222.629298,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 354.8494866046859,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 249.55755841839965,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 297.26430255619294,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 8355.67433503538,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/generate-string-1k.json"
+    },
+    {
+      "id": "generate_sensor_readings_1k",
+      "group": "records.sensor_readings.generate",
+      "title": "Generate Sensor Readings 1K",
+      "category": "records",
+      "sophistication": "structured",
+      "direction": "rust_to_host",
+      "parameters": {
+        "count": 1000
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 9351.528939083204,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 24027.16152177168,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 3705.954081660373,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 1920294.9960106383,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 18130.722782817662,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 1588566.6304702195,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 8354.745001657766,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 34833.2088490852,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/generate-sensor-readings-1k.json"
+    },
+    {
+      "id": "generate_sensor_readings_10k",
+      "group": "records.sensor_readings.generate",
+      "title": "Generate Sensor Readings 10K",
+      "category": "records",
+      "sophistication": "structured",
+      "direction": "rust_to_host",
+      "parameters": {
+        "count": 10000
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 73615.31364267413,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 251192.74864103086,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 38350.37881596162,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 18891769.943661973,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 177869.33444408973,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 5570379.1478089085,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 72104.56887430155,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 162570.3886588949,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/generate-sensor-readings-10k.json"
+    },
+    {
+      "id": "generate_particles_1k",
+      "group": "records.particles.generate",
+      "title": "Generate Particles 1K",
+      "category": "records",
+      "sophistication": "structured",
+      "direction": "rust_to_host",
+      "parameters": {
+        "count": 1000
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 9690.125728045663,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 25678.57597383118,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 3830.3676492746654,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 2074925.2713643177,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 21065.765403476784,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 1862874.3944636676,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 8440.463202543728,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 37148.9114295674,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/generate-particles-1k.json"
+    },
+    {
+      "id": "generate_particles_10k",
+      "group": "records.particles.generate",
+      "title": "Generate Particles 10K",
+      "category": "records",
+      "sophistication": "structured",
+      "direction": "rust_to_host",
+      "parameters": {
+        "count": 10000
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 77767.0279046635,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 271399.83286597335,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 39426.26060865838,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 20483975.37878788,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 229398.2621477827,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 22215430.733766228,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 73031.94684215904,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 189376.08663735926,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/generate-particles-10k.json"
+    },
+    {
+      "id": "generate_locations_1k",
+      "group": "records.locations.generate",
+      "title": "Generate Locations 1K",
+      "category": "records",
+      "sophistication": "structured",
+      "direction": "rust_to_host",
+      "parameters": {
+        "count": 1000
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 7070.073002077261,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 15361.787617678232,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 2181.8580257031044,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 1256229.640216411,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 15718.203160672672,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 716531.8416182727,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 6441.4312834451075,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 27519.540882234054,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/generate-locations-1k.json"
+    },
+    {
+      "id": "generate_locations_10k",
+      "group": "records.locations.generate",
+      "title": "Generate Locations 10K",
+      "category": "records",
+      "sophistication": "structured",
+      "direction": "rust_to_host",
+      "parameters": {
+        "count": 10000
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 52168.58820970765,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 142522.9718458639,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 22365.605538301435,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 12543372.305555556,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 136428.84862505915,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 12918569.333838383,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 47808.598134460124,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 178408.34953429337,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/generate-locations-10k.json"
+    },
+    {
+      "id": "generate_i32_vec_10k",
+      "group": "collections.i32_vec.generate",
+      "title": "Generate I32 Vec 10K",
+      "category": "collections",
+      "sophistication": "structured",
+      "direction": "rust_to_host",
+      "parameters": {
+        "count": 10000
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 2969.3084470434055,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 8445.636368308014,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 1004.166386,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 2054507.850523169,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 5400.517602928368,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 5400.208110165974,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 2834.785806718097,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 43320.56112571067,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/generate-i32-vec-10k.json"
+    },
+    {
+      "id": "generate_i32_vec_100k",
+      "group": "collections.i32_vec.generate",
+      "title": "Generate I32 Vec 100K",
+      "category": "collections",
+      "sophistication": "structured",
+      "direction": "rust_to_host",
+      "parameters": {
+        "count": 100000
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 22659.364291437436,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 58446.443317797464,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 10442.174814252883,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 20317005.529411763,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 45827.00349013547,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 49165.328131857175,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 22423.283574524175,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 260875.45090340447,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/generate-i32-vec-100k.json"
+    },
+    {
+      "id": "generate_f64_vec_10k",
+      "group": "collections.f64_vec.generate",
+      "title": "Generate F64 Vec 10K",
+      "category": "collections",
+      "sophistication": "structured",
+      "direction": "rust_to_host",
+      "parameters": {
+        "count": 10000
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 6621.385494203564,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 12147.421337973303,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 3979.4280059966904,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 2037721.8357348703,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 8098.4583604888085,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 7904.959020969809,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 6267.1273732291875,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 43894.516657149274,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/generate-f64-vec-10k.json"
+    },
+    {
+      "id": "generate_directions_1k",
+      "group": "enums.directions.generate",
+      "title": "Generate Directions 1K",
+      "category": "enums",
+      "sophistication": "structured",
+      "direction": "rust_to_host",
+      "parameters": {
+        "count": 1000
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 3033.717498231166,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 6073.962394879482,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 7601.853485779837,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 204665.2011605416,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 8744.813040006286,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 30947.71846394425,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 3101.6835398311323,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 17054.712990542423,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/generate-directions-1k.json"
+    },
+    {
+      "id": "generate_directions_10k",
+      "group": "enums.directions.generate",
+      "title": "Generate Directions 10K",
+      "category": "enums",
+      "sophistication": "structured",
+      "direction": "rust_to_host",
+      "parameters": {
+        "count": 10000
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 28085.09034276723,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 60556.74886352983,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 78093.0324359043,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 2090840.2026239068,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 64104.36923959773,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 308860.7015559274,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 30499.681494490756,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 49552.662667489,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/generate-directions-10k.json"
+    },
+    {
+      "id": "generate_bytes_64k",
+      "group": "bytes.generate",
+      "title": "Generate Bytes 64K",
+      "category": "bytes",
+      "sophistication": "basic",
+      "direction": "rust_to_host",
+      "parameters": {
+        "size_bytes": 65536
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 2134.804389846168,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 28387.3159668908,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 8672.781112193934,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 27590.575398589237,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 4237.818747542612,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 3313.0846876976634,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 4815.016626380996,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 34379.86262394093,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/generate-bytes-64k.json"
+    },
+    {
+      "id": "find_positive_f64",
+      "group": "options.find_positive_f64",
+      "title": "Find Positive F64",
+      "category": "options",
+      "sophistication": "basic",
+      "direction": "mixed",
+      "parameters": {
+        "value": 3.14
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 128.54685858699102,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 85.7515804619663,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 31.703561,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 651.233773,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 118.68674473454082,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 13.217285701225686,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 125.51746694553663,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 8843.349857756517,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/find-positive-f64.json"
+    },
+    {
+      "id": "find_numbers_100",
+      "group": "options.find_numbers",
+      "title": "Find Numbers 100",
+      "category": "options",
+      "sophistication": "basic",
+      "direction": "mixed",
+      "parameters": {
+        "count": 100
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 228.84609666750814,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 481.957319400278,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 298.925023,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 21364.189199575732,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 886.605051427671,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 357.43689098310915,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 255.544096085068,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 9503.092623571009,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/find-numbers-100.json"
+    },
+    {
+      "id": "find_names_100",
+      "group": "options.find_names",
+      "title": "Find Names 100",
+      "category": "options",
+      "sophistication": "basic",
+      "direction": "mixed",
+      "parameters": {
+        "count": 100
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 6772.055832290894,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 8473.168091776488,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 8686.140710481286,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 50556.74064026045,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 11553.545956397542,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 14751.452214568937,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 6584.081763157118,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 18649.572207303794,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/find-names-100.json"
+    },
+    {
+      "id": "find_name",
+      "group": "options.find_name",
+      "title": "Find Name",
+      "category": "options",
+      "sophistication": "basic",
+      "direction": "mixed",
+      "parameters": {
+        "id": 1
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 196.13744283898419,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 164.25845937229988,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 202.430498,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 998.040169,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 549.681057374968,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 144.173921166957,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 181.45825343213156,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 8425.39830676764,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/find-name.json"
+    },
+    {
+      "id": "find_locations_100",
+      "group": "records.locations.find",
+      "title": "Find Locations 100",
+      "category": "records",
+      "sophistication": "structured",
+      "direction": "rust_to_host",
+      "parameters": {
+        "count": 100
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 759.5324300601105,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 1833.0545990883295,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 486.284422,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 126455.51686596466,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 6978.943692401804,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 177999.5792502218,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 1199.6390975193283,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 9994.216404654862,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/find-locations-100.json"
+    },
+    {
+      "id": "find_even_100",
+      "group": "options.find_even",
+      "title": "Find Even 100",
+      "category": "options",
+      "sophistication": "basic",
+      "direction": "mixed",
+      "parameters": {
+        "count": 100
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 12890.154416495241,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 5393.253218293446,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 2872.9530811731465,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 46967.17623295741,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 13045.321587662951,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 163.4822773689168,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 12373.221440332049,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 809083.3089319753,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/find-even-100.json"
+    },
+    {
+      "id": "find_direction",
+      "group": "enums.direction.find",
+      "title": "Find Direction",
+      "category": "enums",
+      "sophistication": "basic",
+      "direction": "mixed",
+      "parameters": {
+        "id": 0
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 126.62462233501712,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 70.5427099571029,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 34.481404,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 623.125052,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 456.0604244311811,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 6.55237541308153,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 127.66303069091877,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 8017.08524558917,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/find-direction.json"
+    },
+    {
+      "id": "echo_string_small",
+      "group": "strings.echo",
+      "title": "Echo String Small",
+      "category": "strings",
+      "sophistication": "basic",
+      "direction": "mixed",
+      "parameters": {
+        "string_length": 5
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 327.60174213436085,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 175.66043485622347,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 177.149685,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 177.309053,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 510.2339357774968,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 128.87012937098578,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 307.9386110262025,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 10585.133609672877,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/echo-string-small.json"
+    },
+    {
+      "id": "echo_string_1k",
+      "group": "strings.echo",
+      "title": "Echo String 1K",
+      "category": "strings",
+      "sophistication": "basic",
+      "direction": "mixed",
+      "parameters": {
+        "string_length": 1000
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 523.6301712850799,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 1418.9185565819525,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 10291.286521519889,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 10282.833289119337,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 2001.9355284338121,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 2368.718931261783,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 557.6869841622532,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 15677.160566086242,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/echo-string-1k.json"
+    },
+    {
+      "id": "echo_vec_i32_10k",
+      "group": "collections.i32_vec.echo",
+      "title": "Echo I32 Vec 10K",
+      "category": "collections",
+      "sophistication": "structured",
+      "direction": "roundtrip",
+      "parameters": {
+        "count": 10000
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 5408.974079235948,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 21270.48512369872,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 1871.6111875576148,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 2196618.0897832816,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 9861.087481016937,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 8298.930447912911,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 6588.406221161519,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 84881.57889230015,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/echo-vec-i32-10k.json"
+    },
+    {
+      "id": "echo_i32",
+      "group": "primitives.echo_i32",
+      "title": "Echo I32",
+      "category": "primitives",
+      "sophistication": "basic",
+      "direction": "mixed",
+      "parameters": {},
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 3.604019116177121,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 5.3729218504873435,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 10.410596,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 11.913415,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 113.03838393613573,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 4.768848946262456,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 3.3417042920333606,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 3103.1590029502217,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/echo-i32.json"
+    },
+    {
+      "id": "echo_f64",
+      "group": "primitives.echo_f64",
+      "title": "Echo F64",
+      "category": "primitives",
+      "sophistication": "basic",
+      "direction": "mixed",
+      "parameters": {},
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 3.6752865006169855,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 5.554297244728801,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 10.23787,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 11.736194,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 119.32045941817626,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 4.546717844174039,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 3.354294397053918,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 2948.0357387441522,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/echo-f64.json"
+    },
+    {
+      "id": "echo_direction",
+      "group": "enums.direction.echo",
+      "title": "Echo Direction",
+      "category": "enums",
+      "sophistication": "basic",
+      "direction": "mixed",
+      "parameters": {},
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 3.3079150685007854,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 137.41557016400452,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 12.580049,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 431.881825,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 204.0479073990565,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 6.169932032274102,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 3.4976280424415607,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 11876.025040693821,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/echo-direction.json"
+    },
+    {
+      "id": "echo_bytes_64k",
+      "group": "bytes.echo",
+      "title": "Echo Bytes 64K",
+      "category": "bytes",
+      "sophistication": "basic",
+      "direction": "roundtrip",
+      "parameters": {
+        "size_bytes": 65536
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 5505.427689863696,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 87619.3842329349,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 7907.282295777137,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 102161.8991,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 9262.362164173941,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 6688.269160600347,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 7268.255904120954,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 95989.92996937409,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/echo-bytes-64k.json"
+    },
+    {
+      "id": "echo_bool",
+      "group": "primitives.echo_bool",
+      "title": "Echo Bool",
+      "category": "primitives",
+      "sophistication": "basic",
+      "direction": "mixed",
+      "parameters": {},
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 3.5854462886746,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 6.775866138584404,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 10.423961,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 12.664597,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 96.8999749069524,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 7.7235131843975,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 3.549172224740406,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 2715.999039438613,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/echo-bool.json"
+    },
+    {
+      "id": "datastore_add_record_1k",
+      "group": "classes.datastore.add",
+      "title": "Datastore Add Record 1K",
+      "category": "classes",
+      "sophistication": "complex",
+      "direction": "host_to_rust",
+      "parameters": {
+        "count": 1000,
+        "input_shape": "record"
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 316472.31440021406,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 150220.79817836048,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 6706.1364150450945,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 210210.84883188273,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 70433.00315573595,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 113170.0488951325,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 96880.94208651876,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 9844692.285849813,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/datastore-add-record-1k.json"
+    },
+    {
+      "id": "data_enum_input",
+      "group": "enums.task_status.input",
+      "title": "Data Enum Input",
+      "category": "enums",
+      "sophistication": "basic",
+      "direction": "mixed",
+      "parameters": {},
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 194.8410293278539,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 159.41757941851174,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 144.285518,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 229.115492,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 339.93267614739904,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 2025.086431663831,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 187.56153279612047,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 16169.980931454034,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/data-enum-input.json"
+    },
+    {
+      "id": "counter_increment_mutex",
+      "group": "classes.counter.increment",
+      "title": "Counter Increment Mutex",
+      "category": "classes",
+      "sophistication": "complex",
+      "direction": "host_to_rust",
+      "parameters": {
+        "iterations": 1000,
+        "synchronization": "mutex"
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 8324.872880733566,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 21642.579374923054,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 5364.680322988617,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 16559.57564928172,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 3060.231526781203,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 3128.311615658363,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 8414.161521829128,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 5282000.883225356,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/counter-increment-mutex.json"
+    },
+    {
+      "id": "count_north_1k",
+      "group": "enums.directions.count_north",
+      "title": "Count North 1K",
+      "category": "enums",
+      "sophistication": "structured",
+      "direction": "host_to_rust",
+      "parameters": {
+        "count": 1000
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 4315.713127254219,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 4965.194719684444,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 10143.7794,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 9228.680570204242,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 18009.67462301808,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 66365.3778908907,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 4345.412596327752,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 16723.62831297333,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/count-north-1k.json"
+    },
+    {
+      "id": "count_north_10k",
+      "group": "enums.directions.count_north",
+      "title": "Count North 10K",
+      "category": "enums",
+      "sophistication": "structured",
+      "direction": "host_to_rust",
+      "parameters": {
+        "count": 10000
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 40811.03095422508,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 30608.840461295636,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 90294.43164482691,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 85630.92224595667,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 177160.39799125266,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 688485.338053233,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 41779.522681544586,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 63096.19600860146,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/count-north-10k.json"
+    },
+    {
+      "id": "count_active_users_1k",
+      "group": "records.user_profiles.count_active_users",
+      "title": "Count Active Users 1K",
+      "category": "records",
+      "sophistication": "complex",
+      "direction": "host_to_rust",
+      "parameters": {
+        "count": 1000
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 394750.60131740134,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 804839.9834251767,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 479631.7408288043,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 552830.6490196078,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 4152380.64048583,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 1226268.1801848724,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 410066.71736495435,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 699555.8775592177,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/count-active-users-1k.json"
+    },
+    {
+      "id": "count_active_users_100",
+      "group": "records.user_profiles.count_active_users",
+      "title": "Count Active Users 100",
+      "category": "records",
+      "sophistication": "complex",
+      "direction": "host_to_rust",
+      "parameters": {
+        "count": 100
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 40173.62658238851,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 80611.9390282351,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 49987.479600540195,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 55579.932290611454,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 403897.57258812606,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 122578.38526917575,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 41583.59527015669,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 78667.26208539482,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/count-active-users-100.json"
+    },
+    {
+      "id": "callback_1k",
+      "group": "callbacks.data_provider.compute_sum",
+      "title": "Callback 1K",
+      "category": "callbacks",
+      "sophistication": "callback",
+      "direction": "callback",
+      "parameters": {
+        "count": 1000
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 275228.1214295532,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 102205.0769470936,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 103298.59943245463,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 223252.71451279605,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 432107.7443042478,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 362662.40492776857,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 259102.60167886995,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 9173270.828543609,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/callback-1k.json"
+    },
+    {
+      "id": "callback_100",
+      "group": "callbacks.data_provider.compute_sum",
+      "title": "Callback 100",
+      "category": "callbacks",
+      "sophistication": "callback",
+      "direction": "callback",
+      "parameters": {
+        "count": 100
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 27043.79037185828,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 10516.118974575285,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 10795.717764306197,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 22715.6857384213,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 42744.38251111222,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 28165.283204603427,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 26146.79882603766,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 955727.5798181222,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/callback-100.json"
+    },
+    {
+      "id": "avg_sensor_temp_1k",
+      "group": "records.sensor_readings.average_temperature",
+      "title": "Average Sensor Temperature 1K",
+      "category": "records",
+      "sophistication": "structured",
+      "direction": "host_to_rust",
+      "parameters": {
+        "count": 1000
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 10208.560827775415,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 22677.14107579623,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 3949.4024561351134,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 66950.3261594134,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 158913.079125363,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 207412.5117045562,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 10278.033172037805,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 40922.60273717798,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/avg-sensor-temp-1k.json"
+    },
+    {
+      "id": "avg_sensor_temp_10k",
+      "group": "records.sensor_readings.average_temperature",
+      "title": "Average Sensor Temperature 10K",
+      "category": "records",
+      "sophistication": "structured",
+      "direction": "host_to_rust",
+      "parameters": {
+        "count": 10000
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 105295.11048145441,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 207293.14279567768,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 38870.65988037096,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 693375.6022437532,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 1657991.213815789,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 2185938.426703296,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 105586.17770046619,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 362360.82344823267,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/avg-sensor-temp-10k.json"
+    },
+    {
+      "id": "async_add",
+      "group": "async_fns.add",
+      "title": "Async Add",
+      "category": "async_fns",
+      "sophistication": "async",
+      "direction": "mixed",
+      "parameters": {},
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 342.1697442691039,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 9675.57605133093,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 6967.9718,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 6141.1099,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 379.5379342226473,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 320.23748168114116,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 39648.32692208543,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 4132.3085389354055,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/async-add.json"
+    },
+    {
+      "id": "add_f64",
+      "group": "primitives.add_f64",
+      "title": "Add F64",
+      "category": "primitives",
+      "sophistication": "basic",
+      "direction": "mixed",
+      "parameters": {},
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 3.802805094645903,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 5.372402316309902,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 10.356201,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 12.619283,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 96.44753667352688,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 6.11988127425863,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 3.5687134184195215,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 2636.241250982273,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/add-f64.json"
+    },
+    {
+      "id": "add",
+      "group": "primitives.add",
+      "title": "Add",
+      "category": "primitives",
+      "sophistication": "basic",
+      "direction": "mixed",
+      "parameters": {},
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 3.8692904454547032,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 5.470248078215083,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 10.359429,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 12.706171,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 114.55991594583526,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 6.229483206890775,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 3.659243989564263,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 2930.9762113430224,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/add.json"
+    },
+    {
+      "id": "accumulator_mutex",
+      "group": "classes.accumulator.add",
+      "title": "Accumulator Mutex",
+      "category": "classes",
+      "sophistication": "complex",
+      "direction": "host_to_rust",
+      "parameters": {
+        "iterations": 1000,
+        "synchronization": "mutex"
+      },
+      "latest_collected_at": "2026-04-16T16:16:28Z",
+      "latest_run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
+      "run_count": 4,
+      "languages": [
+        "java",
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "java": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 8220.691625580317,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 21292.082424384364,
+              "run_count": 1
+            }
+          ]
+        },
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 5393.944228915198,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 16095.038806857823,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 7301.764710820807,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 5955.161130838238,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 8638.742391685597,
+              "run_count": 1
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 5519202.465514389,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/accumulator-mutex.json"
+    },
+    {
+      "id": "counter_increment_single_threaded",
+      "group": "classes.counter.increment",
+      "title": "Counter Increment Single Threaded",
+      "category": "classes",
+      "sophistication": "complex",
+      "direction": "host_to_rust",
+      "parameters": {
+        "iterations": 1000,
+        "synchronization": "single_threaded"
+      },
+      "latest_collected_at": "2026-04-16T12:24:25Z",
+      "latest_run_id": "2026-04-16t12-24-25z-swift-macos-benchmark-f9c5f59f960d",
+      "run_count": 3,
+      "languages": [
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 1146.893692,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 2388.5099514976096,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 2422.3644828772103,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 4335.262510092273,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/counter-increment-single-threaded.json"
+    },
+    {
+      "id": "accumulator_single_threaded",
+      "group": "classes.accumulator.add",
+      "title": "Accumulator Single Threaded",
+      "category": "classes",
+      "sophistication": "complex",
+      "direction": "host_to_rust",
+      "parameters": {
+        "iterations": 1000,
+        "synchronization": "single_threaded"
+      },
+      "latest_collected_at": "2026-04-16T12:24:25Z",
+      "latest_run_id": "2026-04-16t12-24-25z-swift-macos-benchmark-f9c5f59f960d",
+      "run_count": 3,
+      "languages": [
+        "java_script",
+        "kotlin",
+        "swift"
+      ],
+      "averages": {
+        "swift": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 1185.351157,
+              "run_count": 1
+            }
+          ]
+        },
+        "java_script": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 7098.961541243109,
+              "run_count": 1
+            },
+            {
+              "name": "wasm-bindgen",
+              "unit": "ns_per_op",
+              "average_value": 5268.2076545376785,
+              "run_count": 1
+            }
+          ]
+        },
+        "kotlin": {
+          "run_count": 1,
+          "tools": [
+            {
+              "name": "boltffi",
+              "unit": "ns_per_op",
+              "average_value": 4478.265096776723,
+              "run_count": 1
+            }
+          ]
+        }
+      },
+      "view_path": "data/views/benchmarks/accumulator-single-threaded.json"
+    }
+  ]
+}
