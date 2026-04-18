@@ -1,4 +1,4 @@
-import { formatLanguageLabel } from "@/lib/benchmark";
+import { formatLanguageLabel, formatPlatformLabel } from "@/lib/benchmark";
 import { cn } from "@/lib/utils";
 
 const toolDotColors: Record<string, string> = {
@@ -25,7 +25,7 @@ export function ToolBadge({ name }: { name: string }) {
 export function PlatformBadge({ platform }: { platform: string }) {
   return (
     <span className="inline-flex items-center rounded border border-white/[0.1] bg-black px-2 py-0.5 font-mono text-[12px] text-white/85">
-      {platform}
+      {formatPlatformLabel(platform)}
     </span>
   );
 }

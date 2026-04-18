@@ -159,6 +159,8 @@ export function formatLanguageLabel(language: string): string {
   switch (language) {
     case "java_script":
       return "TypeScript";
+    case "csharp":
+      return "C#";
     default:
       return language
         .split("_")
@@ -173,6 +175,8 @@ export function formatPlatformLabel(platform: string): string {
       return "JVM";
     case "wasm":
       return "WASM";
+    case "dotnet":
+      return ".NET";
     default:
       return platform.charAt(0).toUpperCase() + platform.slice(1);
   }

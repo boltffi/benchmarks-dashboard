@@ -30,6 +30,20 @@ function findBoltffiStat(toolStats: SortableBenchmarkToolStat[]): SortableBenchm
   return toolStats.find((toolStat) => toolStat.toolName.toLowerCase() === "boltffi") ?? null;
 }
 
+function calculateBoltffiAbsoluteScore(toolStats: SortableBenchmarkToolStat[]): number | null {
+  const boltffiStat = findBoltffiStat(toolStats);
+
+  if (!boltffiStat || !Number.isFinite(boltffiStat.latestValue) || boltffiStat.latestValue <= 0) {
+    return null;
+  }
+
+  if (isLowerMetricBetter(boltffiStat.unit)) {
+    return 1 / boltffiStat.latestValue;
+  }
+
+  return boltffiStat.latestValue;
+}
+
 function findBestNonBoltffiValue(toolStats: SortableBenchmarkToolStat[], unit: string): number | null {
   const competitorValues = toolStats
     .filter((toolStat) => toolStat.toolName.toLowerCase() !== "boltffi" && toolStat.unit === unit)
@@ -83,6 +97,27 @@ export function sortBenchmarksByBoltffi<T extends SortableBenchmarkRow>(
       return sortMode === "boltffi_fastest"
         ? rightRelativeScore - leftRelativeScore
         : leftRelativeScore - rightRelativeScore;
+    }
+
+    if (leftRelativeScore === null && rightRelativeScore === null) {
+      const leftAbsoluteScore = calculateBoltffiAbsoluteScore(left.toolStats);
+      const rightAbsoluteScore = calculateBoltffiAbsoluteScore(right.toolStats);
+      const missingBoltffiDelta =
+        Number(leftAbsoluteScore === null) - Number(rightAbsoluteScore === null);
+
+      if (missingBoltffiDelta !== 0) {
+        return missingBoltffiDelta;
+      }
+
+      if (
+        leftAbsoluteScore !== null &&
+        rightAbsoluteScore !== null &&
+        leftAbsoluteScore !== rightAbsoluteScore
+      ) {
+        return sortMode === "boltffi_fastest"
+          ? rightAbsoluteScore - leftAbsoluteScore
+          : leftAbsoluteScore - rightAbsoluteScore;
+      }
     }
 
     return (

@@ -84,8 +84,28 @@ describe("sortBenchmarksByBoltffi", () => {
 
     expect(sorted.map((entry) => entry.id)).toEqual([
       "real_comparison",
-      "missing_boltffi",
       "missing_competitor",
+      "missing_boltffi",
+    ]);
+  });
+
+  it("falls back to raw boltffi speed when the language has no competitor", () => {
+    const rows = [
+      row("slow_single_tool", 200, []),
+      row("fast_single_tool", 20, []),
+      row("middle_single_tool", 100, []),
+    ];
+
+    expect(sortBenchmarksByBoltffi(rows, "boltffi_fastest").map((entry) => entry.id)).toEqual([
+      "fast_single_tool",
+      "middle_single_tool",
+      "slow_single_tool",
+    ]);
+
+    expect(sortBenchmarksByBoltffi(rows, "boltffi_slowest").map((entry) => entry.id)).toEqual([
+      "slow_single_tool",
+      "middle_single_tool",
+      "fast_single_tool",
     ]);
   });
 
