@@ -1,6 +1,6 @@
 {
   "schema_version": "benchmark_view_v1",
-  "generated_at": "2026-04-16T20:32:31Z",
+  "generated_at": "2026-04-18T15:58:23Z",
   "benchmark_id": "callback_100",
   "group": "callbacks.data_provider.compute_sum",
   "title": "Callback 100",

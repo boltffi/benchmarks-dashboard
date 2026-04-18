@@ -1,6 +1,6 @@
 {
   "schema_version": "benchmark_view_v1",
-  "generated_at": "2026-04-16T20:32:31Z",
+  "generated_at": "2026-04-18T15:58:23Z",
   "benchmark_id": "sum_trade_volumes_10k",
   "group": "records.trades.sum_trade_volumes",
   "title": "Sum Trade Volumes 10K",

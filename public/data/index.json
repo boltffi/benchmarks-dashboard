@@ -1,19 +1,19 @@
 {
   "schema_version": "benchmark_site_index_v1",
-  "generated_at": "2026-04-16T20:32:31Z",
+  "generated_at": "2026-04-18T15:58:23Z",
   "totals": {
-    "run_count": 4,
-    "group_count": 48
+    "run_count": 5,
+    "group_count": 52
   },
   "machines": [
     {
       "machine": {
         "machine_id": "local-darwin-arm64-apple-m3-max",
         "label": "Apple M3 Max",
-        "subtitle": "darwin 15.7.3 • arm64 • local • mac.home",
+        "subtitle": "darwin macOS Sequoia 15.7.3 (24G419) [Darwin 24.6.0] • arm64 • local • mac.home",
         "kind": "local",
         "os": "darwin",
-        "os_version": "15.7.3",
+        "os_version": "macOS Sequoia 15.7.3 (24G419) [Darwin 24.6.0]",
         "arch": "arm64",
         "cpu_model": "Apple M3 Max",
         "hostname": "mac.home",
@@ -23,21 +23,23 @@
         "logical_cores": 14,
         "memory_bytes": 38654705664
       },
-      "latest_collected_at": "2026-04-16T16:16:28Z",
-      "run_count": 4,
-      "suite_count": 4,
-      "group_count": 48,
+      "latest_collected_at": "2026-04-18T15:56:54Z",
+      "run_count": 5,
+      "suite_count": 5,
+      "group_count": 52,
       "tools": [
         "boltffi",
         "uniffi",
         "wasm-bindgen"
       ],
       "platforms": [
+        "dotnet",
         "jvm",
         "native",
         "wasm"
       ],
       "languages": [
+        "csharp",
         "java",
         "java_script",
         "kotlin",
@@ -46,6 +48,50 @@
     }
   ],
   "runs": [
+    {
+      "run_id": "2026-04-18t15-56-54z-csharp-dotnet-benchmarkdotnet-c33ca486286f",
+      "collected_at": "2026-04-18T15:56:54Z",
+      "repository": "mobiFFI",
+      "branch": "feature/bench-harness",
+      "commit_sha": "c33ca486286fbcc8f27b8d7d535b55f63a913934",
+      "suite_name": "csharp-dotnet-benchmarkdotnet",
+      "harness": "benchmarkdotnet",
+      "platform": "dotnet",
+      "language": "csharp",
+      "archive_path": "data/archive/2026/04/18/2026-04-18t15-56-54z-csharp-dotnet-benchmarkdotnet-c33ca486286f--ec69cedc6757.json",
+      "content_sha256": "ec69cedc6757f252955beb709b55bb53392efc11142bb519cb58d7e9e83f1df7",
+      "benchmark_count": 11,
+      "groups": [
+        "primitives.add",
+        "primitives.echo_i32",
+        "primitives.noop",
+        "records.address.echo",
+        "records.line.echo",
+        "records.person.echo",
+        "records.point.make",
+        "strings.echo",
+        "strings.generate"
+      ],
+      "tools": [
+        "boltffi"
+      ],
+      "machine": {
+        "machine_id": "local-darwin-arm64-apple-m3-max",
+        "label": "Apple M3 Max",
+        "subtitle": "darwin macOS Sequoia 15.7.3 (24G419) [Darwin 24.6.0] • arm64 • local • mac.home",
+        "kind": "local",
+        "os": "darwin",
+        "os_version": "macOS Sequoia 15.7.3 (24G419) [Darwin 24.6.0]",
+        "arch": "arm64",
+        "cpu_model": "Apple M3 Max",
+        "hostname": "mac.home",
+        "ci_provider": null,
+        "ci_runner": null,
+        "physical_cores": 14,
+        "logical_cores": 14,
+        "memory_bytes": 38654705664
+      }
+    },
     {
       "run_id": "2026-04-16t16-16-28z-java-jvm-jmh-f9c5f59f960d",
       "collected_at": "2026-04-16T16:16:28Z",
@@ -385,6 +431,132 @@
   ],
   "groups": [
     {
+      "group": "primitives.noop",
+      "title": "Noop",
+      "category": "primitives",
+      "sophistication": "basic",
+      "direction": "mixed",
+      "latest_collected_at": "2026-04-18T15:56:54Z",
+      "run_count": 5,
+      "machine_count": 1,
+      "machine_ids": [
+        "local-darwin-arm64-apple-m3-max"
+      ],
+      "view_path": "data/views/groups/primitives-noop.json"
+    },
+    {
+      "group": "records.point.make",
+      "title": "Make Point",
+      "category": "records",
+      "sophistication": "structured",
+      "direction": "rust_to_host",
+      "latest_collected_at": "2026-04-18T15:56:54Z",
+      "run_count": 1,
+      "machine_count": 1,
+      "machine_ids": [
+        "local-darwin-arm64-apple-m3-max"
+      ],
+      "view_path": "data/views/groups/records-point-make.json"
+    },
+    {
+      "group": "strings.generate",
+      "title": "Generate String 1K",
+      "category": "strings",
+      "sophistication": "basic",
+      "direction": "rust_to_host",
+      "latest_collected_at": "2026-04-18T15:56:54Z",
+      "run_count": 5,
+      "machine_count": 1,
+      "machine_ids": [
+        "local-darwin-arm64-apple-m3-max"
+      ],
+      "view_path": "data/views/groups/strings-generate.json"
+    },
+    {
+      "group": "strings.echo",
+      "title": "Echo String 64K",
+      "category": "strings",
+      "sophistication": "basic",
+      "direction": "mixed",
+      "latest_collected_at": "2026-04-18T15:56:54Z",
+      "run_count": 5,
+      "machine_count": 1,
+      "machine_ids": [
+        "local-darwin-arm64-apple-m3-max"
+      ],
+      "view_path": "data/views/groups/strings-echo.json"
+    },
+    {
+      "group": "records.person.echo",
+      "title": "Echo Person",
+      "category": "records",
+      "sophistication": "structured",
+      "direction": "roundtrip",
+      "latest_collected_at": "2026-04-18T15:56:54Z",
+      "run_count": 1,
+      "machine_count": 1,
+      "machine_ids": [
+        "local-darwin-arm64-apple-m3-max"
+      ],
+      "view_path": "data/views/groups/records-person-echo.json"
+    },
+    {
+      "group": "records.line.echo",
+      "title": "Echo Line",
+      "category": "records",
+      "sophistication": "structured",
+      "direction": "roundtrip",
+      "latest_collected_at": "2026-04-18T15:56:54Z",
+      "run_count": 1,
+      "machine_count": 1,
+      "machine_ids": [
+        "local-darwin-arm64-apple-m3-max"
+      ],
+      "view_path": "data/views/groups/records-line-echo.json"
+    },
+    {
+      "group": "primitives.echo_i32",
+      "title": "Echo I32",
+      "category": "primitives",
+      "sophistication": "basic",
+      "direction": "mixed",
+      "latest_collected_at": "2026-04-18T15:56:54Z",
+      "run_count": 5,
+      "machine_count": 1,
+      "machine_ids": [
+        "local-darwin-arm64-apple-m3-max"
+      ],
+      "view_path": "data/views/groups/primitives-echo-i32.json"
+    },
+    {
+      "group": "records.address.echo",
+      "title": "Echo Address",
+      "category": "records",
+      "sophistication": "structured",
+      "direction": "roundtrip",
+      "latest_collected_at": "2026-04-18T15:56:54Z",
+      "run_count": 1,
+      "machine_count": 1,
+      "machine_ids": [
+        "local-darwin-arm64-apple-m3-max"
+      ],
+      "view_path": "data/views/groups/records-address-echo.json"
+    },
+    {
+      "group": "primitives.add",
+      "title": "Add",
+      "category": "primitives",
+      "sophistication": "basic",
+      "direction": "mixed",
+      "latest_collected_at": "2026-04-18T15:56:54Z",
+      "run_count": 5,
+      "machine_count": 1,
+      "machine_ids": [
+        "local-darwin-arm64-apple-m3-max"
+      ],
+      "view_path": "data/views/groups/primitives-add.json"
+    },
+    {
       "group": "records.user_profiles.sum_user_scores",
       "title": "Sum User Scores 100",
       "category": "records",
@@ -497,20 +669,6 @@
       "view_path": "data/views/groups/records-locations-process.json"
     },
     {
-      "group": "primitives.noop",
-      "title": "Noop",
-      "category": "primitives",
-      "sophistication": "basic",
-      "direction": "mixed",
-      "latest_collected_at": "2026-04-16T16:16:28Z",
-      "run_count": 4,
-      "machine_count": 1,
-      "machine_ids": [
-        "local-darwin-arm64-apple-m3-max"
-      ],
-      "view_path": "data/views/groups/primitives-noop.json"
-    },
-    {
       "group": "primitives.negate_bool",
       "title": "Negate Bool",
       "category": "primitives",
@@ -593,20 +751,6 @@
         "local-darwin-arm64-apple-m3-max"
       ],
       "view_path": "data/views/groups/records-trades-generate.json"
-    },
-    {
-      "group": "strings.generate",
-      "title": "Generate String 1K",
-      "category": "strings",
-      "sophistication": "basic",
-      "direction": "rust_to_host",
-      "latest_collected_at": "2026-04-16T16:16:28Z",
-      "run_count": 4,
-      "machine_count": 1,
-      "machine_ids": [
-        "local-darwin-arm64-apple-m3-max"
-      ],
-      "view_path": "data/views/groups/strings-generate.json"
     },
     {
       "group": "records.sensor_readings.generate",
@@ -805,20 +949,6 @@
       "view_path": "data/views/groups/enums-direction-find.json"
     },
     {
-      "group": "strings.echo",
-      "title": "Echo String 1K",
-      "category": "strings",
-      "sophistication": "basic",
-      "direction": "mixed",
-      "latest_collected_at": "2026-04-16T16:16:28Z",
-      "run_count": 4,
-      "machine_count": 1,
-      "machine_ids": [
-        "local-darwin-arm64-apple-m3-max"
-      ],
-      "view_path": "data/views/groups/strings-echo.json"
-    },
-    {
       "group": "collections.i32_vec.echo",
       "title": "Echo I32 Vec 10K",
       "category": "collections",
@@ -831,20 +961,6 @@
         "local-darwin-arm64-apple-m3-max"
       ],
       "view_path": "data/views/groups/collections-i32-vec-echo.json"
-    },
-    {
-      "group": "primitives.echo_i32",
-      "title": "Echo I32",
-      "category": "primitives",
-      "sophistication": "basic",
-      "direction": "mixed",
-      "latest_collected_at": "2026-04-16T16:16:28Z",
-      "run_count": 4,
-      "machine_count": 1,
-      "machine_ids": [
-        "local-darwin-arm64-apple-m3-max"
-      ],
-      "view_path": "data/views/groups/primitives-echo-i32.json"
     },
     {
       "group": "primitives.echo_f64",
@@ -1027,20 +1143,6 @@
         "local-darwin-arm64-apple-m3-max"
       ],
       "view_path": "data/views/groups/primitives-add-f64.json"
-    },
-    {
-      "group": "primitives.add",
-      "title": "Add",
-      "category": "primitives",
-      "sophistication": "basic",
-      "direction": "mixed",
-      "latest_collected_at": "2026-04-16T16:16:28Z",
-      "run_count": 4,
-      "machine_count": 1,
-      "machine_ids": [
-        "local-darwin-arm64-apple-m3-max"
-      ],
-      "view_path": "data/views/groups/primitives-add.json"
     },
     {
       "group": "classes.accumulator.add",

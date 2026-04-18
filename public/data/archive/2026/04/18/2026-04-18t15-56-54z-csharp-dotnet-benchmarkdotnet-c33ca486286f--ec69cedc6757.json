@@ -1,0 +1,1007 @@
+{
+  "schema_version": "benchmark_run_v1",
+  "run_id": "2026-04-18t15-56-54z-csharp-dotnet-benchmarkdotnet-c33ca486286f",
+  "collected_at": "2026-04-18T15:56:54Z",
+  "provenance": {
+    "repository": {
+      "name": "mobiFFI",
+      "url": "git@github.com-ali:boltffi/boltffi",
+      "branch": "feature/bench-harness",
+      "commit_sha": "c33ca486286fbcc8f27b8d7d535b55f63a913934",
+      "dirty": true
+    },
+    "collector": {
+      "name": "mobiffi-benchmark-adapters",
+      "version": "0.1.0",
+      "invocation": "benchmarkdotnet_to_run.py --results /Users/alihilal/Documents/Per/mobiFFI/benchmarks/harnesses/dotnet-bench/build/results/dotnet/results.json"
+    },
+    "artifacts": [
+      {
+        "kind": "json",
+        "path": "/Users/alihilal/Documents/Per/mobiFFI/benchmarks/harnesses/dotnet-bench/build/results/dotnet/results.json",
+        "sha256": "e5c12c53fa17c1515713ed4e8765f77295d30aa980969debaf5d8147bfce5cdf"
+      }
+    ]
+  },
+  "environment": {
+    "host": {
+      "os": "darwin",
+      "os_version": "macOS Sequoia 15.7.3 (24G419) [Darwin 24.6.0]",
+      "arch": "arm64",
+      "cpu_model": "Apple M3 Max",
+      "physical_cores": 14,
+      "logical_cores": 14,
+      "memory_bytes": 38654705664,
+      "attributes": {
+        "hostname": "mac.home",
+        "kernel_release": "24.6.0",
+        "kernel_version": "Darwin Kernel Version 24.6.0: Wed Nov  5 21:32:38 PST 2025; root:xnu-11417.140.69.705.2~1/RELEASE_ARM64_T6031",
+        "python_version": "3.13.3",
+        "benchmarkdotnet_version": "0.15.2",
+        "configuration": "RELEASE",
+        "hardware_timer_kind": "Unknown",
+        "dotnet_cli_version": "10.0.106"
+      }
+    },
+    "toolchains": {
+      "rust": {
+        "rustc_version": "rustc 1.94.1 (e408947bf 2026-03-25)",
+        "cargo_version": "cargo 1.94.1 (29ea6fb6a 2026-03-24)",
+        "channel": "1.94.1",
+        "host_triple": "aarch64-apple-darwin",
+        "target_triple": "aarch64-apple-darwin"
+      },
+      "swift": null,
+      "kotlin": null,
+      "java": null,
+      "node": null,
+      "wasm": null,
+      "dotnet": {
+        "sdk_version": "10.0.106",
+        "runtime_version": ".NET 10.0.6 (10.0.626.17701)",
+        "runtime_kind": null
+      }
+    },
+    "runtime": {
+      "engine": "dotnet",
+      "version": ".NET 10.0.6 (10.0.626.17701)",
+      "platform": "dotnet",
+      "attributes": {
+        "benchmarkdotnet_version": "0.15.2",
+        "dotnet_cli_version": "10.0.106",
+        "configuration": "RELEASE",
+        "chronometer_frequency": {
+          "Hertz": 1000000000
+        },
+        "hardware_timer_kind": "Unknown"
+      }
+    },
+    "ci": null
+  },
+  "suite": {
+    "name": "csharp-dotnet-benchmarkdotnet",
+    "harness": "benchmarkdotnet",
+    "platform": "dotnet",
+    "language": "csharp",
+    "profile": "release",
+    "tags": [],
+    "attributes": {
+      "title": "BoltFFIBench.BoltffiWireReaderBenchmarks-20260418-175441",
+      "benchmarkdotnet_version": "0.15.2",
+      "dotnet_cli_version": "10.0.106"
+    }
+  },
+  "benchmarks": [
+    {
+      "descriptor": {
+        "id": "add",
+        "group": "primitives.add",
+        "title": "Add",
+        "category": "primitives",
+        "sophistication": "basic",
+        "direction": "mixed",
+        "platform": "dotnet",
+        "language": "csharp",
+        "description": null,
+        "tags": [],
+        "parameters": {}
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "c33ca486286fbcc8f27b8d7d535b55f63a913934",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "dotnet",
+              "compiler_version": "10.0.106",
+              "target": null,
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": []
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "p_invoke",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "csharp",
+                "binding_runtime": ".net"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_package": "Demo",
+              "benchmark_method": "Add",
+              "benchmark_type": "BoltffiWireReaderBenchmarks",
+              "benchmarkdotnet_title": "Add"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 2.0772742733359335,
+            "std_dev": 0.007554031839187034,
+            "min": 2.0687514916062355,
+            "max": 2.0855350121855736,
+            "percentiles": {
+              "0": 2.0687514916062355,
+              "25": 2.06975731998682,
+              "50": 2.0806092470884323,
+              "67": 2.0813634002208707,
+              "80": 2.0824816390872,
+              "85": 2.0832449823617933,
+              "90": 2.084008325636387,
+              "95": 2.0847716689109803,
+              "100": 2.0855350121855736
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": null,
+            "sample_count": 5,
+            "total_operations": null
+          },
+          "notes": [
+            "confidence_interval_ns=[2.048186, 2.106362]",
+            "bytes_allocated_per_operation=0.000000"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "echo_address",
+        "group": "records.address.echo",
+        "title": "Echo Address",
+        "category": "records",
+        "sophistication": "structured",
+        "direction": "roundtrip",
+        "platform": "dotnet",
+        "language": "csharp",
+        "description": null,
+        "tags": [],
+        "parameters": {}
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "c33ca486286fbcc8f27b8d7d535b55f63a913934",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "dotnet",
+              "compiler_version": "10.0.106",
+              "target": null,
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": []
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "p_invoke",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "csharp",
+                "binding_runtime": ".net"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_package": "Demo",
+              "benchmark_method": "EchoAddress",
+              "benchmark_type": "BoltffiWireReaderBenchmarks",
+              "benchmarkdotnet_title": "EchoAddress"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 244.37127532958985,
+            "std_dev": 1.003855975238847,
+            "min": 243.53649234771729,
+            "max": 245.85298728942874,
+            "percentiles": {
+              "0": 243.53649234771729,
+              "25": 243.55862569808957,
+              "50": 243.97224187850952,
+              "67": 244.62761741638184,
+              "80": 245.11942100524902,
+              "85": 245.30281257629397,
+              "90": 245.4862041473389,
+              "95": 245.6695957183838,
+              "100": 245.85298728942874
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": null,
+            "sample_count": 5,
+            "total_operations": null
+          },
+          "notes": [
+            "confidence_interval_ns=[240.505783, 248.236767]",
+            "bytes_allocated_per_operation=248.000000"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "echo_i32",
+        "group": "primitives.echo_i32",
+        "title": "Echo I32",
+        "category": "primitives",
+        "sophistication": "basic",
+        "direction": "mixed",
+        "platform": "dotnet",
+        "language": "csharp",
+        "description": null,
+        "tags": [],
+        "parameters": {}
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "c33ca486286fbcc8f27b8d7d535b55f63a913934",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "dotnet",
+              "compiler_version": "10.0.106",
+              "target": null,
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": []
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "p_invoke",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "csharp",
+                "binding_runtime": ".net"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_package": "Demo",
+              "benchmark_method": "EchoI32",
+              "benchmark_type": "BoltffiWireReaderBenchmarks",
+              "benchmarkdotnet_title": "EchoI32"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 2.083737247437239,
+            "std_dev": 0.01359060612534602,
+            "min": 2.069568570703268,
+            "max": 2.104584902524948,
+            "percentiles": {
+              "0": 2.069568570703268,
+              "25": 2.076834749430418,
+              "50": 2.0785682536661625,
+              "67": 2.085750078558922,
+              "80": 2.092220789194107,
+              "85": 2.0953118175268175,
+              "90": 2.0984028458595274,
+              "95": 2.1014938741922378,
+              "100": 2.104584902524948
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": null,
+            "sample_count": 5,
+            "total_operations": null
+          },
+          "notes": [
+            "confidence_interval_ns=[2.031405, 2.136070]",
+            "bytes_allocated_per_operation=0.000000"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "echo_line",
+        "group": "records.line.echo",
+        "title": "Echo Line",
+        "category": "records",
+        "sophistication": "structured",
+        "direction": "roundtrip",
+        "platform": "dotnet",
+        "language": "csharp",
+        "description": null,
+        "tags": [],
+        "parameters": {}
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "c33ca486286fbcc8f27b8d7d535b55f63a913934",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "dotnet",
+              "compiler_version": "10.0.106",
+              "target": null,
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": []
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "p_invoke",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "csharp",
+                "binding_runtime": ".net"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_package": "Demo",
+              "benchmark_method": "EchoLine",
+              "benchmark_type": "BoltffiWireReaderBenchmarks",
+              "benchmarkdotnet_title": "EchoLine"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 51.46888647079468,
+            "std_dev": 0.6298322021364817,
+            "min": 50.40949833393097,
+            "max": 51.93093919754028,
+            "percentiles": {
+              "0": 50.40949833393097,
+              "25": 51.37452733516693,
+              "50": 51.77708971500397,
+              "67": 51.828285593986514,
+              "80": 51.86809005737305,
+              "85": 51.88380234241485,
+              "90": 51.89951462745667,
+              "95": 51.91522691249847,
+              "100": 51.93093919754028
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": null,
+            "sample_count": 5,
+            "total_operations": null
+          },
+          "notes": [
+            "confidence_interval_ns=[49.043627, 53.894146]",
+            "bytes_allocated_per_operation=120.000000"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "echo_person",
+        "group": "records.person.echo",
+        "title": "Echo Person",
+        "category": "records",
+        "sophistication": "structured",
+        "direction": "roundtrip",
+        "platform": "dotnet",
+        "language": "csharp",
+        "description": null,
+        "tags": [],
+        "parameters": {}
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "c33ca486286fbcc8f27b8d7d535b55f63a913934",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "dotnet",
+              "compiler_version": "10.0.106",
+              "target": null,
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": []
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "p_invoke",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "csharp",
+                "binding_runtime": ".net"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_package": "Demo",
+              "benchmark_method": "EchoPerson",
+              "benchmark_type": "BoltffiWireReaderBenchmarks",
+              "benchmarkdotnet_title": "EchoPerson"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 109.56357116699219,
+            "std_dev": 0.7076022042763317,
+            "min": 108.77141344547272,
+            "max": 110.32008123397827,
+            "percentiles": {
+              "0": 108.77141344547272,
+              "25": 108.861044049263,
+              "50": 109.79666805267334,
+              "67": 109.98161513328552,
+              "80": 110.11893548965455,
+              "85": 110.16922192573547,
+              "90": 110.21950836181641,
+              "95": 110.26979479789733,
+              "100": 110.32008123397827
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": null,
+            "sample_count": 5,
+            "total_operations": null
+          },
+          "notes": [
+            "confidence_interval_ns=[106.838847, 112.288295]",
+            "bytes_allocated_per_operation=136.000000"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "echo_string_64k",
+        "group": "strings.echo",
+        "title": "Echo String 64K",
+        "category": "strings",
+        "sophistication": "basic",
+        "direction": "mixed",
+        "platform": "dotnet",
+        "language": "csharp",
+        "description": null,
+        "tags": [],
+        "parameters": {
+          "string_length": 65536
+        }
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "c33ca486286fbcc8f27b8d7d535b55f63a913934",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "dotnet",
+              "compiler_version": "10.0.106",
+              "target": null,
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": []
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "p_invoke",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "csharp",
+                "binding_runtime": ".net"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_package": "Demo",
+              "benchmark_method": "EchoString64K",
+              "benchmark_type": "BoltffiWireReaderBenchmarks",
+              "benchmarkdotnet_title": "EchoString64K"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 29945.333862304688,
+            "std_dev": 780.171942226374,
+            "min": 28738.296508789062,
+            "max": 30780.888854980465,
+            "percentiles": {
+              "0": 28738.296508789062,
+              "25": 29675.270080566406,
+              "50": 30245.412170410156,
+              "67": 30273.55704833984,
+              "80": 30385.61912841797,
+              "85": 30484.43656005859,
+              "90": 30583.253991699217,
+              "95": 30682.07142333984,
+              "100": 30780.888854980465
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": null,
+            "sample_count": 5,
+            "total_operations": null
+          },
+          "notes": [
+            "confidence_interval_ns=[26941.169516, 32949.498208]",
+            "bytes_allocated_per_operation=196677.000000"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "echo_string_small",
+        "group": "strings.echo",
+        "title": "Echo String Small",
+        "category": "strings",
+        "sophistication": "basic",
+        "direction": "mixed",
+        "platform": "dotnet",
+        "language": "csharp",
+        "description": null,
+        "tags": [],
+        "parameters": {
+          "string_length": 5
+        }
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "c33ca486286fbcc8f27b8d7d535b55f63a913934",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "dotnet",
+              "compiler_version": "10.0.106",
+              "target": null,
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": []
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "p_invoke",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "csharp",
+                "binding_runtime": ".net"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_package": "Demo",
+              "benchmark_method": "EchoStringSmall",
+              "benchmark_type": "BoltffiWireReaderBenchmarks",
+              "benchmarkdotnet_title": "EchoStringSmall"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 85.64930865764617,
+            "std_dev": 1.1016040962030738,
+            "min": 84.62230372428894,
+            "max": 86.96739888191223,
+            "percentiles": {
+              "0": 84.62230372428894,
+              "25": 84.73224449157715,
+              "50": 85.24637424945831,
+              "67": 86.22003067970276,
+              "80": 86.73605732917785,
+              "85": 86.79389271736144,
+              "90": 86.85172810554505,
+              "95": 86.90956349372864,
+              "100": 86.96739888191223
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": null,
+            "sample_count": 5,
+            "total_operations": null
+          },
+          "notes": [
+            "confidence_interval_ns=[81.407424, 89.891194]",
+            "bytes_allocated_per_operation=88.000000"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "generate_string_1k",
+        "group": "strings.generate",
+        "title": "Generate String 1K",
+        "category": "strings",
+        "sophistication": "basic",
+        "direction": "rust_to_host",
+        "platform": "dotnet",
+        "language": "csharp",
+        "description": null,
+        "tags": [],
+        "parameters": {
+          "string_length": 1000
+        }
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "c33ca486286fbcc8f27b8d7d535b55f63a913934",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "dotnet",
+              "compiler_version": "10.0.106",
+              "target": null,
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": []
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "p_invoke",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "csharp",
+                "binding_runtime": ".net"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_package": "Demo",
+              "benchmark_method": "GenerateString1K",
+              "benchmark_type": "BoltffiWireReaderBenchmarks",
+              "benchmarkdotnet_title": "GenerateString1K"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 262.0980661392212,
+            "std_dev": 7.925921442325797,
+            "min": 251.34805870056152,
+            "max": 271.23234701156616,
+            "percentiles": {
+              "0": 251.34805870056152,
+              "25": 256.9048204421997,
+              "50": 264.4700012207031,
+              "67": 265.87427064895627,
+              "80": 267.47455205917356,
+              "85": 268.41400079727174,
+              "90": 269.35344953536986,
+              "95": 270.29289827346804,
+              "100": 271.23234701156616
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": null,
+            "sample_count": 5,
+            "total_operations": null
+          },
+          "notes": [
+            "confidence_interval_ns=[231.578165, 292.617967]",
+            "bytes_allocated_per_operation=2072.000000"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "generate_string_64k",
+        "group": "strings.generate",
+        "title": "Generate String 64K",
+        "category": "strings",
+        "sophistication": "basic",
+        "direction": "rust_to_host",
+        "platform": "dotnet",
+        "language": "csharp",
+        "description": null,
+        "tags": [],
+        "parameters": {
+          "string_length": 65536
+        }
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "c33ca486286fbcc8f27b8d7d535b55f63a913934",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "dotnet",
+              "compiler_version": "10.0.106",
+              "target": null,
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": []
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "p_invoke",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "csharp",
+                "binding_runtime": ".net"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_package": "Demo",
+              "benchmark_method": "GenerateString64K",
+              "benchmark_type": "BoltffiWireReaderBenchmarks",
+              "benchmarkdotnet_title": "GenerateString64K"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 26000.34662475586,
+            "std_dev": 539.0664949610791,
+            "min": 25474.586486816406,
+            "max": 26604.690551757812,
+            "percentiles": {
+              "0": 25474.586486816406,
+              "25": 25600.807189941406,
+              "50": 25767.392486572266,
+              "67": 26302.45995361328,
+              "80": 26564.343237304685,
+              "85": 26574.430065917968,
+              "90": 26584.51689453125,
+              "95": 26594.603723144533,
+              "100": 26604.690551757812
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": null,
+            "sample_count": 5,
+            "total_operations": null
+          },
+          "notes": [
+            "confidence_interval_ns=[23924.593503, 28076.099746]",
+            "bytes_allocated_per_operation=131117.000000"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "make_point",
+        "group": "records.point.make",
+        "title": "Make Point",
+        "category": "records",
+        "sophistication": "structured",
+        "direction": "rust_to_host",
+        "platform": "dotnet",
+        "language": "csharp",
+        "description": null,
+        "tags": [],
+        "parameters": {}
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "c33ca486286fbcc8f27b8d7d535b55f63a913934",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "dotnet",
+              "compiler_version": "10.0.106",
+              "target": null,
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": []
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "p_invoke",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "csharp",
+                "binding_runtime": ".net"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_package": "Demo",
+              "benchmark_method": "MakePoint",
+              "benchmark_type": "BoltffiWireReaderBenchmarks",
+              "benchmarkdotnet_title": "MakePoint"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 2.4226401392370462,
+            "std_dev": 0.0036116246451616393,
+            "min": 2.419273678213358,
+            "max": 2.4267950393259525,
+            "percentiles": {
+              "0": 2.419273678213358,
+              "25": 2.4198070941492915,
+              "50": 2.4222459197044373,
+              "67": 2.424529820941389,
+              "80": 2.425422179698944,
+              "85": 2.425765394605696,
+              "90": 2.4261086095124487,
+              "95": 2.4264518244192,
+              "100": 2.4267950393259525
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": null,
+            "sample_count": 4,
+            "total_operations": null
+          },
+          "notes": [
+            "confidence_interval_ns=[2.399302, 2.445978]",
+            "bytes_allocated_per_operation=0.000000"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "noop",
+        "group": "primitives.noop",
+        "title": "Noop",
+        "category": "primitives",
+        "sophistication": "basic",
+        "direction": "mixed",
+        "platform": "dotnet",
+        "language": "csharp",
+        "description": null,
+        "tags": [],
+        "parameters": {}
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "c33ca486286fbcc8f27b8d7d535b55f63a913934",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "dotnet",
+              "compiler_version": "10.0.106",
+              "target": null,
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": []
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "p_invoke",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "csharp",
+                "binding_runtime": ".net"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_package": "Demo",
+              "benchmark_method": "Noop",
+              "benchmark_type": "BoltffiWireReaderBenchmarks",
+              "benchmarkdotnet_title": "Noop"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 2.460648864507675,
+            "std_dev": 0.03156329998400037,
+            "min": 2.4220707528293133,
+            "max": 2.4968155957758427,
+            "percentiles": {
+              "0": 2.4220707528293133,
+              "25": 2.440984360873699,
+              "50": 2.454979032278061,
+              "67": 2.477701605260372,
+              "80": 2.490078783780336,
+              "85": 2.4917629867792126,
+              "90": 2.4934471897780894,
+              "95": 2.495131392776966,
+              "100": 2.4968155957758427
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": null,
+            "sample_count": 5,
+            "total_operations": null
+          },
+          "notes": [
+            "confidence_interval_ns=[2.339110, 2.582188]",
+            "bytes_allocated_per_operation=0.000000"
+          ]
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "notes": []
+}

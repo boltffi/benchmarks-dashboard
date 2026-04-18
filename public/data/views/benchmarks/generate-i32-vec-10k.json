@@ -1,6 +1,6 @@
 {
   "schema_version": "benchmark_view_v1",
-  "generated_at": "2026-04-16T20:32:31Z",
+  "generated_at": "2026-04-18T15:58:23Z",
   "benchmark_id": "generate_i32_vec_10k",
   "group": "collections.i32_vec.generate",
   "title": "Generate I32 Vec 10K",
