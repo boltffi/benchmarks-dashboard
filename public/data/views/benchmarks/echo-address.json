@@ -1,6 +1,6 @@
 {
   "schema_version": "benchmark_view_v1",
-  "generated_at": "2026-04-18T15:58:23Z",
+  "generated_at": "2026-04-18T17:02:58Z",
   "benchmark_id": "echo_address",
   "group": "records.address.echo",
   "title": "Echo Address",
@@ -8,9 +8,179 @@
   "sophistication": "structured",
   "direction": "roundtrip",
   "parameters": {},
-  "latest_run_id": "2026-04-18t15-56-54z-csharp-dotnet-benchmarkdotnet-c33ca486286f",
-  "latest_archive_path": "data/archive/2026/04/18/2026-04-18t15-56-54z-csharp-dotnet-benchmarkdotnet-c33ca486286f--ec69cedc6757.json",
+  "latest_run_id": "2026-04-18t17-02-28z-csharp-dotnet-benchmarkdotnet-c33ca486286f",
+  "latest_archive_path": "data/archive/2026/04/18/2026-04-18t17-02-28z-csharp-dotnet-benchmarkdotnet-c33ca486286f--7da30a023932.json",
   "runs": [
+    {
+      "run_id": "2026-04-18t17-02-28z-csharp-dotnet-benchmarkdotnet-c33ca486286f",
+      "collected_at": "2026-04-18T17:02:28Z",
+      "suite_name": "csharp-dotnet-benchmarkdotnet",
+      "platform": "dotnet",
+      "language": "csharp",
+      "harness": "benchmarkdotnet",
+      "commit_sha": "c33ca486286fbcc8f27b8d7d535b55f63a913934",
+      "archive_path": "data/archive/2026/04/18/2026-04-18t17-02-28z-csharp-dotnet-benchmarkdotnet-c33ca486286f--7da30a023932.json",
+      "machine": {
+        "machine_id": "local-darwin-arm64-apple-m3-max",
+        "label": "Apple M3 Max",
+        "subtitle": "darwin macOS Sequoia 15.7.3 (24G419) [Darwin 24.6.0] • arm64 • local • mac.home",
+        "kind": "local",
+        "os": "darwin",
+        "os_version": "macOS Sequoia 15.7.3 (24G419) [Darwin 24.6.0]",
+        "arch": "arm64",
+        "cpu_model": "Apple M3 Max",
+        "hostname": "mac.home",
+        "ci_provider": null,
+        "ci_runner": null,
+        "physical_cores": 14,
+        "logical_cores": 14,
+        "memory_bytes": 38654705664
+      },
+      "descriptor": {
+        "id": "echo_address",
+        "group": "records.address.echo",
+        "title": "Echo Address",
+        "category": "records",
+        "sophistication": "structured",
+        "direction": "roundtrip",
+        "platform": "dotnet",
+        "language": "csharp",
+        "description": null,
+        "tags": [],
+        "parameters": {}
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "c33ca486286fbcc8f27b8d7d535b55f63a913934",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "dotnet",
+              "compiler_version": "10.0.106",
+              "target": null,
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": []
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "p_invoke",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "csharp",
+                "binding_runtime": ".net"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_package": "Demo",
+              "benchmark_method": "EchoAddress",
+              "benchmark_type": "BoltffiWireReaderBenchmarks",
+              "benchmarkdotnet_title": "EchoAddress"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 230.50005745887756,
+            "std_dev": 0.7862250918881122,
+            "min": 229.50857877731323,
+            "max": 231.16145539283752,
+            "percentiles": {
+              "0": 229.50857877731323,
+              "25": 230.04926759004593,
+              "50": 230.66509783267975,
+              "67": 231.101306040287,
+              "80": 231.12500123977662,
+              "85": 231.13411477804186,
+              "90": 231.14322831630707,
+              "95": 231.1523418545723,
+              "100": 231.16145539283752
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": null,
+            "sample_count": 4,
+            "total_operations": null
+          },
+          "notes": [
+            "confidence_interval_ns=[225.419479, 235.580636]",
+            "bytes_allocated_per_operation=248.000000"
+          ]
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31",
+              "git_sha": "c33ca486286fbcc8f27b8d7d535b55f63a913934",
+              "crate_version": "0.31"
+            },
+            "build": {
+              "compiler_name": "dotnet",
+              "compiler_version": "10.0.106",
+              "target": null,
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": []
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "p_invoke",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "csharp",
+                "binding_runtime": ".net"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_package": "uniffi.demo",
+              "benchmark_method": "EchoAddress",
+              "benchmark_type": "UniffiWireReaderBenchmarks",
+              "benchmarkdotnet_title": "EchoAddress"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 602.0375289916992,
+            "std_dev": 3.422911679456021,
+            "min": 597.8889465332031,
+            "max": 605.4215431213379,
+            "percentiles": {
+              "0": 597.8889465332031,
+              "25": 599.9671814441681,
+              "50": 602.4198131561279,
+              "67": 604.1921183300018,
+              "80": 604.6764371871948,
+              "85": 604.8627136707305,
+              "90": 605.0489901542663,
+              "95": 605.2352666378022,
+              "100": 605.4215431213379
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": null,
+            "sample_count": 4,
+            "total_operations": null
+          },
+          "notes": [
+            "confidence_interval_ns=[579.918710, 624.156348]",
+            "bytes_allocated_per_operation=1088.000000"
+          ]
+        }
+      ],
+      "notes": []
+    },
     {
       "run_id": "2026-04-18t15-56-54z-csharp-dotnet-benchmarkdotnet-c33ca486286f",
       "collected_at": "2026-04-18T15:56:54Z",

@@ -1,6 +1,6 @@
 {
   "schema_version": "benchmark_view_v1",
-  "generated_at": "2026-04-18T15:58:23Z",
+  "generated_at": "2026-04-18T17:02:58Z",
   "benchmark_id": "inc_u64",
   "group": "primitives.inc_u64.in_place",
   "title": "Increment U64 In Place",

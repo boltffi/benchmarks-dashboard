@@ -1,6 +1,6 @@
 {
   "schema_version": "benchmark_view_v1",
-  "generated_at": "2026-04-18T15:58:23Z",
+  "generated_at": "2026-04-18T17:02:58Z",
   "benchmark_id": "generate_particles_10k",
   "group": "records.particles.generate",
   "title": "Generate Particles 10K",

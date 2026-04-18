@@ -1,8 +1,8 @@
 {
   "schema_version": "benchmark_site_index_v1",
-  "generated_at": "2026-04-18T15:58:23Z",
+  "generated_at": "2026-04-18T17:02:58Z",
   "totals": {
-    "run_count": 5,
+    "run_count": 6,
     "group_count": 52
   },
   "machines": [
@@ -23,8 +23,8 @@
         "logical_cores": 14,
         "memory_bytes": 38654705664
       },
-      "latest_collected_at": "2026-04-18T15:56:54Z",
-      "run_count": 5,
+      "latest_collected_at": "2026-04-18T17:02:28Z",
+      "run_count": 6,
       "suite_count": 5,
       "group_count": 52,
       "tools": [
@@ -48,6 +48,51 @@
     }
   ],
   "runs": [
+    {
+      "run_id": "2026-04-18t17-02-28z-csharp-dotnet-benchmarkdotnet-c33ca486286f",
+      "collected_at": "2026-04-18T17:02:28Z",
+      "repository": "mobiFFI",
+      "branch": "feature/bench-harness",
+      "commit_sha": "c33ca486286fbcc8f27b8d7d535b55f63a913934",
+      "suite_name": "csharp-dotnet-benchmarkdotnet",
+      "harness": "benchmarkdotnet",
+      "platform": "dotnet",
+      "language": "csharp",
+      "archive_path": "data/archive/2026/04/18/2026-04-18t17-02-28z-csharp-dotnet-benchmarkdotnet-c33ca486286f--7da30a023932.json",
+      "content_sha256": "7da30a023932f1792edd68a7c186f5baffa908c239823f379b86a48638a027d1",
+      "benchmark_count": 11,
+      "groups": [
+        "primitives.add",
+        "primitives.echo_i32",
+        "primitives.noop",
+        "records.address.echo",
+        "records.line.echo",
+        "records.person.echo",
+        "records.point.make",
+        "strings.echo",
+        "strings.generate"
+      ],
+      "tools": [
+        "boltffi",
+        "uniffi"
+      ],
+      "machine": {
+        "machine_id": "local-darwin-arm64-apple-m3-max",
+        "label": "Apple M3 Max",
+        "subtitle": "darwin macOS Sequoia 15.7.3 (24G419) [Darwin 24.6.0] • arm64 • local • mac.home",
+        "kind": "local",
+        "os": "darwin",
+        "os_version": "macOS Sequoia 15.7.3 (24G419) [Darwin 24.6.0]",
+        "arch": "arm64",
+        "cpu_model": "Apple M3 Max",
+        "hostname": "mac.home",
+        "ci_provider": null,
+        "ci_runner": null,
+        "physical_cores": 14,
+        "logical_cores": 14,
+        "memory_bytes": 38654705664
+      }
+    },
     {
       "run_id": "2026-04-18t15-56-54z-csharp-dotnet-benchmarkdotnet-c33ca486286f",
       "collected_at": "2026-04-18T15:56:54Z",
@@ -436,8 +481,8 @@
       "category": "primitives",
       "sophistication": "basic",
       "direction": "mixed",
-      "latest_collected_at": "2026-04-18T15:56:54Z",
-      "run_count": 5,
+      "latest_collected_at": "2026-04-18T17:02:28Z",
+      "run_count": 6,
       "machine_count": 1,
       "machine_ids": [
         "local-darwin-arm64-apple-m3-max"
@@ -450,8 +495,8 @@
       "category": "records",
       "sophistication": "structured",
       "direction": "rust_to_host",
-      "latest_collected_at": "2026-04-18T15:56:54Z",
-      "run_count": 1,
+      "latest_collected_at": "2026-04-18T17:02:28Z",
+      "run_count": 2,
       "machine_count": 1,
       "machine_ids": [
         "local-darwin-arm64-apple-m3-max"
@@ -464,8 +509,8 @@
       "category": "strings",
       "sophistication": "basic",
       "direction": "rust_to_host",
-      "latest_collected_at": "2026-04-18T15:56:54Z",
-      "run_count": 5,
+      "latest_collected_at": "2026-04-18T17:02:28Z",
+      "run_count": 6,
       "machine_count": 1,
       "machine_ids": [
         "local-darwin-arm64-apple-m3-max"
@@ -478,8 +523,8 @@
       "category": "strings",
       "sophistication": "basic",
       "direction": "mixed",
-      "latest_collected_at": "2026-04-18T15:56:54Z",
-      "run_count": 5,
+      "latest_collected_at": "2026-04-18T17:02:28Z",
+      "run_count": 6,
       "machine_count": 1,
       "machine_ids": [
         "local-darwin-arm64-apple-m3-max"
@@ -492,8 +537,8 @@
       "category": "records",
       "sophistication": "structured",
       "direction": "roundtrip",
-      "latest_collected_at": "2026-04-18T15:56:54Z",
-      "run_count": 1,
+      "latest_collected_at": "2026-04-18T17:02:28Z",
+      "run_count": 2,
       "machine_count": 1,
       "machine_ids": [
         "local-darwin-arm64-apple-m3-max"
@@ -506,8 +551,8 @@
       "category": "records",
       "sophistication": "structured",
       "direction": "roundtrip",
-      "latest_collected_at": "2026-04-18T15:56:54Z",
-      "run_count": 1,
+      "latest_collected_at": "2026-04-18T17:02:28Z",
+      "run_count": 2,
       "machine_count": 1,
       "machine_ids": [
         "local-darwin-arm64-apple-m3-max"
@@ -520,8 +565,8 @@
       "category": "primitives",
       "sophistication": "basic",
       "direction": "mixed",
-      "latest_collected_at": "2026-04-18T15:56:54Z",
-      "run_count": 5,
+      "latest_collected_at": "2026-04-18T17:02:28Z",
+      "run_count": 6,
       "machine_count": 1,
       "machine_ids": [
         "local-darwin-arm64-apple-m3-max"
@@ -534,8 +579,8 @@
       "category": "records",
       "sophistication": "structured",
       "direction": "roundtrip",
-      "latest_collected_at": "2026-04-18T15:56:54Z",
-      "run_count": 1,
+      "latest_collected_at": "2026-04-18T17:02:28Z",
+      "run_count": 2,
       "machine_count": 1,
       "machine_ids": [
         "local-darwin-arm64-apple-m3-max"
@@ -548,8 +593,8 @@
       "category": "primitives",
       "sophistication": "basic",
       "direction": "mixed",
-      "latest_collected_at": "2026-04-18T15:56:54Z",
-      "run_count": 5,
+      "latest_collected_at": "2026-04-18T17:02:28Z",
+      "run_count": 6,
       "machine_count": 1,
       "machine_ids": [
         "local-darwin-arm64-apple-m3-max"

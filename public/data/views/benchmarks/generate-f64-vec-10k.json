@@ -1,6 +1,6 @@
 {
   "schema_version": "benchmark_view_v1",
-  "generated_at": "2026-04-18T15:58:23Z",
+  "generated_at": "2026-04-18T17:02:58Z",
   "benchmark_id": "generate_f64_vec_10k",
   "group": "collections.f64_vec.generate",
   "title": "Generate F64 Vec 10K",

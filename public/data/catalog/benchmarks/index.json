@@ -1,6 +1,6 @@
 {
   "schema_version": "benchmark_catalog_v1",
-  "generated_at": "2026-04-18T15:58:23Z",
+  "generated_at": "2026-04-18T17:02:58Z",
   "benchmarks": [
     {
       "id": "noop",
@@ -10,9 +10,9 @@
       "sophistication": "basic",
       "direction": "mixed",
       "parameters": {},
-      "latest_collected_at": "2026-04-18T15:56:54Z",
-      "latest_run_id": "2026-04-18t15-56-54z-csharp-dotnet-benchmarkdotnet-c33ca486286f",
-      "run_count": 5,
+      "latest_collected_at": "2026-04-18T17:02:28Z",
+      "latest_run_id": "2026-04-18t17-02-28z-csharp-dotnet-benchmarkdotnet-c33ca486286f",
+      "run_count": 6,
       "languages": [
         "csharp",
         "java",
@@ -22,12 +22,18 @@
       ],
       "averages": {
         "csharp": {
-          "run_count": 1,
+          "run_count": 2,
           "tools": [
             {
               "name": "boltffi",
               "unit": "ns_per_op",
-              "average_value": 2.460648864507675,
+              "average_value": 2.4576966795139015,
+              "run_count": 2
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 12.84848860502243,
               "run_count": 1
             }
           ]
@@ -111,20 +117,26 @@
       "sophistication": "structured",
       "direction": "rust_to_host",
       "parameters": {},
-      "latest_collected_at": "2026-04-18T15:56:54Z",
-      "latest_run_id": "2026-04-18t15-56-54z-csharp-dotnet-benchmarkdotnet-c33ca486286f",
-      "run_count": 1,
+      "latest_collected_at": "2026-04-18T17:02:28Z",
+      "latest_run_id": "2026-04-18t17-02-28z-csharp-dotnet-benchmarkdotnet-c33ca486286f",
+      "run_count": 2,
       "languages": [
         "csharp"
       ],
       "averages": {
         "csharp": {
-          "run_count": 1,
+          "run_count": 2,
           "tools": [
             {
               "name": "boltffi",
               "unit": "ns_per_op",
-              "average_value": 2.4226401392370462,
+              "average_value": 2.5740343356505035,
+              "run_count": 2
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 0.0028027530759572985,
               "run_count": 1
             }
           ]
@@ -142,20 +154,26 @@
       "parameters": {
         "string_length": 65536
       },
-      "latest_collected_at": "2026-04-18T15:56:54Z",
-      "latest_run_id": "2026-04-18t15-56-54z-csharp-dotnet-benchmarkdotnet-c33ca486286f",
-      "run_count": 1,
+      "latest_collected_at": "2026-04-18T17:02:28Z",
+      "latest_run_id": "2026-04-18t17-02-28z-csharp-dotnet-benchmarkdotnet-c33ca486286f",
+      "run_count": 2,
       "languages": [
         "csharp"
       ],
       "averages": {
         "csharp": {
-          "run_count": 1,
+          "run_count": 2,
           "tools": [
             {
               "name": "boltffi",
               "unit": "ns_per_op",
-              "average_value": 26000.34662475586,
+              "average_value": 25523.0083404541,
+              "run_count": 2
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 27291.505500793457,
               "run_count": 1
             }
           ]
@@ -173,9 +191,9 @@
       "parameters": {
         "string_length": 1000
       },
-      "latest_collected_at": "2026-04-18T15:56:54Z",
-      "latest_run_id": "2026-04-18t15-56-54z-csharp-dotnet-benchmarkdotnet-c33ca486286f",
-      "run_count": 5,
+      "latest_collected_at": "2026-04-18T17:02:28Z",
+      "latest_run_id": "2026-04-18t17-02-28z-csharp-dotnet-benchmarkdotnet-c33ca486286f",
+      "run_count": 6,
       "languages": [
         "csharp",
         "java",
@@ -185,12 +203,18 @@
       ],
       "averages": {
         "csharp": {
-          "run_count": 1,
+          "run_count": 2,
           "tools": [
             {
               "name": "boltffi",
               "unit": "ns_per_op",
-              "average_value": 262.0980661392212,
+              "average_value": 255.65603473186493,
+              "run_count": 2
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 302.23108568191526,
               "run_count": 1
             }
           ]
@@ -276,9 +300,9 @@
       "parameters": {
         "string_length": 5
       },
-      "latest_collected_at": "2026-04-18T15:56:54Z",
-      "latest_run_id": "2026-04-18t15-56-54z-csharp-dotnet-benchmarkdotnet-c33ca486286f",
-      "run_count": 5,
+      "latest_collected_at": "2026-04-18T17:02:28Z",
+      "latest_run_id": "2026-04-18t17-02-28z-csharp-dotnet-benchmarkdotnet-c33ca486286f",
+      "run_count": 6,
       "languages": [
         "csharp",
         "java",
@@ -288,12 +312,18 @@
       ],
       "averages": {
         "csharp": {
-          "run_count": 1,
+          "run_count": 2,
           "tools": [
             {
               "name": "boltffi",
               "unit": "ns_per_op",
-              "average_value": 85.64930865764617,
+              "average_value": 86.03541312217712,
+              "run_count": 2
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 118.7464795589447,
               "run_count": 1
             }
           ]
@@ -379,20 +409,26 @@
       "parameters": {
         "string_length": 65536
       },
-      "latest_collected_at": "2026-04-18T15:56:54Z",
-      "latest_run_id": "2026-04-18t15-56-54z-csharp-dotnet-benchmarkdotnet-c33ca486286f",
-      "run_count": 1,
+      "latest_collected_at": "2026-04-18T17:02:28Z",
+      "latest_run_id": "2026-04-18t17-02-28z-csharp-dotnet-benchmarkdotnet-c33ca486286f",
+      "run_count": 2,
       "languages": [
         "csharp"
       ],
       "averages": {
         "csharp": {
-          "run_count": 1,
+          "run_count": 2,
           "tools": [
             {
               "name": "boltffi",
               "unit": "ns_per_op",
-              "average_value": 29945.333862304688,
+              "average_value": 29724.506634521484,
+              "run_count": 2
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 30378.017127990723,
               "run_count": 1
             }
           ]
@@ -408,20 +444,26 @@
       "sophistication": "structured",
       "direction": "roundtrip",
       "parameters": {},
-      "latest_collected_at": "2026-04-18T15:56:54Z",
-      "latest_run_id": "2026-04-18t15-56-54z-csharp-dotnet-benchmarkdotnet-c33ca486286f",
-      "run_count": 1,
+      "latest_collected_at": "2026-04-18T17:02:28Z",
+      "latest_run_id": "2026-04-18t17-02-28z-csharp-dotnet-benchmarkdotnet-c33ca486286f",
+      "run_count": 2,
       "languages": [
         "csharp"
       ],
       "averages": {
         "csharp": {
-          "run_count": 1,
+          "run_count": 2,
           "tools": [
             {
               "name": "boltffi",
               "unit": "ns_per_op",
-              "average_value": 109.56357116699219,
+              "average_value": 106.00985733270645,
+              "run_count": 2
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 272.01822195053103,
               "run_count": 1
             }
           ]
@@ -437,20 +479,26 @@
       "sophistication": "structured",
       "direction": "roundtrip",
       "parameters": {},
-      "latest_collected_at": "2026-04-18T15:56:54Z",
-      "latest_run_id": "2026-04-18t15-56-54z-csharp-dotnet-benchmarkdotnet-c33ca486286f",
-      "run_count": 1,
+      "latest_collected_at": "2026-04-18T17:02:28Z",
+      "latest_run_id": "2026-04-18t17-02-28z-csharp-dotnet-benchmarkdotnet-c33ca486286f",
+      "run_count": 2,
       "languages": [
         "csharp"
       ],
       "averages": {
         "csharp": {
-          "run_count": 1,
+          "run_count": 2,
           "tools": [
             {
               "name": "boltffi",
               "unit": "ns_per_op",
-              "average_value": 51.46888647079468,
+              "average_value": 51.18727747648954,
+              "run_count": 2
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 280.6649166107178,
               "run_count": 1
             }
           ]
@@ -466,9 +514,9 @@
       "sophistication": "basic",
       "direction": "mixed",
       "parameters": {},
-      "latest_collected_at": "2026-04-18T15:56:54Z",
-      "latest_run_id": "2026-04-18t15-56-54z-csharp-dotnet-benchmarkdotnet-c33ca486286f",
-      "run_count": 5,
+      "latest_collected_at": "2026-04-18T17:02:28Z",
+      "latest_run_id": "2026-04-18t17-02-28z-csharp-dotnet-benchmarkdotnet-c33ca486286f",
+      "run_count": 6,
       "languages": [
         "csharp",
         "java",
@@ -478,12 +526,18 @@
       ],
       "averages": {
         "csharp": {
-          "run_count": 1,
+          "run_count": 2,
           "tools": [
             {
               "name": "boltffi",
               "unit": "ns_per_op",
-              "average_value": 2.083737247437239,
+              "average_value": 2.094227479398251,
+              "run_count": 2
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 12.861876556277275,
               "run_count": 1
             }
           ]
@@ -567,20 +621,26 @@
       "sophistication": "structured",
       "direction": "roundtrip",
       "parameters": {},
-      "latest_collected_at": "2026-04-18T15:56:54Z",
-      "latest_run_id": "2026-04-18t15-56-54z-csharp-dotnet-benchmarkdotnet-c33ca486286f",
-      "run_count": 1,
+      "latest_collected_at": "2026-04-18T17:02:28Z",
+      "latest_run_id": "2026-04-18t17-02-28z-csharp-dotnet-benchmarkdotnet-c33ca486286f",
+      "run_count": 2,
       "languages": [
         "csharp"
       ],
       "averages": {
         "csharp": {
-          "run_count": 1,
+          "run_count": 2,
           "tools": [
             {
               "name": "boltffi",
               "unit": "ns_per_op",
-              "average_value": 244.37127532958985,
+              "average_value": 237.4356663942337,
+              "run_count": 2
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 602.0375289916992,
               "run_count": 1
             }
           ]
@@ -596,9 +656,9 @@
       "sophistication": "basic",
       "direction": "mixed",
       "parameters": {},
-      "latest_collected_at": "2026-04-18T15:56:54Z",
-      "latest_run_id": "2026-04-18t15-56-54z-csharp-dotnet-benchmarkdotnet-c33ca486286f",
-      "run_count": 5,
+      "latest_collected_at": "2026-04-18T17:02:28Z",
+      "latest_run_id": "2026-04-18t17-02-28z-csharp-dotnet-benchmarkdotnet-c33ca486286f",
+      "run_count": 6,
       "languages": [
         "csharp",
         "java",
@@ -608,12 +668,18 @@
       ],
       "averages": {
         "csharp": {
-          "run_count": 1,
+          "run_count": 2,
           "tools": [
             {
               "name": "boltffi",
               "unit": "ns_per_op",
-              "average_value": 2.0772742733359335,
+              "average_value": 2.0982658814638855,
+              "run_count": 2
+            },
+            {
+              "name": "uniffi",
+              "unit": "ns_per_op",
+              "average_value": 12.88248971477151,
               "run_count": 1
             }
           ]

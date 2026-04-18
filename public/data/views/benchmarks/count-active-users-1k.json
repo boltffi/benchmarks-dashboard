@@ -1,6 +1,6 @@
 {
   "schema_version": "benchmark_view_v1",
-  "generated_at": "2026-04-18T15:58:23Z",
+  "generated_at": "2026-04-18T17:02:58Z",
   "benchmark_id": "count_active_users_1k",
   "group": "records.user_profiles.count_active_users",
   "title": "Count Active Users 1K",
