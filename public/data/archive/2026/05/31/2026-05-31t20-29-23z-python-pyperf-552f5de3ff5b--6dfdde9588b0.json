@@ -1,0 +1,3628 @@
+{
+  "schema_version": "benchmark_run_v1",
+  "run_id": "2026-05-31t20-29-23z-python-pyperf-552f5de3ff5b",
+  "collected_at": "2026-05-31T20:29:23Z",
+  "provenance": {
+    "repository": {
+      "name": "mobiFFI",
+      "url": "git@github.com-ali:boltffi/boltffi",
+      "branch": "ali/add-boltffi-binding-crate",
+      "commit_sha": "552f5de3ff5ba3c4198ee81e2d46c33a32b012e9",
+      "dirty": true
+    },
+    "collector": {
+      "name": "mobiffi-benchmark-adapters",
+      "version": "0.1.0",
+      "invocation": "/Users/alihilal/Documents/Per/mobiFFI/benchmarks/harnesses/python-bench/build/venv/bin/python /Users/alihilal/Documents/Per/mobiFFI/benchmarks/harnesses/python-bench/bench.py --boltffi-site /Users/alihilal/Documents/Per/mobiFFI/benchmarks/harnesses/python-bench/build/generated/boltffi/site --uniffi-dir /Users/alihilal/Documents/Per/mobiFFI/benchmarks/harnesses/python-bench/../../../benchmarks/adapters/uniffi/dist/python --output /Users/alihilal/Documents/Per/mobiFFI/benchmarks/harnesses/python-bench/build/results/pyperf/results.json"
+    },
+    "artifacts": [
+      {
+        "kind": "json",
+        "path": "/Users/alihilal/Documents/Per/mobiFFI/benchmarks/harnesses/python-bench/build/results/pyperf/results.json",
+        "sha256": "b8a8bb7f8a30eea1c33b64049666c9945f48bf5dd8f332e7c8c4b99e487df13f"
+      }
+    ]
+  },
+  "environment": {
+    "host": {
+      "os": "darwin",
+      "os_version": "15.7.3",
+      "arch": "arm64",
+      "cpu_model": "Apple M3 Max",
+      "physical_cores": 14,
+      "logical_cores": 14,
+      "memory_bytes": 38654705664,
+      "attributes": {
+        "hostname": "mac.home",
+        "kernel_release": "24.6.0",
+        "kernel_version": "Darwin Kernel Version 24.6.0: Wed Nov  5 21:32:38 PST 2025; root:xnu-11417.140.69.705.2~1/RELEASE_ARM64_T6031",
+        "python_version": "3.13.3"
+      }
+    },
+    "toolchains": {
+      "rust": {
+        "rustc_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+        "cargo_version": "cargo 1.95.0 (f2d3ce0bd 2026-03-21)",
+        "channel": "1.95.0",
+        "host_triple": "aarch64-apple-darwin",
+        "target_triple": "aarch64-apple-darwin"
+      },
+      "swift": null,
+      "kotlin": null,
+      "java": null,
+      "node": null,
+      "wasm": null
+    },
+    "runtime": {
+      "engine": "cpython",
+      "version": "3.13.3 (64-bit)",
+      "platform": "native",
+      "attributes": {
+        "python_executable": "/Users/alihilal/Documents/Per/mobiFFI/benchmarks/harnesses/python-bench/build/venv/bin/python",
+        "python_implementation": "cpython",
+        "pyperf_version": "2.10.0",
+        "runner_command": "/Users/alihilal/Documents/Per/mobiFFI/benchmarks/harnesses/python-bench/build/venv/bin/python /Users/alihilal/Documents/Per/mobiFFI/benchmarks/harnesses/python-bench/bench.py --boltffi-site /Users/alihilal/Documents/Per/mobiFFI/benchmarks/harnesses/python-bench/build/generated/boltffi/site --uniffi-dir /Users/alihilal/Documents/Per/mobiFFI/benchmarks/harnesses/python-bench/../../../benchmarks/adapters/uniffi/dist/python --output /Users/alihilal/Documents/Per/mobiFFI/benchmarks/harnesses/python-bench/build/results/pyperf/results.json"
+      }
+    },
+    "ci": null
+  },
+  "suite": {
+    "name": "python-pyperf",
+    "harness": "pyperf",
+    "platform": "native",
+    "language": "python",
+    "profile": "release",
+    "tags": [],
+    "attributes": {
+      "results_sha256": "b8a8bb7f8a30eea1c33b64049666c9945f48bf5dd8f332e7c8c4b99e487df13f",
+      "benchmark_count": 54
+    }
+  },
+  "benchmarks": [
+    {
+      "descriptor": {
+        "id": "add",
+        "group": "primitives.add",
+        "title": "Add",
+        "category": "primitives",
+        "sophistication": "basic",
+        "direction": "mixed",
+        "platform": "native",
+        "language": "python",
+        "description": null,
+        "tags": [],
+        "parameters": {}
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "552f5de3ff5ba3c4198ee81e2d46c33a32b012e9",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "python_capi",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "cpython_extension"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 49.881087057131644,
+            "std_dev": 0.781824497995689,
+            "min": 49.03421846336187,
+            "max": 52.80097337134748,
+            "percentiles": {
+              "50.0": 49.58577937141939,
+              "90.0": 50.989665467682244,
+              "95.0": 51.48296854384782,
+              "99.0": 52.29772544357303
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 125829120
+          },
+          "notes": []
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31.1",
+              "git_sha": null,
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [
+                "uniffi"
+              ],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "ctypes",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "ctypes"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 1585.6882824275924,
+            "std_dev": 40.1506929981425,
+            "min": 1528.2268464034132,
+            "max": 1806.4460789446457,
+            "percentiles": {
+              "50.0": 1582.334828498233,
+              "90.0": 1626.1488624991216,
+              "95.0": 1647.9115707568326,
+              "99.0": 1715.4540589814355
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 3932160
+          },
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "add_f64",
+        "group": "primitives.add_f64",
+        "title": "Add F64",
+        "category": "primitives",
+        "sophistication": "basic",
+        "direction": "mixed",
+        "platform": "native",
+        "language": "python",
+        "description": null,
+        "tags": [],
+        "parameters": {}
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "552f5de3ff5ba3c4198ee81e2d46c33a32b012e9",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "python_capi",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "cpython_extension"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 46.01795722998977,
+            "std_dev": 0.7444387881696738,
+            "min": 45.38117837071809,
+            "max": 50.30805849681741,
+            "percentiles": {
+              "50.0": 45.77137030503664,
+              "90.0": 46.58019124859081,
+              "95.0": 47.141060099953336,
+              "99.0": 48.788679591904575
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 251658240
+          },
+          "notes": []
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31.1",
+              "git_sha": null,
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [
+                "uniffi"
+              ],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "ctypes",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "ctypes"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 1502.8939082858035,
+            "std_dev": 23.320036690240826,
+            "min": 1463.0257325620732,
+            "max": 1592.1150868791756,
+            "percentiles": {
+              "50.0": 1500.6079667756467,
+              "90.0": 1532.6673850069028,
+              "95.0": 1540.9016427270217,
+              "99.0": 1569.958349030287
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 7864320
+          },
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "count_north_10k",
+        "group": "enums.directions.count_north",
+        "title": "Count North 10K",
+        "category": "enums",
+        "sophistication": "structured",
+        "direction": "host_to_rust",
+        "platform": "native",
+        "language": "python",
+        "description": null,
+        "tags": [],
+        "parameters": {
+          "count": 10000
+        }
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "552f5de3ff5ba3c4198ee81e2d46c33a32b012e9",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "python_capi",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "cpython_extension"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 68603.47762085439,
+            "std_dev": 2751.785527131631,
+            "min": 64410.1562556898,
+            "max": 81491.1093129922,
+            "percentiles": {
+              "50.0": 67740.34613954427,
+              "90.0": 71591.9495178241,
+              "95.0": 72051.55235396887,
+              "99.0": 76547.06234688999
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 122880
+          },
+          "notes": []
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31.1",
+              "git_sha": null,
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [
+                "uniffi"
+              ],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "ctypes",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "ctypes"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 16926364.41536403,
+            "std_dev": 369242.4352123429,
+            "min": 16382900.99799633,
+            "max": 18739125.051070005,
+            "percentiles": {
+              "50.0": 16859132.883837447,
+              "90.0": 17367551.068309695,
+              "95.0": 17481281.224172562,
+              "99.0": 18185877.082869407
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 480
+          },
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "count_north_1k",
+        "group": "enums.directions.count_north",
+        "title": "Count North 1K",
+        "category": "enums",
+        "sophistication": "structured",
+        "direction": "host_to_rust",
+        "platform": "native",
+        "language": "python",
+        "description": null,
+        "tags": [],
+        "parameters": {
+          "count": 1000
+        }
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "552f5de3ff5ba3c4198ee81e2d46c33a32b012e9",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "python_capi",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "cpython_extension"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 7000.827746613444,
+            "std_dev": 199.50618950195476,
+            "min": 6791.206345724277,
+            "max": 7546.971630745247,
+            "percentiles": {
+              "50.0": 6893.943790942103,
+              "90.0": 7297.982503473577,
+              "95.0": 7337.710967192379,
+              "99.0": 7509.295387819748
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 983040
+          },
+          "notes": []
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31.1",
+              "git_sha": null,
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [
+                "uniffi"
+              ],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "ctypes",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "ctypes"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 1788468.4131180015,
+            "std_dev": 62987.06499715535,
+            "min": 1695144.5286395028,
+            "max": 1945729.170984123,
+            "percentiles": {
+              "50.0": 1764102.2204770707,
+              "90.0": 1878465.9579978324,
+              "95.0": 1899531.7681401502,
+              "99.0": 1921176.1838232633
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 3840
+          },
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "echo_bool",
+        "group": "primitives.echo_bool",
+        "title": "Echo Bool",
+        "category": "primitives",
+        "sophistication": "basic",
+        "direction": "mixed",
+        "platform": "native",
+        "language": "python",
+        "description": null,
+        "tags": [],
+        "parameters": {}
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "552f5de3ff5ba3c4198ee81e2d46c33a32b012e9",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "python_capi",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "cpython_extension"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 41.00188481330017,
+            "std_dev": 1.4794059960827692,
+            "min": 39.49701787853144,
+            "max": 45.70727540897934,
+            "percentiles": {
+              "50.0": 40.73747494892643,
+              "90.0": 43.144733830047244,
+              "95.0": 43.5786708941066,
+              "99.0": 45.07806634856948
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 251658240
+          },
+          "notes": []
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31.1",
+              "git_sha": null,
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [
+                "uniffi"
+              ],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "ctypes",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "ctypes"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 1217.675500460776,
+            "std_dev": 57.28838311608698,
+            "min": 1150.3458026140834,
+            "max": 1417.5955413975316,
+            "percentiles": {
+              "50.0": 1194.4756490578357,
+              "90.0": 1306.057927408233,
+              "95.0": 1331.1788391590085,
+              "99.0": 1376.1484943941578
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 7864320
+          },
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "echo_bytes_64k",
+        "group": "bytes.echo",
+        "title": "Echo Bytes 64K",
+        "category": "bytes",
+        "sophistication": "basic",
+        "direction": "roundtrip",
+        "platform": "native",
+        "language": "python",
+        "description": null,
+        "tags": [],
+        "parameters": {
+          "size_bytes": 65536
+        }
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "552f5de3ff5ba3c4198ee81e2d46c33a32b012e9",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "python_capi",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "cpython_extension"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 2029.8525165903434,
+            "std_dev": 120.35991809589076,
+            "min": 1903.1098617006137,
+            "max": 2563.0391391473495,
+            "percentiles": {
+              "50.0": 1992.6169727568777,
+              "90.0": 2159.5579092092976,
+              "95.0": 2219.634226108269,
+              "99.0": 2474.960238529888
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 3932160
+          },
+          "notes": []
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31.1",
+              "git_sha": null,
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [
+                "uniffi"
+              ],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "ctypes",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "ctypes"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 8939888.892928138,
+            "std_dev": 312787.47070319735,
+            "min": 8593796.897912398,
+            "max": 10801247.379276901,
+            "percentiles": {
+              "50.0": 8892020.82180418,
+              "90.0": 9169086.199835874,
+              "95.0": 9262912.637495901,
+              "99.0": 9963461.244769854
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 960
+          },
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "echo_direction",
+        "group": "enums.direction.echo",
+        "title": "Echo Direction",
+        "category": "enums",
+        "sophistication": "basic",
+        "direction": "mixed",
+        "platform": "native",
+        "language": "python",
+        "description": null,
+        "tags": [],
+        "parameters": {}
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "552f5de3ff5ba3c4198ee81e2d46c33a32b012e9",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "python_capi",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "cpython_extension"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 56.089409827819736,
+            "std_dev": 3.7882310713384677,
+            "min": 53.66669064699181,
+            "max": 83.46960922445135,
+            "percentiles": {
+              "50.0": 55.71773642465416,
+              "90.0": 56.86382413827573,
+              "95.0": 57.122382646213055,
+              "99.0": 70.3993628770049
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 125829120
+          },
+          "notes": []
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31.1",
+              "git_sha": null,
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [
+                "uniffi"
+              ],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "ctypes",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "ctypes"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 7056.0915669185915,
+            "std_dev": 96.302804464647,
+            "min": 6857.7880654174805,
+            "max": 7299.774182456531,
+            "percentiles": {
+              "50.0": 7045.848875009142,
+              "90.0": 7200.787391070662,
+              "95.0": 7234.239097897444,
+              "99.0": 7278.0387043280825
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 983040
+          },
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "echo_f64",
+        "group": "primitives.echo_f64",
+        "title": "Echo F64",
+        "category": "primitives",
+        "sophistication": "basic",
+        "direction": "mixed",
+        "platform": "native",
+        "language": "python",
+        "description": null,
+        "tags": [],
+        "parameters": {}
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "552f5de3ff5ba3c4198ee81e2d46c33a32b012e9",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "python_capi",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "cpython_extension"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 42.54771090820657,
+            "std_dev": 0.4990703587565751,
+            "min": 42.1284735985239,
+            "max": 44.666250476055325,
+            "percentiles": {
+              "50.0": 42.396133159705585,
+              "90.0": 43.16312192109706,
+              "95.0": 43.59499162220892,
+              "99.0": 44.14659158347156
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 251658240
+          },
+          "notes": []
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31.1",
+              "git_sha": null,
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [
+                "uniffi"
+              ],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "ctypes",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "ctypes"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 1251.6748107908406,
+            "std_dev": 27.75669104680799,
+            "min": 1216.0517322001851,
+            "max": 1335.900304155757,
+            "percentiles": {
+              "50.0": 1242.8027762467764,
+              "90.0": 1287.1626573485173,
+              "95.0": 1306.1411864967454,
+              "99.0": 1329.3399731395539
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 7864320
+          },
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "echo_i32",
+        "group": "primitives.echo_i32",
+        "title": "Echo I32",
+        "category": "primitives",
+        "sophistication": "basic",
+        "direction": "mixed",
+        "platform": "native",
+        "language": "python",
+        "description": null,
+        "tags": [],
+        "parameters": {}
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "552f5de3ff5ba3c4198ee81e2d46c33a32b012e9",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "python_capi",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "cpython_extension"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 42.40091097858685,
+            "std_dev": 1.291219747764634,
+            "min": 41.391958749414925,
+            "max": 47.01072986446064,
+            "percentiles": {
+              "50.0": 41.85538493572949,
+              "90.0": 43.494498636054146,
+              "95.0": 46.01323994601891,
+              "99.0": 46.52103886337855
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 251658240
+          },
+          "notes": []
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31.1",
+              "git_sha": null,
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [
+                "uniffi"
+              ],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "ctypes",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "ctypes"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 1287.4608511144932,
+            "std_dev": 34.449221746873555,
+            "min": 1246.7266792270948,
+            "max": 1497.9162195061235,
+            "percentiles": {
+              "50.0": 1282.4834172420196,
+              "90.0": 1307.0432991924008,
+              "95.0": 1336.4723024267278,
+              "99.0": 1413.7996290486394
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 7864320
+          },
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "echo_string_1k",
+        "group": "strings.echo",
+        "title": "Echo String 1K",
+        "category": "strings",
+        "sophistication": "basic",
+        "direction": "mixed",
+        "platform": "native",
+        "language": "python",
+        "description": null,
+        "tags": [],
+        "parameters": {
+          "string_length": 1000
+        }
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "552f5de3ff5ba3c4198ee81e2d46c33a32b012e9",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "python_capi",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "cpython_extension"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 253.90295852467662,
+            "std_dev": 5.6041998106537045,
+            "min": 245.01546125321738,
+            "max": 280.39153487924295,
+            "percentiles": {
+              "50.0": 252.58247049464444,
+              "90.0": 259.38227041777395,
+              "95.0": 263.4496653719509,
+              "99.0": 274.6009781162683
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 31457280
+          },
+          "notes": []
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31.1",
+              "git_sha": null,
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [
+                "uniffi"
+              ],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "ctypes",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "ctypes"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 139055.47010229688,
+            "std_dev": 4431.258005951237,
+            "min": 135404.25652536214,
+            "max": 163487.71077900892,
+            "percentiles": {
+              "50.0": 137946.37038699875,
+              "90.0": 142976.54965957918,
+              "95.0": 146522.70047008642,
+              "99.0": 157799.02179474445
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 61440
+          },
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "echo_string_small",
+        "group": "strings.echo",
+        "title": "Echo String Small",
+        "category": "strings",
+        "sophistication": "basic",
+        "direction": "mixed",
+        "platform": "native",
+        "language": "python",
+        "description": null,
+        "tags": [],
+        "parameters": {
+          "string_length": 5
+        }
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "552f5de3ff5ba3c4198ee81e2d46c33a32b012e9",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "python_capi",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "cpython_extension"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 93.08219749426527,
+            "std_dev": 2.1183045073350457,
+            "min": 90.40228565737607,
+            "max": 103.1318903610412,
+            "percentiles": {
+              "50.0": 92.67032130555464,
+              "90.0": 94.67245507543964,
+              "95.0": 96.95603251369533,
+              "99.0": 100.72939237160126
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 125829120
+          },
+          "notes": []
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31.1",
+              "git_sha": null,
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [
+                "uniffi"
+              ],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "ctypes",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "ctypes"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 6820.737798799806,
+            "std_dev": 172.16335047311352,
+            "min": 6634.562197405103,
+            "max": 7530.2505422314425,
+            "percentiles": {
+              "50.0": 6784.421259453666,
+              "90.0": 6990.266359707675,
+              "95.0": 7077.441574665499,
+              "99.0": 7516.958075370894
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 983040
+          },
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "echo_vec_i32_10k",
+        "group": "collections.i32_vec.echo",
+        "title": "Echo I32 Vec 10K",
+        "category": "collections",
+        "sophistication": "structured",
+        "direction": "roundtrip",
+        "platform": "native",
+        "language": "python",
+        "description": null,
+        "tags": [],
+        "parameters": {
+          "count": 10000
+        }
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "552f5de3ff5ba3c4198ee81e2d46c33a32b012e9",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "python_capi",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "cpython_extension"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 90494.52719788557,
+            "std_dev": 1438.1836500471054,
+            "min": 88428.87359605811,
+            "max": 96505.06581238005,
+            "percentiles": {
+              "50.0": 90119.47622639127,
+              "90.0": 92137.42891915899,
+              "95.0": 92567.555941514,
+              "99.0": 94972.04040599172
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 122880
+          },
+          "notes": []
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31.1",
+              "git_sha": null,
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [
+                "uniffi"
+              ],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "ctypes",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "ctypes"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 18109316.2294322,
+            "std_dev": 447694.94995722384,
+            "min": 17653453.163802624,
+            "max": 20416833.402123302,
+            "percentiles": {
+              "50.0": 18003994.74450387,
+              "90.0": 18627012.0262634,
+              "95.0": 18773054.69242856,
+              "99.0": 19805697.819683697
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 480
+          },
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "generate_bytes_64k",
+        "group": "bytes.generate",
+        "title": "Generate Bytes 64K",
+        "category": "bytes",
+        "sophistication": "basic",
+        "direction": "rust_to_host",
+        "platform": "native",
+        "language": "python",
+        "description": null,
+        "tags": [],
+        "parameters": {
+          "size_bytes": 65536
+        }
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "552f5de3ff5ba3c4198ee81e2d46c33a32b012e9",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "python_capi",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "cpython_extension"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 1412.7202091411086,
+            "std_dev": 71.66408862763443,
+            "min": 1344.4353719194169,
+            "max": 1621.2533360260295,
+            "percentiles": {
+              "50.0": 1385.4883551545072,
+              "90.0": 1531.2528308442097,
+              "95.0": 1612.2875830859584,
+              "99.0": 1620.784069302772
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 7864320
+          },
+          "notes": []
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31.1",
+              "git_sha": null,
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [
+                "uniffi"
+              ],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "ctypes",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "ctypes"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 28420.445060343503,
+            "std_dev": 612.7847128519967,
+            "min": 27717.234388546785,
+            "max": 30797.739782428835,
+            "percentiles": {
+              "50.0": 28273.630846342712,
+              "90.0": 28940.95558758636,
+              "95.0": 29241.832470461304,
+              "99.0": 30738.514094537095
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 245760
+          },
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "generate_directions_10k",
+        "group": "enums.directions.generate",
+        "title": "Generate Directions 10K",
+        "category": "enums",
+        "sophistication": "structured",
+        "direction": "rust_to_host",
+        "platform": "native",
+        "language": "python",
+        "description": null,
+        "tags": [],
+        "parameters": {
+          "count": 10000
+        }
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "552f5de3ff5ba3c4198ee81e2d46c33a32b012e9",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "python_capi",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "cpython_extension"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 34039.13115865483,
+            "std_dev": 1773.9287220258411,
+            "min": 32236.053471024206,
+            "max": 44389.97393663158,
+            "percentiles": {
+              "50.0": 33574.93585554039,
+              "90.0": 35380.017027364374,
+              "95.0": 35817.676814531296,
+              "99.0": 40213.16596436006
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 245760
+          },
+          "notes": []
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31.1",
+              "git_sha": null,
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [
+                "uniffi"
+              ],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "ctypes",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "ctypes"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 2975366.3648686293,
+            "std_dev": 148678.79675535383,
+            "min": 2774581.3786168583,
+            "max": 3515010.4231433943,
+            "percentiles": {
+              "50.0": 2952184.5681301784,
+              "90.0": 3131705.151463393,
+              "95.0": 3163234.608655329,
+              "99.0": 3484111.4748996915
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 3840
+          },
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "generate_directions_1k",
+        "group": "enums.directions.generate",
+        "title": "Generate Directions 1K",
+        "category": "enums",
+        "sophistication": "structured",
+        "direction": "rust_to_host",
+        "platform": "native",
+        "language": "python",
+        "description": null,
+        "tags": [],
+        "parameters": {
+          "count": 1000
+        }
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "552f5de3ff5ba3c4198ee81e2d46c33a32b012e9",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "python_capi",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "cpython_extension"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 3428.12843451649,
+            "std_dev": 112.67142455892898,
+            "min": 3313.0391585700636,
+            "max": 3880.681362034011,
+            "percentiles": {
+              "50.0": 3407.0256518248243,
+              "90.0": 3506.9171715917946,
+              "95.0": 3679.807541345781,
+              "99.0": 3855.5008579521655
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 1966080
+          },
+          "notes": []
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31.1",
+              "git_sha": null,
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [
+                "uniffi"
+              ],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "ctypes",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "ctypes"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 292960.81409787195,
+            "std_dev": 10654.648977463683,
+            "min": 277386.2306639785,
+            "max": 326108.2365497714,
+            "percentiles": {
+              "50.0": 290221.6806432989,
+              "90.0": 305854.72813982057,
+              "95.0": 311699.36614787724,
+              "99.0": 323410.0236386439
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 30720
+          },
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "generate_f64_vec_10k",
+        "group": "collections.f64_vec.generate",
+        "title": "Generate F64 Vec 10K",
+        "category": "collections",
+        "sophistication": "structured",
+        "direction": "rust_to_host",
+        "platform": "native",
+        "language": "python",
+        "description": null,
+        "tags": [],
+        "parameters": {
+          "count": 10000
+        }
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "552f5de3ff5ba3c4198ee81e2d46c33a32b012e9",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "python_capi",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "cpython_extension"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 82179.87943150243,
+            "std_dev": 1420.993277305715,
+            "min": 79961.3237632002,
+            "max": 85182.94293935469,
+            "percentiles": {
+              "50.0": 82011.1491748321,
+              "90.0": 84462.30287972867,
+              "95.0": 84959.61706103117,
+              "99.0": 85111.31718705656
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 122880
+          },
+          "notes": []
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31.1",
+              "git_sha": null,
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [
+                "uniffi"
+              ],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "ctypes",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "ctypes"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 2254506.8350154907,
+            "std_dev": 71508.24694929147,
+            "min": 2197305.999288801,
+            "max": 2579311.2072278745,
+            "percentiles": {
+              "50.0": 2233703.7771649193,
+              "90.0": 2302670.6352538895,
+              "95.0": 2429078.723071143,
+              "99.0": 2539511.5449646255
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 3840
+          },
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "generate_i32_vec_100k",
+        "group": "collections.i32_vec.generate",
+        "title": "Generate I32 Vec 100K",
+        "category": "collections",
+        "sophistication": "structured",
+        "direction": "rust_to_host",
+        "platform": "native",
+        "language": "python",
+        "description": null,
+        "tags": [],
+        "parameters": {
+          "count": 100000
+        }
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "552f5de3ff5ba3c4198ee81e2d46c33a32b012e9",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "python_capi",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "cpython_extension"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 955629.9046986776,
+            "std_dev": 25412.9180713871,
+            "min": 915088.22151809,
+            "max": 1072316.4050432388,
+            "percentiles": {
+              "50.0": 950759.2749287141,
+              "90.0": 984459.4755122671,
+              "95.0": 991350.0973198097,
+              "99.0": 1027791.3837489903
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 7680
+          },
+          "notes": []
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31.1",
+              "git_sha": null,
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [
+                "uniffi"
+              ],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "ctypes",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "ctypes"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 22856593.834391486,
+            "std_dev": 804407.3408058146,
+            "min": 22185432.200785726,
+            "max": 28003010.37495956,
+            "percentiles": {
+              "50.0": 22675348.940538242,
+              "90.0": 23496390.035143122,
+              "95.0": 23908126.816968434,
+              "99.0": 25692358.334781587
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 480
+          },
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "generate_i32_vec_10k",
+        "group": "collections.i32_vec.generate",
+        "title": "Generate I32 Vec 10K",
+        "category": "collections",
+        "sophistication": "structured",
+        "direction": "rust_to_host",
+        "platform": "native",
+        "language": "python",
+        "description": null,
+        "tags": [],
+        "parameters": {
+          "count": 10000
+        }
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "552f5de3ff5ba3c4198ee81e2d46c33a32b012e9",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "python_capi",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "cpython_extension"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 74494.59025489583,
+            "std_dev": 1160.7250661213718,
+            "min": 73005.31001419586,
+            "max": 79554.9315171229,
+            "percentiles": {
+              "50.0": 74473.42932209722,
+              "90.0": 75915.25497900875,
+              "95.0": 76330.48795696595,
+              "99.0": 78003.46873864326
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 122880
+          },
+          "notes": []
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31.1",
+              "git_sha": null,
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [
+                "uniffi"
+              ],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "ctypes",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "ctypes"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 2260297.1149656996,
+            "std_dev": 57799.51714353449,
+            "min": 2192269.53049656,
+            "max": 2510707.6871790923,
+            "percentiles": {
+              "50.0": 2244990.8901762683,
+              "90.0": 2317271.740321303,
+              "95.0": 2350973.4317485704,
+              "99.0": 2492709.9916385487
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 3840
+          },
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "generate_string_1k",
+        "group": "strings.generate",
+        "title": "Generate String 1K",
+        "category": "strings",
+        "sophistication": "basic",
+        "direction": "rust_to_host",
+        "platform": "native",
+        "language": "python",
+        "description": null,
+        "tags": [],
+        "parameters": {
+          "string_length": 1000
+        }
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "552f5de3ff5ba3c4198ee81e2d46c33a32b012e9",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "python_capi",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "cpython_extension"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 258.6009240671909,
+            "std_dev": 6.452642703571403,
+            "min": 246.70870946152945,
+            "max": 272.70865476936024,
+            "percentiles": {
+              "50.0": 258.7174572354911,
+              "90.0": 268.8690746488476,
+              "95.0": 269.8295484826474,
+              "99.0": 271.55851572757683
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 31457280
+          },
+          "notes": []
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31.1",
+              "git_sha": null,
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [
+                "uniffi"
+              ],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "ctypes",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "ctypes"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 3757.3539515278753,
+            "std_dev": 187.38741210612773,
+            "min": 3607.575749242642,
+            "max": 4949.995656033934,
+            "percentiles": {
+              "50.0": 3713.083266632111,
+              "90.0": 3833.4395327410675,
+              "95.0": 3966.194218918417,
+              "99.0": 4485.914728746818
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 1966080
+          },
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "inc_u64_value",
+        "group": "primitives.inc_u64.by_value",
+        "title": "Increment U64 By Value",
+        "category": "primitives",
+        "sophistication": "basic",
+        "direction": "mixed",
+        "platform": "native",
+        "language": "python",
+        "description": null,
+        "tags": [],
+        "parameters": {
+          "mutation_mode": "by_value"
+        }
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "552f5de3ff5ba3c4198ee81e2d46c33a32b012e9",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "python_capi",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "cpython_extension"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 43.132271535887654,
+            "std_dev": 1.4253826334614426,
+            "min": 42.16848803473283,
+            "max": 48.118531603691395,
+            "percentiles": {
+              "50.0": 42.58616270735871,
+              "90.0": 44.050531677886084,
+              "95.0": 46.85727158504349,
+              "99.0": 47.97491068853077
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 251658240
+          },
+          "notes": []
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31.1",
+              "git_sha": null,
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [
+                "uniffi"
+              ],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "ctypes",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "ctypes"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 1298.126215350711,
+            "std_dev": 34.88579572162292,
+            "min": 1246.2291714143703,
+            "max": 1411.1855755061242,
+            "percentiles": {
+              "50.0": 1290.5941009222488,
+              "90.0": 1346.7029233993344,
+              "95.0": 1355.069491992822,
+              "99.0": 1396.8630615224242
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 7864320
+          },
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "multiply",
+        "group": "primitives.multiply",
+        "title": "Multiply",
+        "category": "primitives",
+        "sophistication": "basic",
+        "direction": "mixed",
+        "platform": "native",
+        "language": "python",
+        "description": null,
+        "tags": [],
+        "parameters": {}
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "552f5de3ff5ba3c4198ee81e2d46c33a32b012e9",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "python_capi",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "cpython_extension"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 46.35761195285563,
+            "std_dev": 1.422459089144993,
+            "min": 45.47634713247817,
+            "max": 54.82334897166652,
+            "percentiles": {
+              "50.0": 45.90916635738296,
+              "90.0": 47.213231502141184,
+              "95.0": 48.279092207392786,
+              "99.0": 52.03040650214595
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 251658240
+          },
+          "notes": []
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31.1",
+              "git_sha": null,
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [
+                "uniffi"
+              ],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "ctypes",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "ctypes"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 1513.0498990008807,
+            "std_dev": 29.859608792551807,
+            "min": 1464.2696370970043,
+            "max": 1613.4084006580451,
+            "percentiles": {
+              "50.0": 1511.8665732671843,
+              "90.0": 1551.1579242399876,
+              "95.0": 1558.2509561795632,
+              "99.0": 1593.4952120133516
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 7864320
+          },
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "negate_bool",
+        "group": "primitives.negate_bool",
+        "title": "Negate Bool",
+        "category": "primitives",
+        "sophistication": "basic",
+        "direction": "mixed",
+        "platform": "native",
+        "language": "python",
+        "description": null,
+        "tags": [],
+        "parameters": {}
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "552f5de3ff5ba3c4198ee81e2d46c33a32b012e9",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "python_capi",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "cpython_extension"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 41.143261871508706,
+            "std_dev": 0.9762906943928803,
+            "min": 39.544721608386624,
+            "max": 43.97358510654925,
+            "percentiles": {
+              "50.0": 40.89882954527724,
+              "90.0": 42.8281664799357,
+              "95.0": 42.98168554406345,
+              "99.0": 43.6598332309579
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 251658240
+          },
+          "notes": []
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31.1",
+              "git_sha": null,
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [
+                "uniffi"
+              ],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "ctypes",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "ctypes"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 1234.139405958956,
+            "std_dev": 52.54641628268845,
+            "min": 1168.93959045683,
+            "max": 1472.160338522599,
+            "percentiles": {
+              "50.0": 1229.8027680657242,
+              "90.0": 1267.0626659883055,
+              "95.0": 1286.5630001357429,
+              "99.0": 1456.873779446255
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 7864320
+          },
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "noop",
+        "group": "primitives.noop",
+        "title": "Noop",
+        "category": "primitives",
+        "sophistication": "basic",
+        "direction": "mixed",
+        "platform": "native",
+        "language": "python",
+        "description": null,
+        "tags": [],
+        "parameters": {}
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "552f5de3ff5ba3c4198ee81e2d46c33a32b012e9",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "python_capi",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "cpython_extension"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 20.809509682084837,
+            "std_dev": 0.5818463668226935,
+            "min": 20.33497892295344,
+            "max": 24.17520678088536,
+            "percentiles": {
+              "50.0": 20.706353076604955,
+              "90.0": 21.182605636216323,
+              "95.0": 21.910016748116767,
+              "99.0": 22.972873479631943
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 503316480
+          },
+          "notes": []
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31.1",
+              "git_sha": null,
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [
+                "uniffi"
+              ],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "ctypes",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "ctypes"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 944.9465904272832,
+            "std_dev": 30.027444752809576,
+            "min": 885.1531276832247,
+            "max": 1019.1323021047083,
+            "percentiles": {
+              "50.0": 942.4495690524282,
+              "90.0": 980.4606150964901,
+              "95.0": 985.742237702425,
+              "99.0": 1012.2870690310037
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 7864320
+          },
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "simple_enum",
+        "group": "enums.direction.basic_ops",
+        "title": "Simple Enum",
+        "category": "enums",
+        "sophistication": "basic",
+        "direction": "mixed",
+        "platform": "native",
+        "language": "python",
+        "description": "Calls oppositeDirection and directionToDegrees with simple enum values.",
+        "tags": [],
+        "parameters": {}
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "552f5de3ff5ba3c4198ee81e2d46c33a32b012e9",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "python_capi",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "cpython_extension"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 89.94124427822806,
+            "std_dev": 2.062619678977032,
+            "min": 88.17887309220396,
+            "max": 100.3857454939805,
+            "percentiles": {
+              "50.0": 89.41519269445308,
+              "90.0": 91.23029895974355,
+              "95.0": 91.76854582904069,
+              "99.0": 98.76738358727266
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 125829120
+          },
+          "notes": []
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31.1",
+              "git_sha": null,
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [
+                "uniffi"
+              ],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "ctypes",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "ctypes"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 12069.348349541542,
+            "std_dev": 327.33942162286775,
+            "min": 11576.332099139108,
+            "max": 13249.923711100564,
+            "percentiles": {
+              "50.0": 12052.616114033299,
+              "90.0": 12368.2302017869,
+              "95.0": 12678.787868480867,
+              "99.0": 13190.998117806885
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 983040
+          },
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "sum_f64_vec_10k",
+        "group": "collections.f64_vec.sum",
+        "title": "Sum F64 Vec 10K",
+        "category": "collections",
+        "sophistication": "structured",
+        "direction": "host_to_rust",
+        "platform": "native",
+        "language": "python",
+        "description": null,
+        "tags": [],
+        "parameters": {
+          "count": 10000
+        }
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "552f5de3ff5ba3c4198ee81e2d46c33a32b012e9",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "python_capi",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "cpython_extension"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 42315.21165441639,
+            "std_dev": 937.9487055065387,
+            "min": 41517.91381445946,
+            "max": 47602.427230231115,
+            "percentiles": {
+              "50.0": 42059.09726806567,
+              "90.0": 42872.42140890157,
+              "95.0": 43283.085108214436,
+              "99.0": 46064.180285156894
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 245760
+          },
+          "notes": []
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31.1",
+              "git_sha": null,
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [
+                "uniffi"
+              ],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "ctypes",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "ctypes"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 20863056.778519727,
+            "std_dev": 450913.4982400412,
+            "min": 20281625.038478523,
+            "max": 22747890.616301447,
+            "percentiles": {
+              "50.0": 20804419.327760115,
+              "90.0": 21466175.495879725,
+              "95.0": 21546451.78525243,
+              "99.0": 22128221.673192453
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 480
+          },
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "sum_i32_vec_100k",
+        "group": "collections.i32_vec.sum",
+        "title": "Sum I32 Vec 100K",
+        "category": "collections",
+        "sophistication": "structured",
+        "direction": "host_to_rust",
+        "platform": "native",
+        "language": "python",
+        "description": null,
+        "tags": [],
+        "parameters": {
+          "count": 100000
+        }
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "552f5de3ff5ba3c4198ee81e2d46c33a32b012e9",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "python_capi",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "cpython_extension"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 172721.40642792993,
+            "std_dev": 4782.448857456802,
+            "min": 168313.15042509232,
+            "max": 192537.71961302846,
+            "percentiles": {
+              "50.0": 170730.9370431176,
+              "90.0": 176518.46887929423,
+              "95.0": 181088.82634351176,
+              "99.0": 189753.44112732273
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 61440
+          },
+          "notes": []
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31.1",
+              "git_sha": null,
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [
+                "uniffi"
+              ],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "ctypes",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "ctypes"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 159349663.889346,
+            "std_dev": 3664813.3503335337,
+            "min": 154496499.80291724,
+            "max": 176021167.07712412,
+            "percentiles": {
+              "50.0": 158324645.3665197,
+              "90.0": 164205708.1218809,
+              "95.0": 165239883.00468773,
+              "99.0": 170196293.531917
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 60
+          },
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "sum_i32_vec_10k",
+        "group": "collections.i32_vec.sum",
+        "title": "Sum I32 Vec 10K",
+        "category": "collections",
+        "sophistication": "structured",
+        "direction": "host_to_rust",
+        "platform": "native",
+        "language": "python",
+        "description": null,
+        "tags": [],
+        "parameters": {
+          "count": 10000
+        }
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "552f5de3ff5ba3c4198ee81e2d46c33a32b012e9",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "python_capi",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "cpython_extension"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 17294.85160240074,
+            "std_dev": 457.3732914764001,
+            "min": 16868.759189492266,
+            "max": 19835.103387322306,
+            "percentiles": {
+              "50.0": 17198.382096239584,
+              "90.0": 17521.346603643906,
+              "95.0": 17720.010578159417,
+              "99.0": 19390.880846117398
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 491520
+          },
+          "notes": []
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31.1",
+              "git_sha": null,
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [
+                "uniffi"
+              ],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "ctypes",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "python",
+                "binding_runtime": "ctypes"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_module": "demo"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 16088479.165531075,
+            "std_dev": 753158.3050463733,
+            "min": 15437880.239915103,
+            "max": 19587234.361097217,
+            "percentiles": {
+              "50.0": 15817843.755939975,
+              "90.0": 16613733.815029263,
+              "95.0": 17550235.13105698,
+              "99.0": 18758539.395639665
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 60,
+            "sample_count": 60,
+            "total_operations": 480
+          },
+          "notes": []
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "notes": []
+}

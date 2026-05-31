@@ -37,12 +37,8 @@ def parse_args() -> argparse.Namespace:
 
 
 def load_incoming_run_documents(source_root: Path) -> list[dict[str, Any]]:
-    run_paths = sorted(source_root.glob("*/build/results/*/benchmark_run.json"))
-    documents: list[dict[str, Any]] = []
-    for run_path in run_paths:
-        documents.append(json.loads(run_path.read_text()))
-
-    return documents
+    run_paths = sorted(source_root.glob("harnesses/*/build/results/*/benchmark_run.json"))
+    return [json.loads(run_path.read_text()) for run_path in run_paths]
 
 
 def load_archived_run_documents(output_root: Path) -> list[dict[str, Any]]:

@@ -1,0 +1,1007 @@
+{
+  "schema_version": "benchmark_run_v1",
+  "run_id": "2026-04-24t23-26-22z-csharp-dotnet-benchmarkdotnet-6603136a752c",
+  "collected_at": "2026-04-24T23:26:22Z",
+  "provenance": {
+    "repository": {
+      "name": "mobiFFI",
+      "url": "git@github.com-ali:boltffi/boltffi",
+      "branch": "main",
+      "commit_sha": "6603136a752cbb06fba7c35ff607d3ed9ca1c97b",
+      "dirty": true
+    },
+    "collector": {
+      "name": "mobiffi-benchmark-adapters",
+      "version": "0.1.0",
+      "invocation": "benchmarkdotnet_to_run.py --results /Users/alihilal/Documents/Per/mobiFFI/benchmarks/harnesses/dotnet-bench/build/results/dotnet/results.json"
+    },
+    "artifacts": [
+      {
+        "kind": "json",
+        "path": "/Users/alihilal/Documents/Per/mobiFFI/benchmarks/harnesses/dotnet-bench/build/results/dotnet/results.json",
+        "sha256": "82404fb31d72835e28987147836d746442741c5205066a2a7b910c5be8cfffa4"
+      }
+    ]
+  },
+  "environment": {
+    "host": {
+      "os": "darwin",
+      "os_version": "macOS Sequoia 15.7.3 (24G419) [Darwin 24.6.0]",
+      "arch": "arm64",
+      "cpu_model": "Apple M3 Max",
+      "physical_cores": 14,
+      "logical_cores": 14,
+      "memory_bytes": 38654705664,
+      "attributes": {
+        "hostname": "mac.home",
+        "kernel_release": "24.6.0",
+        "kernel_version": "Darwin Kernel Version 24.6.0: Wed Nov  5 21:32:38 PST 2025; root:xnu-11417.140.69.705.2~1/RELEASE_ARM64_T6031",
+        "python_version": "3.13.3",
+        "benchmarkdotnet_version": "0.15.8",
+        "configuration": "RELEASE",
+        "hardware_timer_kind": "Unknown",
+        "dotnet_cli_version": "10.0.106"
+      }
+    },
+    "toolchains": {
+      "rust": {
+        "rustc_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+        "cargo_version": "cargo 1.95.0 (f2d3ce0bd 2026-03-21)",
+        "channel": "1.95.0",
+        "host_triple": "aarch64-apple-darwin",
+        "target_triple": "aarch64-apple-darwin"
+      },
+      "swift": null,
+      "kotlin": null,
+      "java": null,
+      "node": null,
+      "wasm": null,
+      "dotnet": {
+        "sdk_version": "10.0.106",
+        "runtime_version": ".NET 10.0.6 (10.0.6, 10.0.626.17701)",
+        "runtime_kind": null
+      }
+    },
+    "runtime": {
+      "engine": "dotnet",
+      "version": ".NET 10.0.6 (10.0.6, 10.0.626.17701)",
+      "platform": "dotnet",
+      "attributes": {
+        "benchmarkdotnet_version": "0.15.8",
+        "dotnet_cli_version": "10.0.106",
+        "configuration": "RELEASE",
+        "chronometer_frequency": {
+          "Hertz": 1000000000
+        },
+        "hardware_timer_kind": "Unknown"
+      }
+    },
+    "ci": null
+  },
+  "suite": {
+    "name": "csharp-dotnet-benchmarkdotnet",
+    "harness": "benchmarkdotnet",
+    "platform": "dotnet",
+    "language": "csharp",
+    "profile": "release",
+    "tags": [],
+    "attributes": {
+      "title": "BoltFFIBench.UniffiWireReaderBenchmarks-20260425-012452",
+      "benchmarkdotnet_version": "0.15.8",
+      "dotnet_cli_version": "10.0.106"
+    }
+  },
+  "benchmarks": [
+    {
+      "descriptor": {
+        "id": "add",
+        "group": "primitives.add",
+        "title": "Add",
+        "category": "primitives",
+        "sophistication": "basic",
+        "direction": "mixed",
+        "platform": "dotnet",
+        "language": "csharp",
+        "description": null,
+        "tags": [],
+        "parameters": {}
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31",
+              "git_sha": "6603136a752cbb06fba7c35ff607d3ed9ca1c97b",
+              "crate_version": "0.31"
+            },
+            "build": {
+              "compiler_name": "dotnet",
+              "compiler_version": "10.0.106",
+              "target": null,
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": []
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "p_invoke",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "csharp",
+                "binding_runtime": ".net"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_package": "uniffi.demo",
+              "benchmark_method": "Add",
+              "benchmark_type": "UniffiWireReaderBenchmarks",
+              "benchmarkdotnet_title": "Add"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 15.936557210981846,
+            "std_dev": 0.036967362502960156,
+            "min": 15.903593361377716,
+            "max": 15.985500067472458,
+            "percentiles": {
+              "0": 15.903593361377716,
+              "25": 15.91058386862278,
+              "50": 15.928567707538605,
+              "67": 15.944634164273738,
+              "80": 15.960732853412628,
+              "85": 15.966924656927585,
+              "90": 15.973116460442544,
+              "95": 15.9793082639575,
+              "100": 15.985500067472458
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": null,
+            "sample_count": 4,
+            "total_operations": null
+          },
+          "notes": [
+            "confidence_interval_ns=[15.697675, 16.175440]",
+            "bytes_allocated_per_operation=88.000000"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "echo_address",
+        "group": "records.address.echo",
+        "title": "Echo Address",
+        "category": "records",
+        "sophistication": "structured",
+        "direction": "roundtrip",
+        "platform": "dotnet",
+        "language": "csharp",
+        "description": null,
+        "tags": [],
+        "parameters": {}
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31",
+              "git_sha": "6603136a752cbb06fba7c35ff607d3ed9ca1c97b",
+              "crate_version": "0.31"
+            },
+            "build": {
+              "compiler_name": "dotnet",
+              "compiler_version": "10.0.106",
+              "target": null,
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": []
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "p_invoke",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "csharp",
+                "binding_runtime": ".net"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_package": "uniffi.demo",
+              "benchmark_method": "EchoAddress",
+              "benchmark_type": "UniffiWireReaderBenchmarks",
+              "benchmarkdotnet_title": "EchoAddress"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 599.9953111648559,
+            "std_dev": 4.608457277690241,
+            "min": 594.6491956710815,
+            "max": 604.8086881637573,
+            "percentiles": {
+              "0": 594.6491956710815,
+              "25": 597.1200065612793,
+              "50": 598.6068248748779,
+              "67": 602.8126355361939,
+              "80": 604.7952100753785,
+              "85": 604.7985795974732,
+              "90": 604.8019491195679,
+              "95": 604.8053186416626,
+              "100": 604.8086881637573
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": null,
+            "sample_count": 5,
+            "total_operations": null
+          },
+          "notes": [
+            "confidence_interval_ns=[582.249783, 617.740839]",
+            "bytes_allocated_per_operation=960.000000"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "echo_i32",
+        "group": "primitives.echo_i32",
+        "title": "Echo I32",
+        "category": "primitives",
+        "sophistication": "basic",
+        "direction": "mixed",
+        "platform": "dotnet",
+        "language": "csharp",
+        "description": null,
+        "tags": [],
+        "parameters": {}
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31",
+              "git_sha": "6603136a752cbb06fba7c35ff607d3ed9ca1c97b",
+              "crate_version": "0.31"
+            },
+            "build": {
+              "compiler_name": "dotnet",
+              "compiler_version": "10.0.106",
+              "target": null,
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": []
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "p_invoke",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "csharp",
+                "binding_runtime": ".net"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_package": "uniffi.demo",
+              "benchmark_method": "EchoI32",
+              "benchmark_type": "UniffiWireReaderBenchmarks",
+              "benchmarkdotnet_title": "EchoI32"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 15.87750341296196,
+            "std_dev": 0.7549175703730614,
+            "min": 14.861407399177551,
+            "max": 16.74552384018898,
+            "percentiles": {
+              "0": 14.861407399177551,
+              "25": 15.362153470516205,
+              "50": 16.145815461874008,
+              "67": 16.23204043507576,
+              "80": 16.36719828248024,
+              "85": 16.461779671907426,
+              "90": 16.55636106133461,
+              "95": 16.650942450761796,
+              "100": 16.74552384018898
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": null,
+            "sample_count": 5,
+            "total_operations": null
+          },
+          "notes": [
+            "confidence_interval_ns=[12.970585, 18.784422]",
+            "bytes_allocated_per_operation=88.000000"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "echo_line",
+        "group": "records.line.echo",
+        "title": "Echo Line",
+        "category": "records",
+        "sophistication": "structured",
+        "direction": "roundtrip",
+        "platform": "dotnet",
+        "language": "csharp",
+        "description": null,
+        "tags": [],
+        "parameters": {}
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31",
+              "git_sha": "6603136a752cbb06fba7c35ff607d3ed9ca1c97b",
+              "crate_version": "0.31"
+            },
+            "build": {
+              "compiler_name": "dotnet",
+              "compiler_version": "10.0.106",
+              "target": null,
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": []
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "p_invoke",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "csharp",
+                "binding_runtime": ".net"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_package": "uniffi.demo",
+              "benchmark_method": "EchoLine",
+              "benchmark_type": "UniffiWireReaderBenchmarks",
+              "benchmarkdotnet_title": "EchoLine"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 288.07706813812257,
+            "std_dev": 2.619740938733645,
+            "min": 284.3320960998535,
+            "max": 290.51617765426636,
+            "percentiles": {
+              "0": 284.3320960998535,
+              "25": 286.7907085418701,
+              "50": 288.26332092285156,
+              "67": 289.77272817611697,
+              "80": 290.48966550827026,
+              "85": 290.4962935447693,
+              "90": 290.5029215812683,
+              "95": 290.50954961776733,
+              "100": 290.51617765426636
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": null,
+            "sample_count": 5,
+            "total_operations": null
+          },
+          "notes": [
+            "confidence_interval_ns=[277.989379, 298.164758]",
+            "bytes_allocated_per_operation=688.000000"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "echo_person",
+        "group": "records.person.echo",
+        "title": "Echo Person",
+        "category": "records",
+        "sophistication": "structured",
+        "direction": "roundtrip",
+        "platform": "dotnet",
+        "language": "csharp",
+        "description": null,
+        "tags": [],
+        "parameters": {}
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31",
+              "git_sha": "6603136a752cbb06fba7c35ff607d3ed9ca1c97b",
+              "crate_version": "0.31"
+            },
+            "build": {
+              "compiler_name": "dotnet",
+              "compiler_version": "10.0.106",
+              "target": null,
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": []
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "p_invoke",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "csharp",
+                "binding_runtime": ".net"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_package": "uniffi.demo",
+              "benchmark_method": "EchoPerson",
+              "benchmark_type": "UniffiWireReaderBenchmarks",
+              "benchmarkdotnet_title": "EchoPerson"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 267.90673742294314,
+            "std_dev": 7.829646748350864,
+            "min": 261.58855390548706,
+            "max": 280.14651918411255,
+            "percentiles": {
+              "0": 261.58855390548706,
+              "25": 262.38059997558594,
+              "50": 264.1830048561096,
+              "67": 268.97836780548096,
+              "80": 273.01731119155886,
+              "85": 274.79961318969725,
+              "90": 276.58191518783565,
+              "95": 278.3642171859741,
+              "100": 280.14651918411255
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": null,
+            "sample_count": 5,
+            "total_operations": null
+          },
+          "notes": [
+            "confidence_interval_ns=[237.757556, 298.055919]",
+            "bytes_allocated_per_operation=720.000000"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "echo_string_64k",
+        "group": "strings.echo",
+        "title": "Echo String 64K",
+        "category": "strings",
+        "sophistication": "basic",
+        "direction": "mixed",
+        "platform": "dotnet",
+        "language": "csharp",
+        "description": null,
+        "tags": [],
+        "parameters": {
+          "string_length": 65536
+        }
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31",
+              "git_sha": "6603136a752cbb06fba7c35ff607d3ed9ca1c97b",
+              "crate_version": "0.31"
+            },
+            "build": {
+              "compiler_name": "dotnet",
+              "compiler_version": "10.0.106",
+              "target": null,
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": []
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "p_invoke",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "csharp",
+                "binding_runtime": ".net"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_package": "uniffi.demo",
+              "benchmark_method": "EchoString64K",
+              "benchmark_type": "UniffiWireReaderBenchmarks",
+              "benchmarkdotnet_title": "EchoString64K"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 42493.729904174805,
+            "std_dev": 1149.4623083584645,
+            "min": 40930.369079589844,
+            "max": 43462.811767578125,
+            "percentiles": {
+              "0": 40930.369079589844,
+              "25": 41988.665267944336,
+              "50": 42790.869384765625,
+              "67": 43242.533142089844,
+              "80": 43329.3095703125,
+              "85": 43362.685119628906,
+              "90": 43396.06066894531,
+              "95": 43429.43621826172,
+              "100": 43462.811767578125
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": null,
+            "sample_count": 4,
+            "total_operations": null
+          },
+          "notes": [
+            "confidence_interval_ns=[35065.916733, 49921.543075]",
+            "bytes_allocated_per_operation=262749.000000"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "echo_string_small",
+        "group": "strings.echo",
+        "title": "Echo String Small",
+        "category": "strings",
+        "sophistication": "basic",
+        "direction": "mixed",
+        "platform": "dotnet",
+        "language": "csharp",
+        "description": null,
+        "tags": [],
+        "parameters": {
+          "string_length": 5
+        }
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31",
+              "git_sha": "6603136a752cbb06fba7c35ff607d3ed9ca1c97b",
+              "crate_version": "0.31"
+            },
+            "build": {
+              "compiler_name": "dotnet",
+              "compiler_version": "10.0.106",
+              "target": null,
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": []
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "p_invoke",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "csharp",
+                "binding_runtime": ".net"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_package": "uniffi.demo",
+              "benchmark_method": "EchoStringSmall",
+              "benchmark_type": "UniffiWireReaderBenchmarks",
+              "benchmarkdotnet_title": "EchoStringSmall"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 124.76267409324646,
+            "std_dev": 0.22712463355400744,
+            "min": 124.42290782928468,
+            "max": 124.89952635765076,
+            "percentiles": {
+              "0": 124.42290782928468,
+              "25": 124.75366139411926,
+              "50": 124.86413109302521,
+              "67": 124.86470137119292,
+              "80": 124.87842030525206,
+              "85": 124.88369681835175,
+              "90": 124.88897333145141,
+              "95": 124.8942498445511,
+              "100": 124.89952635765076
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": null,
+            "sample_count": 4,
+            "total_operations": null
+          },
+          "notes": [
+            "confidence_interval_ns=[123.294997, 126.230351]",
+            "bytes_allocated_per_operation=632.000000"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "generate_string_1k",
+        "group": "strings.generate",
+        "title": "Generate String 1K",
+        "category": "strings",
+        "sophistication": "basic",
+        "direction": "rust_to_host",
+        "platform": "dotnet",
+        "language": "csharp",
+        "description": null,
+        "tags": [],
+        "parameters": {
+          "string_length": 1000
+        }
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31",
+              "git_sha": "6603136a752cbb06fba7c35ff607d3ed9ca1c97b",
+              "crate_version": "0.31"
+            },
+            "build": {
+              "compiler_name": "dotnet",
+              "compiler_version": "10.0.106",
+              "target": null,
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": []
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "p_invoke",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "csharp",
+                "binding_runtime": ".net"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_package": "uniffi.demo",
+              "benchmark_method": "GenerateString1K",
+              "benchmark_type": "UniffiWireReaderBenchmarks",
+              "benchmarkdotnet_title": "GenerateString1K"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 333.60875816345214,
+            "std_dev": 19.907263706114033,
+            "min": 302.73518896102905,
+            "max": 354.1589775085449,
+            "percentiles": {
+              "0": 302.73518896102905,
+              "25": 326.58336544036865,
+              "50": 340.06251859664917,
+              "67": 343.0825493621826,
+              "80": 346.43478775024414,
+              "85": 348.36583518981934,
+              "90": 350.29688262939453,
+              "95": 352.2279300689697,
+              "100": 354.1589775085449
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": null,
+            "sample_count": 5,
+            "total_operations": null
+          },
+          "notes": [
+            "confidence_interval_ns=[256.952974, 410.264542]",
+            "bytes_allocated_per_operation=3488.000000"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "generate_string_64k",
+        "group": "strings.generate",
+        "title": "Generate String 64K",
+        "category": "strings",
+        "sophistication": "basic",
+        "direction": "rust_to_host",
+        "platform": "dotnet",
+        "language": "csharp",
+        "description": null,
+        "tags": [],
+        "parameters": {
+          "string_length": 65536
+        }
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31",
+              "git_sha": "6603136a752cbb06fba7c35ff607d3ed9ca1c97b",
+              "crate_version": "0.31"
+            },
+            "build": {
+              "compiler_name": "dotnet",
+              "compiler_version": "10.0.106",
+              "target": null,
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": []
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "p_invoke",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "csharp",
+                "binding_runtime": ".net"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_package": "uniffi.demo",
+              "benchmark_method": "GenerateString64K",
+              "benchmark_type": "UniffiWireReaderBenchmarks",
+              "benchmarkdotnet_title": "GenerateString64K"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 24299.356072998045,
+            "std_dev": 435.8481666690952,
+            "min": 23673.119842529297,
+            "max": 24802.64028930664,
+            "percentiles": {
+              "0": 23673.119842529297,
+              "25": 24086.329132080078,
+              "50": 24388.079315185547,
+              "67": 24495.88139526367,
+              "80": 24597.81748657227,
+              "85": 24649.023187255858,
+              "90": 24700.228887939455,
+              "95": 24751.434588623048,
+              "100": 24802.64028930664
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": null,
+            "sample_count": 5,
+            "total_operations": null
+          },
+          "notes": [
+            "confidence_interval_ns=[22621.059980, 25977.652166]",
+            "bytes_allocated_per_operation=197053.000000"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "make_point",
+        "group": "records.point.make",
+        "title": "Make Point",
+        "category": "records",
+        "sophistication": "structured",
+        "direction": "rust_to_host",
+        "platform": "dotnet",
+        "language": "csharp",
+        "description": null,
+        "tags": [],
+        "parameters": {}
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31",
+              "git_sha": "6603136a752cbb06fba7c35ff607d3ed9ca1c97b",
+              "crate_version": "0.31"
+            },
+            "build": {
+              "compiler_name": "dotnet",
+              "compiler_version": "10.0.106",
+              "target": null,
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": []
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "p_invoke",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "csharp",
+                "binding_runtime": ".net"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_package": "uniffi.demo",
+              "benchmark_method": "MakePoint",
+              "benchmark_type": "UniffiWireReaderBenchmarks",
+              "benchmarkdotnet_title": "MakePoint"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 118.88146698474884,
+            "std_dev": 1.987030838706304,
+            "min": 116.17441475391388,
+            "max": 121.38369178771971,
+            "percentiles": {
+              "0": 116.17441475391388,
+              "25": 117.89784336090088,
+              "50": 118.96082258224489,
+              "67": 119.66104568481447,
+              "80": 120.26918830871581,
+              "85": 120.5478141784668,
+              "90": 120.82644004821776,
+              "95": 121.10506591796874,
+              "100": 121.38369178771971
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": null,
+            "sample_count": 5,
+            "total_operations": null
+          },
+          "notes": [
+            "confidence_interval_ns=[111.230119, 126.532815]",
+            "bytes_allocated_per_operation=432.000000"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "descriptor": {
+        "id": "noop",
+        "group": "primitives.noop",
+        "title": "Noop",
+        "category": "primitives",
+        "sophistication": "basic",
+        "direction": "mixed",
+        "platform": "dotnet",
+        "language": "csharp",
+        "description": null,
+        "tags": [],
+        "parameters": {}
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31",
+              "git_sha": "6603136a752cbb06fba7c35ff607d3ed9ca1c97b",
+              "crate_version": "0.31"
+            },
+            "build": {
+              "compiler_name": "dotnet",
+              "compiler_version": "10.0.106",
+              "target": null,
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": []
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "p_invoke",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "csharp",
+                "binding_runtime": ".net"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_package": "uniffi.demo",
+              "benchmark_method": "Noop",
+              "benchmark_type": "UniffiWireReaderBenchmarks",
+              "benchmarkdotnet_title": "Noop"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 16.99116504788399,
+            "std_dev": 0.2544327451380039,
+            "min": 16.777350276708603,
+            "max": 17.353465169668198,
+            "percentiles": {
+              "0": 16.777350276708603,
+              "25": 16.807281732559204,
+              "50": 16.854710906744003,
+              "67": 17.064359154701233,
+              "80": 17.201106756925583,
+              "85": 17.239196360111237,
+              "90": 17.27728596329689,
+              "95": 17.315375566482544,
+              "100": 17.353465169668198
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": null,
+            "sample_count": 5,
+            "total_operations": null
+          },
+          "notes": [
+            "confidence_interval_ns=[16.011435, 17.970895]",
+            "bytes_allocated_per_operation=88.000000"
+          ]
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "notes": []
+}
