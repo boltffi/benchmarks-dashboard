@@ -1,0 +1,189 @@
+{
+  "schema_version": "benchmark_view_v1",
+  "generated_at": "2026-05-31T23:24:50Z",
+  "benchmark_id": "echo_direction_north",
+  "group": "enums.direction.echo",
+  "title": "Echo Direction North",
+  "category": "enums",
+  "sophistication": "basic",
+  "direction": "mixed",
+  "parameters": {
+    "value": "north"
+  },
+  "latest_run_id": "2026-05-31t23-24-49z-csharp-dotnet-benchmarkdotnet-c7eef64668cb",
+  "latest_archive_path": "data/archive/2026/05/31/2026-05-31t23-24-49z-csharp-dotnet-benchmarkdotnet-c7eef64668cb--8a337c0e5349.json",
+  "runs": [
+    {
+      "run_id": "2026-05-31t23-24-49z-csharp-dotnet-benchmarkdotnet-c7eef64668cb",
+      "collected_at": "2026-05-31T23:24:49Z",
+      "suite_name": "csharp-dotnet-benchmarkdotnet",
+      "platform": "dotnet",
+      "language": "csharp",
+      "harness": "benchmarkdotnet",
+      "commit_sha": "c7eef64668cbd65faed35bc3ee9878bb7a5782bc",
+      "archive_path": "data/archive/2026/05/31/2026-05-31t23-24-49z-csharp-dotnet-benchmarkdotnet-c7eef64668cb--8a337c0e5349.json",
+      "machine": {
+        "machine_id": "local-darwin-arm64-apple-m3-max",
+        "label": "Apple M3 Max",
+        "subtitle": "darwin macOS Sequoia 15.7.3 (24G419) [Darwin 24.6.0] • arm64 • local • mac.home",
+        "kind": "local",
+        "os": "darwin",
+        "os_version": "macOS Sequoia 15.7.3 (24G419) [Darwin 24.6.0]",
+        "arch": "arm64",
+        "cpu_model": "Apple M3 Max",
+        "hostname": "mac.home",
+        "ci_provider": null,
+        "ci_runner": null,
+        "physical_cores": 14,
+        "logical_cores": 14,
+        "memory_bytes": 38654705664
+      },
+      "descriptor": {
+        "id": "echo_direction_north",
+        "group": "enums.direction.echo",
+        "title": "Echo Direction North",
+        "category": "enums",
+        "sophistication": "basic",
+        "direction": "mixed",
+        "platform": "dotnet",
+        "language": "csharp",
+        "description": null,
+        "tags": [],
+        "parameters": {
+          "value": "north"
+        }
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "c7eef64668cbd65faed35bc3ee9878bb7a5782bc",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "dotnet",
+              "compiler_version": "10.0.106",
+              "target": null,
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": []
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "p_invoke",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "csharp",
+                "binding_runtime": ".net"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_package": "Demo",
+              "benchmark_method": "EchoDirection_North",
+              "benchmark_type": "BoltffiEnumWireBenchmarks",
+              "benchmarkdotnet_title": "EchoDirection_North"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 4.909770441055298,
+            "std_dev": 0.0678219047563786,
+            "min": 4.827044285833836,
+            "max": 5.004089951515198,
+            "percentiles": {
+              "0": 4.827044285833836,
+              "25": 4.865021139383316,
+              "50": 4.919023871421814,
+              "67": 4.928985249698162,
+              "80": 4.9477563560009,
+              "85": 4.961839754879475,
+              "90": 4.975923153758049,
+              "95": 4.990006552636624,
+              "100": 5.004089951515198
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": null,
+            "sample_count": 5,
+            "total_operations": null
+          },
+          "notes": [
+            "confidence_interval_ns=[4.648612, 5.170928]",
+            "bytes_allocated_per_operation=0.000000"
+          ]
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31",
+              "git_sha": "c7eef64668cbd65faed35bc3ee9878bb7a5782bc",
+              "crate_version": "0.31"
+            },
+            "build": {
+              "compiler_name": "dotnet",
+              "compiler_version": "10.0.106",
+              "target": null,
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": []
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "p_invoke",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "csharp",
+                "binding_runtime": ".net"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_package": "uniffi.demo",
+              "benchmark_method": "EchoDirection_North",
+              "benchmark_type": "UniffiEnumWireBenchmarks",
+              "benchmarkdotnet_title": "EchoDirection_North"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 153.4231861591339,
+            "std_dev": 1.6938853338301123,
+            "min": 151.53266978263855,
+            "max": 155.47957015037537,
+            "percentiles": {
+              "0": 151.53266978263855,
+              "25": 151.81595087051392,
+              "50": 153.98224210739136,
+              "67": 154.2020560359955,
+              "80": 154.54031233787538,
+              "85": 154.77512679100036,
+              "90": 155.00994124412537,
+              "95": 155.24475569725035,
+              "100": 155.47957015037537
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": null,
+            "sample_count": 5,
+            "total_operations": null
+          },
+          "notes": [
+            "confidence_interval_ns=[146.900637, 159.945735]",
+            "bytes_allocated_per_operation=616.000000"
+          ]
+        }
+      ],
+      "notes": []
+    }
+  ]
+}

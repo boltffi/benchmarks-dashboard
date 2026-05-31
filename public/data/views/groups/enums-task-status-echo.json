@@ -1,0 +1,529 @@
+{
+  "schema_version": "benchmark_group_view_v1",
+  "generated_at": "2026-05-31T23:24:50Z",
+  "group": "enums.task_status.echo",
+  "title": "Echo TaskStatus Completed Payload",
+  "category": "enums",
+  "sophistication": "basic",
+  "direction": "roundtrip",
+  "latest_run_id": "2026-05-31t23-24-49z-csharp-dotnet-benchmarkdotnet-c7eef64668cb",
+  "latest_archive_path": "data/archive/2026/05/31/2026-05-31t23-24-49z-csharp-dotnet-benchmarkdotnet-c7eef64668cb--8a337c0e5349.json",
+  "runs": [
+    {
+      "run_id": "2026-05-31t23-24-49z-csharp-dotnet-benchmarkdotnet-c7eef64668cb",
+      "collected_at": "2026-05-31T23:24:49Z",
+      "suite_name": "csharp-dotnet-benchmarkdotnet",
+      "platform": "dotnet",
+      "language": "csharp",
+      "harness": "benchmarkdotnet",
+      "commit_sha": "c7eef64668cbd65faed35bc3ee9878bb7a5782bc",
+      "archive_path": "data/archive/2026/05/31/2026-05-31t23-24-49z-csharp-dotnet-benchmarkdotnet-c7eef64668cb--8a337c0e5349.json",
+      "machine": {
+        "machine_id": "local-darwin-arm64-apple-m3-max",
+        "label": "Apple M3 Max",
+        "subtitle": "darwin macOS Sequoia 15.7.3 (24G419) [Darwin 24.6.0] • arm64 • local • mac.home",
+        "kind": "local",
+        "os": "darwin",
+        "os_version": "macOS Sequoia 15.7.3 (24G419) [Darwin 24.6.0]",
+        "arch": "arm64",
+        "cpu_model": "Apple M3 Max",
+        "hostname": "mac.home",
+        "ci_provider": null,
+        "ci_runner": null,
+        "physical_cores": 14,
+        "logical_cores": 14,
+        "memory_bytes": 38654705664
+      },
+      "descriptor": {
+        "id": "echo_task_status_completed_payload",
+        "group": "enums.task_status.echo",
+        "title": "Echo TaskStatus Completed Payload",
+        "category": "enums",
+        "sophistication": "basic",
+        "direction": "roundtrip",
+        "platform": "dotnet",
+        "language": "csharp",
+        "description": null,
+        "tags": [],
+        "parameters": {
+          "variant": "completed"
+        }
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "c7eef64668cbd65faed35bc3ee9878bb7a5782bc",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "dotnet",
+              "compiler_version": "10.0.106",
+              "target": null,
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": []
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "p_invoke",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "csharp",
+                "binding_runtime": ".net"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_package": "Demo",
+              "benchmark_method": "EchoTaskStatus_CompletedPayload",
+              "benchmark_type": "BoltffiEnumWireBenchmarks",
+              "benchmarkdotnet_title": "EchoTaskStatus_CompletedPayload"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 57.65932893753052,
+            "std_dev": 0.30955324213812735,
+            "min": 57.157347559928894,
+            "max": 57.929510831832886,
+            "percentiles": {
+              "0": 57.157347559928894,
+              "25": 57.572906136512756,
+              "50": 57.808250188827515,
+              "67": 57.82210844039916,
+              "80": 57.84880614280701,
+              "85": 57.86898231506348,
+              "90": 57.889158487319946,
+              "95": 57.909334659576416,
+              "100": 57.929510831832886
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": null,
+            "sample_count": 5,
+            "total_operations": null
+          },
+          "notes": [
+            "confidence_interval_ns=[56.467350, 58.851308]",
+            "bytes_allocated_per_operation=120.000000"
+          ]
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31",
+              "git_sha": "c7eef64668cbd65faed35bc3ee9878bb7a5782bc",
+              "crate_version": "0.31"
+            },
+            "build": {
+              "compiler_name": "dotnet",
+              "compiler_version": "10.0.106",
+              "target": null,
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": []
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "p_invoke",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "csharp",
+                "binding_runtime": ".net"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_package": "uniffi.demo",
+              "benchmark_method": "EchoTaskStatus_CompletedPayload",
+              "benchmark_type": "UniffiEnumWireBenchmarks",
+              "benchmarkdotnet_title": "EchoTaskStatus_CompletedPayload"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 180.4999788761139,
+            "std_dev": 1.299753686684004,
+            "min": 178.8048644065857,
+            "max": 182.29700136184692,
+            "percentiles": {
+              "0": 178.8048644065857,
+              "25": 179.80744433403015,
+              "50": 180.77642726898193,
+              "67": 180.80208349227905,
+              "80": 181.1107258796692,
+              "85": 181.40729475021362,
+              "90": 181.70386362075806,
+              "95": 182.0004324913025,
+              "100": 182.29700136184692
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": null,
+            "sample_count": 5,
+            "total_operations": null
+          },
+          "notes": [
+            "confidence_interval_ns=[175.495090, 185.504868]",
+            "bytes_allocated_per_operation=616.000000"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "run_id": "2026-05-31t23-24-49z-csharp-dotnet-benchmarkdotnet-c7eef64668cb",
+      "collected_at": "2026-05-31T23:24:49Z",
+      "suite_name": "csharp-dotnet-benchmarkdotnet",
+      "platform": "dotnet",
+      "language": "csharp",
+      "harness": "benchmarkdotnet",
+      "commit_sha": "c7eef64668cbd65faed35bc3ee9878bb7a5782bc",
+      "archive_path": "data/archive/2026/05/31/2026-05-31t23-24-49z-csharp-dotnet-benchmarkdotnet-c7eef64668cb--8a337c0e5349.json",
+      "machine": {
+        "machine_id": "local-darwin-arm64-apple-m3-max",
+        "label": "Apple M3 Max",
+        "subtitle": "darwin macOS Sequoia 15.7.3 (24G419) [Darwin 24.6.0] • arm64 • local • mac.home",
+        "kind": "local",
+        "os": "darwin",
+        "os_version": "macOS Sequoia 15.7.3 (24G419) [Darwin 24.6.0]",
+        "arch": "arm64",
+        "cpu_model": "Apple M3 Max",
+        "hostname": "mac.home",
+        "ci_provider": null,
+        "ci_runner": null,
+        "physical_cores": 14,
+        "logical_cores": 14,
+        "memory_bytes": 38654705664
+      },
+      "descriptor": {
+        "id": "echo_task_status_small_payload",
+        "group": "enums.task_status.echo",
+        "title": "Echo TaskStatus Small Payload",
+        "category": "enums",
+        "sophistication": "basic",
+        "direction": "roundtrip",
+        "platform": "dotnet",
+        "language": "csharp",
+        "description": null,
+        "tags": [],
+        "parameters": {
+          "variant": "in_progress"
+        }
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "c7eef64668cbd65faed35bc3ee9878bb7a5782bc",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "dotnet",
+              "compiler_version": "10.0.106",
+              "target": null,
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": []
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "p_invoke",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "csharp",
+                "binding_runtime": ".net"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_package": "Demo",
+              "benchmark_method": "EchoTaskStatus_SmallPayload",
+              "benchmark_type": "BoltffiEnumWireBenchmarks",
+              "benchmarkdotnet_title": "EchoTaskStatus_SmallPayload"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 56.895497465133666,
+            "std_dev": 0.6629543544311945,
+            "min": 55.97183108329773,
+            "max": 57.60224413871765,
+            "percentiles": {
+              "0": 55.97183108329773,
+              "25": 56.50059634447098,
+              "50": 57.0249508023262,
+              "67": 57.26493242740631,
+              "80": 57.42274079322815,
+              "85": 57.46761662960053,
+              "90": 57.5124924659729,
+              "95": 57.557368302345274,
+              "100": 57.60224413871765
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": null,
+            "sample_count": 5,
+            "total_operations": null
+          },
+          "notes": [
+            "confidence_interval_ns=[54.342696, 59.448299]",
+            "bytes_allocated_per_operation=120.000000"
+          ]
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31",
+              "git_sha": "c7eef64668cbd65faed35bc3ee9878bb7a5782bc",
+              "crate_version": "0.31"
+            },
+            "build": {
+              "compiler_name": "dotnet",
+              "compiler_version": "10.0.106",
+              "target": null,
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": []
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "p_invoke",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "csharp",
+                "binding_runtime": ".net"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_package": "uniffi.demo",
+              "benchmark_method": "EchoTaskStatus_SmallPayload",
+              "benchmark_type": "UniffiEnumWireBenchmarks",
+              "benchmarkdotnet_title": "EchoTaskStatus_SmallPayload"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 179.3958095908165,
+            "std_dev": 2.5461120361332203,
+            "min": 175.726731300354,
+            "max": 181.21096467971802,
+            "percentiles": {
+              "0": 175.726731300354,
+              "25": 178.65074163675308,
+              "50": 180.32277119159698,
+              "67": 181.02203897476195,
+              "80": 181.09646425247192,
+              "85": 181.12508935928344,
+              "90": 181.15371446609498,
+              "95": 181.1823395729065,
+              "100": 181.21096467971802
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": null,
+            "sample_count": 4,
+            "total_operations": null
+          },
+          "notes": [
+            "confidence_interval_ns=[162.942861, 195.848758]",
+            "bytes_allocated_per_operation=616.000000"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "run_id": "2026-05-31t23-24-49z-csharp-dotnet-benchmarkdotnet-c7eef64668cb",
+      "collected_at": "2026-05-31T23:24:49Z",
+      "suite_name": "csharp-dotnet-benchmarkdotnet",
+      "platform": "dotnet",
+      "language": "csharp",
+      "harness": "benchmarkdotnet",
+      "commit_sha": "c7eef64668cbd65faed35bc3ee9878bb7a5782bc",
+      "archive_path": "data/archive/2026/05/31/2026-05-31t23-24-49z-csharp-dotnet-benchmarkdotnet-c7eef64668cb--8a337c0e5349.json",
+      "machine": {
+        "machine_id": "local-darwin-arm64-apple-m3-max",
+        "label": "Apple M3 Max",
+        "subtitle": "darwin macOS Sequoia 15.7.3 (24G419) [Darwin 24.6.0] • arm64 • local • mac.home",
+        "kind": "local",
+        "os": "darwin",
+        "os_version": "macOS Sequoia 15.7.3 (24G419) [Darwin 24.6.0]",
+        "arch": "arm64",
+        "cpu_model": "Apple M3 Max",
+        "hostname": "mac.home",
+        "ci_provider": null,
+        "ci_runner": null,
+        "physical_cores": 14,
+        "logical_cores": 14,
+        "memory_bytes": 38654705664
+      },
+      "descriptor": {
+        "id": "echo_task_status_unit_variant",
+        "group": "enums.task_status.echo",
+        "title": "Echo TaskStatus Unit Variant",
+        "category": "enums",
+        "sophistication": "basic",
+        "direction": "roundtrip",
+        "platform": "dotnet",
+        "language": "csharp",
+        "description": null,
+        "tags": [],
+        "parameters": {
+          "variant": "pending"
+        }
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "c7eef64668cbd65faed35bc3ee9878bb7a5782bc",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "dotnet",
+              "compiler_version": "10.0.106",
+              "target": null,
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": []
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "p_invoke",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "csharp",
+                "binding_runtime": ".net"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_package": "Demo",
+              "benchmark_method": "EchoTaskStatus_UnitVariant",
+              "benchmark_type": "BoltffiEnumWireBenchmarks",
+              "benchmarkdotnet_title": "EchoTaskStatus_UnitVariant"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 52.247952073812485,
+            "std_dev": 0.4046239252557627,
+            "min": 51.7897407412529,
+            "max": 52.74390923976898,
+            "percentiles": {
+              "0": 51.7897407412529,
+              "25": 52.02071434259415,
+              "50": 52.22907915711403,
+              "67": 52.364287335872646,
+              "80": 52.51383535861969,
+              "85": 52.571353828907014,
+              "90": 52.628872299194335,
+              "95": 52.68639076948166,
+              "100": 52.74390923976898
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": null,
+            "sample_count": 4,
+            "total_operations": null
+          },
+          "notes": [
+            "confidence_interval_ns=[49.633277, 54.862628]",
+            "bytes_allocated_per_operation=120.000000"
+          ]
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31",
+              "git_sha": "c7eef64668cbd65faed35bc3ee9878bb7a5782bc",
+              "crate_version": "0.31"
+            },
+            "build": {
+              "compiler_name": "dotnet",
+              "compiler_version": "10.0.106",
+              "target": null,
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": []
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "p_invoke",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "csharp",
+                "binding_runtime": ".net"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_package": "uniffi.demo",
+              "benchmark_method": "EchoTaskStatus_UnitVariant",
+              "benchmark_type": "UniffiEnumWireBenchmarks",
+              "benchmarkdotnet_title": "EchoTaskStatus_UnitVariant"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 147.83360815048218,
+            "std_dev": 2.170953228886148,
+            "min": 144.79424571990967,
+            "max": 149.90496635437012,
+            "percentiles": {
+              "0": 144.79424571990967,
+              "25": 147.2366800904274,
+              "50": 148.31761026382446,
+              "67": 148.59760135412216,
+              "80": 149.11262392997742,
+              "85": 149.3107095360756,
+              "90": 149.50879514217377,
+              "95": 149.70688074827194,
+              "100": 149.90496635437012
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": null,
+            "sample_count": 4,
+            "total_operations": null
+          },
+          "notes": [
+            "confidence_interval_ns=[133.804932, 161.862285]",
+            "bytes_allocated_per_operation=616.000000"
+          ]
+        }
+      ],
+      "notes": []
+    }
+  ]
+}
