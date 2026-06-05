@@ -1,14 +1,1346 @@
 {
   "schema_version": "benchmark_group_view_v1",
-  "generated_at": "2026-05-31T23:24:50Z",
+  "generated_at": "2026-06-05T15:54:18Z",
   "group": "enums.directions.generate",
-  "title": "Generate Directions 10K",
+  "title": "Generate Directions 1K",
   "category": "enums",
   "sophistication": "structured",
   "direction": "rust_to_host",
-  "latest_run_id": "2026-05-31t23-24-49z-csharp-dotnet-benchmarkdotnet-c7eef64668cb",
-  "latest_archive_path": "data/archive/2026/05/31/2026-05-31t23-24-49z-csharp-dotnet-benchmarkdotnet-c7eef64668cb--8a337c0e5349.json",
+  "latest_run_id": "2026-06-05t15-28-37z-wasm-node-benchmarkjs-0c5c2f3187f9",
+  "latest_archive_path": "data/archive/2026/06/05/2026-06-05t15-28-37z-wasm-node-benchmarkjs-0c5c2f3187f9--74ddd1660f6e.json",
   "runs": [
+    {
+      "run_id": "2026-06-05t15-28-37z-wasm-node-benchmarkjs-0c5c2f3187f9",
+      "collected_at": "2026-06-05T15:28:37Z",
+      "suite_name": "wasm-node-benchmarkjs",
+      "platform": "wasm",
+      "language": "java_script",
+      "harness": "benchmark_js",
+      "commit_sha": "0c5c2f3187f94013b918e81b9796ae9f61fb8a5b",
+      "archive_path": "data/archive/2026/06/05/2026-06-05t15-28-37z-wasm-node-benchmarkjs-0c5c2f3187f9--74ddd1660f6e.json",
+      "machine": {
+        "machine_id": "local-darwin-arm64-apple-m3-max",
+        "label": "Apple M3 Max",
+        "subtitle": "darwin 15.7.3 • arm64 • local • mac.home",
+        "kind": "local",
+        "os": "darwin",
+        "os_version": "15.7.3",
+        "arch": "arm64",
+        "cpu_model": "Apple M3 Max",
+        "hostname": "mac.home",
+        "ci_provider": null,
+        "ci_runner": null,
+        "physical_cores": 14,
+        "logical_cores": 14,
+        "memory_bytes": 38654705664
+      },
+      "descriptor": {
+        "id": "generate_directions_1k",
+        "group": "enums.directions.generate",
+        "title": "Generate Directions 1K",
+        "category": "enums",
+        "sophistication": "structured",
+        "direction": "rust_to_host",
+        "platform": "wasm",
+        "language": "java_script",
+        "description": null,
+        "tags": [],
+        "parameters": {
+          "count": 1000
+        }
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "0c5c2f3187f94013b918e81b9796ae9f61fb8a5b",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "wasm32-unknown-unknown",
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "wasm",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "javascript",
+                "binding_runtime": "@boltffi/runtime"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "operations_per_cycle": 7952,
+              "cycles": 6,
+              "hz": 153015.4006147344
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 6535.289885740472,
+            "std_dev": 152.75662042868495,
+            "min": 6304.352238430583,
+            "max": 6988.781690140845,
+            "percentiles": {
+              "50.0": 6508.669329276024,
+              "90.0": 6754.866725352113,
+              "95.0": 6808.724452967806,
+              "99.0": 6947.785528169014
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": null,
+            "sample_count": 98,
+            "total_operations": 779296
+          },
+          "notes": []
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "wasm-bindgen",
+              "version": null,
+              "git_sha": null,
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "wasm32-unknown-unknown",
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "wasm-bindgen",
+              "transport": "wasm",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "javascript",
+                "binding_runtime": "wasm-bindgen"
+              }
+            },
+            "attributes": {
+              "subject_key": "wasmbindgen",
+              "operations_per_cycle": 1705,
+              "cycles": 4,
+              "hz": 32525.547580580474
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 30745.062708707617,
+            "std_dev": 2004.2357788397694,
+            "min": 29481.01173020528,
+            "max": 47811.021466905186,
+            "percentiles": {
+              "50.0": 30365.522046241575,
+              "90.0": 31548.03470483006,
+              "95.0": 31893.617472460217,
+              "99.0": 36184.6828033908
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": null,
+            "sample_count": 92,
+            "total_operations": 156860
+          },
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "run_id": "2026-06-05t15-28-37z-wasm-node-benchmarkjs-0c5c2f3187f9",
+      "collected_at": "2026-06-05T15:28:37Z",
+      "suite_name": "wasm-node-benchmarkjs",
+      "platform": "wasm",
+      "language": "java_script",
+      "harness": "benchmark_js",
+      "commit_sha": "0c5c2f3187f94013b918e81b9796ae9f61fb8a5b",
+      "archive_path": "data/archive/2026/06/05/2026-06-05t15-28-37z-wasm-node-benchmarkjs-0c5c2f3187f9--74ddd1660f6e.json",
+      "machine": {
+        "machine_id": "local-darwin-arm64-apple-m3-max",
+        "label": "Apple M3 Max",
+        "subtitle": "darwin 15.7.3 • arm64 • local • mac.home",
+        "kind": "local",
+        "os": "darwin",
+        "os_version": "15.7.3",
+        "arch": "arm64",
+        "cpu_model": "Apple M3 Max",
+        "hostname": "mac.home",
+        "ci_provider": null,
+        "ci_runner": null,
+        "physical_cores": 14,
+        "logical_cores": 14,
+        "memory_bytes": 38654705664
+      },
+      "descriptor": {
+        "id": "generate_directions_10k",
+        "group": "enums.directions.generate",
+        "title": "Generate Directions 10K",
+        "category": "enums",
+        "sophistication": "structured",
+        "direction": "rust_to_host",
+        "platform": "wasm",
+        "language": "java_script",
+        "description": null,
+        "tags": [],
+        "parameters": {
+          "count": 10000
+        }
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "0c5c2f3187f94013b918e81b9796ae9f61fb8a5b",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "wasm32-unknown-unknown",
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "wasm",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "javascript",
+                "binding_runtime": "@boltffi/runtime"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "operations_per_cycle": 982,
+              "cycles": 6,
+              "hz": 18856.923099281616
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 53030.92104342816,
+            "std_dev": 2601.555014216589,
+            "min": 51036.871690427695,
+            "max": 72971.95417515274,
+            "percentiles": {
+              "50.0": 52668.57637474542,
+              "90.0": 53913.94236252546,
+              "95.0": 54112.61486761711,
+              "99.0": 63240.895478615035
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": null,
+            "sample_count": 99,
+            "total_operations": 97218
+          },
+          "notes": []
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "wasm-bindgen",
+              "version": null,
+              "git_sha": null,
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "wasm32-unknown-unknown",
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "wasm-bindgen",
+              "transport": "wasm",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "javascript",
+                "binding_runtime": "wasm-bindgen"
+              }
+            },
+            "attributes": {
+              "subject_key": "wasmbindgen",
+              "operations_per_cycle": 175,
+              "cycles": 4,
+              "hz": 3423.0946199860036
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 292133.3211654222,
+            "std_dev": 4023.965456435755,
+            "min": 287838.6034482758,
+            "max": 309408.5229885058,
+            "percentiles": {
+              "50.0": 290857.2787356322,
+              "90.0": 296293.8178226601,
+              "95.0": 298274.9738171612,
+              "99.0": 308079.65086206904
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": null,
+            "sample_count": 98,
+            "total_operations": 17150
+          },
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "run_id": "2026-06-05t15-12-14z-java-jvm-jmh-0c5c2f3187f9",
+      "collected_at": "2026-06-05T15:12:14Z",
+      "suite_name": "java-jvm-jmh",
+      "platform": "jvm",
+      "language": "java",
+      "harness": "jmh",
+      "commit_sha": "0c5c2f3187f94013b918e81b9796ae9f61fb8a5b",
+      "archive_path": "data/archive/2026/06/05/2026-06-05t15-12-14z-java-jvm-jmh-0c5c2f3187f9--19b398e52c71.json",
+      "machine": {
+        "machine_id": "local-darwin-arm64-apple-m3-max",
+        "label": "Apple M3 Max",
+        "subtitle": "darwin 15.7.3 • arm64 • local • mac.home",
+        "kind": "local",
+        "os": "darwin",
+        "os_version": "15.7.3",
+        "arch": "arm64",
+        "cpu_model": "Apple M3 Max",
+        "hostname": "mac.home",
+        "ci_provider": null,
+        "ci_runner": null,
+        "physical_cores": 14,
+        "logical_cores": 14,
+        "memory_bytes": 38654705664
+      },
+      "descriptor": {
+        "id": "generate_directions_10k",
+        "group": "enums.directions.generate",
+        "title": "Generate Directions 10K",
+        "category": "enums",
+        "sophistication": "structured",
+        "direction": "rust_to_host",
+        "platform": "jvm",
+        "language": "java",
+        "description": null,
+        "tags": [],
+        "parameters": {
+          "count": 10000
+        }
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "0c5c2f3187f94013b918e81b9796ae9f61fb8a5b",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "jni",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "java",
+                "binding_runtime": "jni"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi_java",
+              "binding_package": "com.example.bench_boltffi",
+              "benchmark_class": "com.example.bench_compare.BoltffiJavaBench",
+              "benchmark_method": "boltffi_java_generate_directions_10k"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 36952.521740244054,
+            "std_dev": 264789.6688867245,
+            "min": 28513.483674283434,
+            "max": 53711.72242411287,
+            "percentiles": {
+              "0.0": 28513.483674283434,
+              "50.0": 28632.359122335867,
+              "90.0": 53711.72242411287,
+              "95.0": 53711.72242411287,
+              "99.0": 53711.72242411287,
+              "99.9": 53711.72242411287,
+              "99.99": 53711.72242411287,
+              "99.999": 53711.72242411287,
+              "99.9999": 53711.72242411287,
+              "100.0": 53711.72242411287
+            }
+          },
+          "sampling": {
+            "warmup_iterations": 3,
+            "measurement_iterations": 3,
+            "sample_count": 3,
+            "total_operations": null
+          },
+          "notes": [
+            "jmh_score_confidence=[-227837.147146, 301742.190627] ns/op"
+          ]
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31.0",
+              "git_sha": null,
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [
+                "uniffi"
+              ],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "ffm",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "java",
+                "binding_runtime": "foreign_function_memory_api"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi_java",
+              "binding_package": "uniffi.demo",
+              "benchmark_class": "com.example.bench_compare.UniffiJavaBench",
+              "benchmark_method": "uniffi_java_generate_directions_10k"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 59962.40989131603,
+            "std_dev": 3406.5629682053,
+            "min": 59763.81931519924,
+            "max": 60134.421352355836,
+            "percentiles": {
+              "0.0": 59763.81931519924,
+              "50.0": 59988.98900639302,
+              "90.0": 60134.421352355836,
+              "95.0": 60134.421352355836,
+              "99.0": 60134.421352355836,
+              "99.9": 60134.421352355836,
+              "99.99": 60134.421352355836,
+              "99.999": 60134.421352355836,
+              "99.9999": 60134.421352355836,
+              "100.0": 60134.421352355836
+            }
+          },
+          "sampling": {
+            "warmup_iterations": 3,
+            "measurement_iterations": 3,
+            "sample_count": 3,
+            "total_operations": null
+          },
+          "notes": [
+            "jmh_score_confidence=[56555.846923, 63368.972860] ns/op"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "run_id": "2026-06-05t15-12-14z-java-jvm-jmh-0c5c2f3187f9",
+      "collected_at": "2026-06-05T15:12:14Z",
+      "suite_name": "java-jvm-jmh",
+      "platform": "jvm",
+      "language": "java",
+      "harness": "jmh",
+      "commit_sha": "0c5c2f3187f94013b918e81b9796ae9f61fb8a5b",
+      "archive_path": "data/archive/2026/06/05/2026-06-05t15-12-14z-java-jvm-jmh-0c5c2f3187f9--19b398e52c71.json",
+      "machine": {
+        "machine_id": "local-darwin-arm64-apple-m3-max",
+        "label": "Apple M3 Max",
+        "subtitle": "darwin 15.7.3 • arm64 • local • mac.home",
+        "kind": "local",
+        "os": "darwin",
+        "os_version": "15.7.3",
+        "arch": "arm64",
+        "cpu_model": "Apple M3 Max",
+        "hostname": "mac.home",
+        "ci_provider": null,
+        "ci_runner": null,
+        "physical_cores": 14,
+        "logical_cores": 14,
+        "memory_bytes": 38654705664
+      },
+      "descriptor": {
+        "id": "generate_directions_1k",
+        "group": "enums.directions.generate",
+        "title": "Generate Directions 1K",
+        "category": "enums",
+        "sophistication": "structured",
+        "direction": "rust_to_host",
+        "platform": "jvm",
+        "language": "java",
+        "description": null,
+        "tags": [],
+        "parameters": {
+          "count": 1000
+        }
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "0c5c2f3187f94013b918e81b9796ae9f61fb8a5b",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "jni",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "java",
+                "binding_runtime": "jni"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi_java",
+              "binding_package": "com.example.bench_boltffi",
+              "benchmark_class": "com.example.bench_compare.BoltffiJavaBench",
+              "benchmark_method": "boltffi_java_generate_directions_1k"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 3013.783386919811,
+            "std_dev": 470.23343888294636,
+            "min": 2989.5919306828914,
+            "max": 3040.893605074663,
+            "percentiles": {
+              "0.0": 2989.5919306828914,
+              "50.0": 3010.8646250018783,
+              "90.0": 3040.893605074663,
+              "95.0": 3040.893605074663,
+              "99.0": 3040.893605074663,
+              "99.9": 3040.893605074663,
+              "99.99": 3040.893605074663,
+              "99.999": 3040.893605074663,
+              "99.9999": 3040.893605074663,
+              "100.0": 3040.893605074663
+            }
+          },
+          "sampling": {
+            "warmup_iterations": 3,
+            "measurement_iterations": 3,
+            "sample_count": 3,
+            "total_operations": null
+          },
+          "notes": [
+            "jmh_score_confidence=[2543.549948, 3484.016826] ns/op"
+          ]
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31.0",
+              "git_sha": null,
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [
+                "uniffi"
+              ],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "ffm",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "java",
+                "binding_runtime": "foreign_function_memory_api"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi_java",
+              "binding_package": "uniffi.demo",
+              "benchmark_class": "com.example.bench_compare.UniffiJavaBench",
+              "benchmark_method": "uniffi_java_generate_directions_1k"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 6254.820724067256,
+            "std_dev": 391.43794370191694,
+            "min": 6238.764278664407,
+            "max": 6279.189214179505,
+            "percentiles": {
+              "0.0": 6238.764278664407,
+              "50.0": 6246.5086793578585,
+              "90.0": 6279.189214179505,
+              "95.0": 6279.189214179505,
+              "99.0": 6279.189214179505,
+              "99.9": 6279.189214179505,
+              "99.99": 6279.189214179505,
+              "99.999": 6279.189214179505,
+              "99.9999": 6279.189214179505,
+              "100.0": 6279.189214179505
+            }
+          },
+          "sampling": {
+            "warmup_iterations": 3,
+            "measurement_iterations": 3,
+            "sample_count": 3,
+            "total_operations": null
+          },
+          "notes": [
+            "jmh_score_confidence=[5863.382780, 6646.258668] ns/op"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "run_id": "2026-06-05t14-58-13z-kotlin-jvm-jmh-0c5c2f3187f9",
+      "collected_at": "2026-06-05T14:58:13Z",
+      "suite_name": "kotlin-jvm-jmh",
+      "platform": "jvm",
+      "language": "kotlin",
+      "harness": "jmh",
+      "commit_sha": "0c5c2f3187f94013b918e81b9796ae9f61fb8a5b",
+      "archive_path": "data/archive/2026/06/05/2026-06-05t14-58-13z-kotlin-jvm-jmh-0c5c2f3187f9--ec51bd0cdd17.json",
+      "machine": {
+        "machine_id": "local-darwin-arm64-apple-m3-max",
+        "label": "Apple M3 Max",
+        "subtitle": "darwin 15.7.3 • arm64 • local • mac.home",
+        "kind": "local",
+        "os": "darwin",
+        "os_version": "15.7.3",
+        "arch": "arm64",
+        "cpu_model": "Apple M3 Max",
+        "hostname": "mac.home",
+        "ci_provider": null,
+        "ci_runner": null,
+        "physical_cores": 14,
+        "logical_cores": 14,
+        "memory_bytes": 38654705664
+      },
+      "descriptor": {
+        "id": "generate_directions_10k",
+        "group": "enums.directions.generate",
+        "title": "Generate Directions 10K",
+        "category": "enums",
+        "sophistication": "structured",
+        "direction": "rust_to_host",
+        "platform": "jvm",
+        "language": "kotlin",
+        "description": null,
+        "tags": [],
+        "parameters": {
+          "count": 10000
+        }
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "0c5c2f3187f94013b918e81b9796ae9f61fb8a5b",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "jni",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "kotlin",
+                "binding_runtime": "jni"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_package": "BenchBoltFFI",
+              "benchmark_class": "com.example.bench_compare.BoltFFIVsUniffiBench",
+              "benchmark_method": "boltffi_generate_directions_10k"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 31697.002967513803,
+            "std_dev": 8567.766713733457,
+            "min": 31198.48256720514,
+            "max": 32131.08391339214,
+            "percentiles": {
+              "0.0": 31198.48256720514,
+              "50.0": 31761.442421944128,
+              "90.0": 32131.08391339214,
+              "95.0": 32131.08391339214,
+              "99.0": 32131.08391339214,
+              "99.9": 32131.08391339214,
+              "99.99": 32131.08391339214,
+              "99.999": 32131.08391339214,
+              "99.9999": 32131.08391339214,
+              "100.0": 32131.08391339214
+            }
+          },
+          "sampling": {
+            "warmup_iterations": 3,
+            "measurement_iterations": 3,
+            "sample_count": 3,
+            "total_operations": null
+          },
+          "notes": [
+            "jmh_score_confidence=[23129.236254, 40264.769681] ns/op"
+          ]
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31.0",
+              "git_sha": null,
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [
+                "uniffi"
+              ],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "jna",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "kotlin",
+                "binding_runtime": "jna"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_package": "BenchUniffi",
+              "benchmark_class": "com.example.bench_compare.BoltFFIVsUniffiBench",
+              "benchmark_method": "uniffi_generate_directions_10k"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 50480.20970271661,
+            "std_dev": 29416.59397151134,
+            "min": 49184.303890384144,
+            "max": 52285.90969151537,
+            "percentiles": {
+              "0.0": 49184.303890384144,
+              "50.0": 49970.41552625031,
+              "90.0": 52285.90969151537,
+              "95.0": 52285.90969151537,
+              "99.0": 52285.90969151537,
+              "99.9": 52285.90969151537,
+              "99.99": 52285.90969151537,
+              "99.999": 52285.90969151537,
+              "99.9999": 52285.90969151537,
+              "100.0": 52285.90969151537
+            }
+          },
+          "sampling": {
+            "warmup_iterations": 3,
+            "measurement_iterations": 3,
+            "sample_count": 3,
+            "total_operations": null
+          },
+          "notes": [
+            "jmh_score_confidence=[21063.615731, 79896.803674] ns/op"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "run_id": "2026-06-05t14-58-13z-kotlin-jvm-jmh-0c5c2f3187f9",
+      "collected_at": "2026-06-05T14:58:13Z",
+      "suite_name": "kotlin-jvm-jmh",
+      "platform": "jvm",
+      "language": "kotlin",
+      "harness": "jmh",
+      "commit_sha": "0c5c2f3187f94013b918e81b9796ae9f61fb8a5b",
+      "archive_path": "data/archive/2026/06/05/2026-06-05t14-58-13z-kotlin-jvm-jmh-0c5c2f3187f9--ec51bd0cdd17.json",
+      "machine": {
+        "machine_id": "local-darwin-arm64-apple-m3-max",
+        "label": "Apple M3 Max",
+        "subtitle": "darwin 15.7.3 • arm64 • local • mac.home",
+        "kind": "local",
+        "os": "darwin",
+        "os_version": "15.7.3",
+        "arch": "arm64",
+        "cpu_model": "Apple M3 Max",
+        "hostname": "mac.home",
+        "ci_provider": null,
+        "ci_runner": null,
+        "physical_cores": 14,
+        "logical_cores": 14,
+        "memory_bytes": 38654705664
+      },
+      "descriptor": {
+        "id": "generate_directions_1k",
+        "group": "enums.directions.generate",
+        "title": "Generate Directions 1K",
+        "category": "enums",
+        "sophistication": "structured",
+        "direction": "rust_to_host",
+        "platform": "jvm",
+        "language": "kotlin",
+        "description": null,
+        "tags": [],
+        "parameters": {
+          "count": 1000
+        }
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "0c5c2f3187f94013b918e81b9796ae9f61fb8a5b",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "jni",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "kotlin",
+                "binding_runtime": "jni"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "binding_package": "BenchBoltFFI",
+              "benchmark_class": "com.example.bench_compare.BoltFFIVsUniffiBench",
+              "benchmark_method": "boltffi_generate_directions_1k"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 3171.787254879948,
+            "std_dev": 148.61340967851112,
+            "min": 3164.5024097868595,
+            "max": 3180.582892929702,
+            "percentiles": {
+              "0.0": 3164.5024097868595,
+              "50.0": 3170.276461923282,
+              "90.0": 3180.582892929702,
+              "95.0": 3180.582892929702,
+              "99.0": 3180.582892929702,
+              "99.9": 3180.582892929702,
+              "99.99": 3180.582892929702,
+              "99.999": 3180.582892929702,
+              "99.9999": 3180.582892929702,
+              "100.0": 3180.582892929702
+            }
+          },
+          "sampling": {
+            "warmup_iterations": 3,
+            "measurement_iterations": 3,
+            "sample_count": 3,
+            "total_operations": null
+          },
+          "notes": [
+            "jmh_score_confidence=[3023.173845, 3320.400665] ns/op"
+          ]
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31.0",
+              "git_sha": null,
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [
+                "uniffi"
+              ],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "jna",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "kotlin",
+                "binding_runtime": "jna"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "binding_package": "BenchUniffi",
+              "benchmark_class": "com.example.bench_compare.BoltFFIVsUniffiBench",
+              "benchmark_method": "uniffi_generate_directions_1k"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 16869.266414033675,
+            "std_dev": 4121.462393147172,
+            "min": 16738.41096825767,
+            "max": 17130.125805514246,
+            "percentiles": {
+              "0.0": 16738.41096825767,
+              "50.0": 16739.26246832911,
+              "90.0": 17130.125805514246,
+              "95.0": 17130.125805514246,
+              "99.0": 17130.125805514246,
+              "99.9": 17130.125805514246,
+              "99.99": 17130.125805514246,
+              "99.999": 17130.125805514246,
+              "99.9999": 17130.125805514246,
+              "100.0": 17130.125805514246
+            }
+          },
+          "sampling": {
+            "warmup_iterations": 3,
+            "measurement_iterations": 3,
+            "sample_count": 3,
+            "total_operations": null
+          },
+          "notes": [
+            "jmh_score_confidence=[12747.804021, 20990.728807] ns/op"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "run_id": "2026-06-05t14-42-10z-swift-macos-benchmark-0c5c2f3187f9",
+      "collected_at": "2026-06-05T14:42:10Z",
+      "suite_name": "swift-macos-benchmark",
+      "platform": "native",
+      "language": "swift",
+      "harness": "swift_benchmark",
+      "commit_sha": "0c5c2f3187f94013b918e81b9796ae9f61fb8a5b",
+      "archive_path": "data/archive/2026/06/05/2026-06-05t14-42-10z-swift-macos-benchmark-0c5c2f3187f9--69d3b0ddb830.json",
+      "machine": {
+        "machine_id": "local-darwin-arm64-apple-m3-max",
+        "label": "Apple M3 Max",
+        "subtitle": "darwin 15.7.3 • arm64 • local • mac.home",
+        "kind": "local",
+        "os": "darwin",
+        "os_version": "15.7.3",
+        "arch": "arm64",
+        "cpu_model": "Apple M3 Max",
+        "hostname": "mac.home",
+        "ci_provider": null,
+        "ci_runner": null,
+        "physical_cores": 14,
+        "logical_cores": 14,
+        "memory_bytes": 38654705664
+      },
+      "descriptor": {
+        "id": "generate_directions_10k",
+        "group": "enums.directions.generate",
+        "title": "Generate Directions 10K",
+        "category": "enums",
+        "sophistication": "structured",
+        "direction": "rust_to_host",
+        "platform": "native",
+        "language": "swift",
+        "description": null,
+        "tags": [],
+        "parameters": {
+          "count": 10000
+        }
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "0c5c2f3187f94013b918e81b9796ae9f61fb8a5b",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "swift",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "swift",
+                "binding_runtime": "swift_package_manager"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "benchmark_name": "generate_directions_10k"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 75214.22411144116,
+            "std_dev": 78473.31079205916,
+            "min": 68708.0,
+            "max": 8762959.0,
+            "percentiles": {
+              "50.0": 71917.0,
+              "90.0": 76125.0,
+              "95.0": 81792.0,
+              "99.0": 130072.75
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 19526,
+            "sample_count": 19526,
+            "total_operations": null
+          },
+          "notes": []
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31.0",
+              "git_sha": null,
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [
+                "uniffi"
+              ],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "swift",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "swift",
+                "binding_runtime": "swift_package_manager"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "benchmark_name": "generate_directions_10k"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 2136808.368499257,
+            "std_dev": 354182.0236318677,
+            "min": 1943916.0,
+            "max": 10491250.0,
+            "percentiles": {
+              "50.0": 2109875.0,
+              "90.0": 2211741.8000000003,
+              "95.0": 2249783.2,
+              "99.0": 3037709.5199999996
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 673,
+            "sample_count": 673,
+            "total_operations": null
+          },
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "run_id": "2026-06-05t14-42-10z-swift-macos-benchmark-0c5c2f3187f9",
+      "collected_at": "2026-06-05T14:42:10Z",
+      "suite_name": "swift-macos-benchmark",
+      "platform": "native",
+      "language": "swift",
+      "harness": "swift_benchmark",
+      "commit_sha": "0c5c2f3187f94013b918e81b9796ae9f61fb8a5b",
+      "archive_path": "data/archive/2026/06/05/2026-06-05t14-42-10z-swift-macos-benchmark-0c5c2f3187f9--69d3b0ddb830.json",
+      "machine": {
+        "machine_id": "local-darwin-arm64-apple-m3-max",
+        "label": "Apple M3 Max",
+        "subtitle": "darwin 15.7.3 • arm64 • local • mac.home",
+        "kind": "local",
+        "os": "darwin",
+        "os_version": "15.7.3",
+        "arch": "arm64",
+        "cpu_model": "Apple M3 Max",
+        "hostname": "mac.home",
+        "ci_provider": null,
+        "ci_runner": null,
+        "physical_cores": 14,
+        "logical_cores": 14,
+        "memory_bytes": 38654705664
+      },
+      "descriptor": {
+        "id": "generate_directions_1k",
+        "group": "enums.directions.generate",
+        "title": "Generate Directions 1K",
+        "category": "enums",
+        "sophistication": "structured",
+        "direction": "rust_to_host",
+        "platform": "native",
+        "language": "swift",
+        "description": null,
+        "tags": [],
+        "parameters": {
+          "count": 1000
+        }
+      },
+      "variants": [
+        {
+          "subject": {
+            "tool": {
+              "name": "boltffi",
+              "version": null,
+              "git_sha": "0c5c2f3187f94013b918e81b9796ae9f61fb8a5b",
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "boltffi",
+              "transport": "swift",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "swift",
+                "binding_runtime": "swift_package_manager"
+              }
+            },
+            "attributes": {
+              "subject_key": "boltffi",
+              "benchmark_name": "generate_directions_1k"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 7305.347773146882,
+            "std_dev": 1243.8747682513924,
+            "min": 7000.0,
+            "max": 243208.0,
+            "percentiles": {
+              "50.0": 7084.0,
+              "90.0": 7416.0,
+              "95.0": 8500.0,
+              "99.0": 9458.0
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 186429,
+            "sample_count": 186429,
+            "total_operations": null
+          },
+          "notes": []
+        },
+        {
+          "subject": {
+            "tool": {
+              "name": "uniffi",
+              "version": "0.31.0",
+              "git_sha": null,
+              "crate_version": null
+            },
+            "build": {
+              "compiler_name": "rustc",
+              "compiler_version": "rustc 1.95.0 (59807616e 2026-04-14)",
+              "target": "aarch64-apple-darwin",
+              "profile": "release",
+              "optimization": "release",
+              "features": [
+                "uniffi"
+              ],
+              "flags": [
+                "--release"
+              ]
+            },
+            "ffi": {
+              "bridge": "uniffi",
+              "transport": "swift",
+              "ownership_model": null,
+              "attributes": {
+                "host_language": "swift",
+                "binding_runtime": "swift_package_manager"
+              }
+            },
+            "attributes": {
+              "subject_key": "uniffi",
+              "benchmark_name": "generate_directions_1k"
+            }
+          },
+          "metrics": {
+            "unit": "ns_per_op",
+            "estimator": "mean",
+            "value": 210351.16621417797,
+            "std_dev": 13032.278229846255,
+            "min": 187542.0,
+            "max": 330167.0,
+            "percentiles": {
+              "50.0": 206708.0,
+              "90.0": 224250.0,
+              "95.0": 233731.54999999996,
+              "99.0": 265360.46
+            }
+          },
+          "sampling": {
+            "warmup_iterations": null,
+            "measurement_iterations": 6630,
+            "sample_count": 6630,
+            "total_operations": null
+          },
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
     {
       "run_id": "2026-05-31t23-24-49z-csharp-dotnet-benchmarkdotnet-c7eef64668cb",
       "collected_at": "2026-05-31T23:24:49Z",

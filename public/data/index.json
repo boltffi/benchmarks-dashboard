@@ -1,8 +1,8 @@
 {
   "schema_version": "benchmark_site_index_v1",
-  "generated_at": "2026-05-31T23:24:50Z",
+  "generated_at": "2026-06-05T15:54:18Z",
   "totals": {
-    "run_count": 15,
+    "run_count": 20,
     "group_count": 53
   },
   "machines": [
@@ -23,8 +23,8 @@
         "logical_cores": 14,
         "memory_bytes": 38654705664
       },
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 15,
+      "latest_collected_at": "2026-06-05T15:53:40Z",
+      "run_count": 20,
       "suite_count": 6,
       "group_count": 53,
       "tools": [
@@ -49,6 +49,386 @@
     }
   ],
   "runs": [
+    {
+      "run_id": "2026-06-05t15-53-40z-csharp-dotnet-benchmarkdotnet-0c5c2f3187f9",
+      "collected_at": "2026-06-05T15:53:40Z",
+      "repository": "mobiFFI_tymon",
+      "branch": "main",
+      "commit_sha": "0c5c2f3187f94013b918e81b9796ae9f61fb8a5b",
+      "suite_name": "csharp-dotnet-benchmarkdotnet",
+      "harness": "benchmarkdotnet",
+      "platform": "dotnet",
+      "language": "csharp",
+      "archive_path": "data/archive/2026/06/05/2026-06-05t15-53-40z-csharp-dotnet-benchmarkdotnet-0c5c2f3187f9--ded3d2b5ecbb.json",
+      "content_sha256": "ded3d2b5ecbbbc35d44609b71d417106e014a035fb4c22ff701b1dad9851a6ec",
+      "benchmark_count": 11,
+      "groups": [
+        "primitives.add",
+        "primitives.echo_i32",
+        "primitives.noop",
+        "records.address.echo",
+        "records.line.echo",
+        "records.person.echo",
+        "records.point.make",
+        "strings.echo",
+        "strings.generate"
+      ],
+      "tools": [
+        "uniffi"
+      ],
+      "machine": {
+        "machine_id": "local-darwin-arm64-apple-m3-max",
+        "label": "Apple M3 Max",
+        "subtitle": "darwin macOS Sequoia 15.7.3 (24G419) [Darwin 24.6.0] • arm64 • local • mac.home",
+        "kind": "local",
+        "os": "darwin",
+        "os_version": "macOS Sequoia 15.7.3 (24G419) [Darwin 24.6.0]",
+        "arch": "arm64",
+        "cpu_model": "Apple M3 Max",
+        "hostname": "mac.home",
+        "ci_provider": null,
+        "ci_runner": null,
+        "physical_cores": 14,
+        "logical_cores": 14,
+        "memory_bytes": 38654705664
+      }
+    },
+    {
+      "run_id": "2026-06-05t15-28-37z-wasm-node-benchmarkjs-0c5c2f3187f9",
+      "collected_at": "2026-06-05T15:28:37Z",
+      "repository": "mobiFFI_tymon",
+      "branch": "main",
+      "commit_sha": "0c5c2f3187f94013b918e81b9796ae9f61fb8a5b",
+      "suite_name": "wasm-node-benchmarkjs",
+      "harness": "benchmark_js",
+      "platform": "wasm",
+      "language": "java_script",
+      "archive_path": "data/archive/2026/06/05/2026-06-05t15-28-37z-wasm-node-benchmarkjs-0c5c2f3187f9--74ddd1660f6e.json",
+      "content_sha256": "74ddd1660f6ef1eda32fb7062dadf309181f02db88e13294e18837dde0687a93",
+      "benchmark_count": 68,
+      "groups": [
+        "async_fns.add",
+        "bytes.echo",
+        "bytes.generate",
+        "callbacks.data_provider.compute_sum",
+        "classes.accumulator.add",
+        "classes.counter.increment",
+        "classes.datastore.add",
+        "collections.f64_vec.generate",
+        "collections.f64_vec.sum",
+        "collections.i32_vec.echo",
+        "collections.i32_vec.generate",
+        "collections.i32_vec.sum",
+        "enums.direction.basic_ops",
+        "enums.direction.echo",
+        "enums.direction.find",
+        "enums.directions.count_north",
+        "enums.directions.generate",
+        "enums.task_status.input",
+        "options.find_even",
+        "options.find_name",
+        "options.find_names",
+        "options.find_numbers",
+        "options.find_positive_f64",
+        "primitives.add",
+        "primitives.add_f64",
+        "primitives.echo_bool",
+        "primitives.echo_f64",
+        "primitives.echo_i32",
+        "primitives.inc_u64.by_value",
+        "primitives.inc_u64.in_place",
+        "primitives.multiply",
+        "primitives.negate_bool",
+        "primitives.noop",
+        "records.locations.find",
+        "records.locations.generate",
+        "records.locations.process",
+        "records.locations.sum_ratings",
+        "records.particles.generate",
+        "records.particles.sum_particle_masses",
+        "records.sensor_readings.average_temperature",
+        "records.sensor_readings.generate",
+        "records.trades.generate",
+        "records.trades.sum_trade_volumes",
+        "records.user_profiles.count_active_users",
+        "records.user_profiles.generate",
+        "records.user_profiles.sum_user_scores",
+        "strings.echo",
+        "strings.generate"
+      ],
+      "tools": [
+        "boltffi",
+        "wasm-bindgen"
+      ],
+      "machine": {
+        "machine_id": "local-darwin-arm64-apple-m3-max",
+        "label": "Apple M3 Max",
+        "subtitle": "darwin 15.7.3 • arm64 • local • mac.home",
+        "kind": "local",
+        "os": "darwin",
+        "os_version": "15.7.3",
+        "arch": "arm64",
+        "cpu_model": "Apple M3 Max",
+        "hostname": "mac.home",
+        "ci_provider": null,
+        "ci_runner": null,
+        "physical_cores": 14,
+        "logical_cores": 14,
+        "memory_bytes": 38654705664
+      }
+    },
+    {
+      "run_id": "2026-06-05t15-12-14z-java-jvm-jmh-0c5c2f3187f9",
+      "collected_at": "2026-06-05T15:12:14Z",
+      "repository": "mobiFFI_tymon",
+      "branch": "main",
+      "commit_sha": "0c5c2f3187f94013b918e81b9796ae9f61fb8a5b",
+      "suite_name": "java-jvm-jmh",
+      "harness": "jmh",
+      "platform": "jvm",
+      "language": "java",
+      "archive_path": "data/archive/2026/06/05/2026-06-05t15-12-14z-java-jvm-jmh-0c5c2f3187f9--19b398e52c71.json",
+      "content_sha256": "19b398e52c718f87002dcdadb52888c0470ad80d57579ac1c28dc4c49b1e9268",
+      "benchmark_count": 66,
+      "groups": [
+        "async_fns.add",
+        "bytes.echo",
+        "bytes.generate",
+        "callbacks.data_provider.compute_sum",
+        "classes.accumulator.add",
+        "classes.counter.increment",
+        "classes.datastore.add",
+        "collections.f64_vec.generate",
+        "collections.f64_vec.sum",
+        "collections.i32_vec.echo",
+        "collections.i32_vec.generate",
+        "collections.i32_vec.sum",
+        "enums.direction.basic_ops",
+        "enums.direction.echo",
+        "enums.direction.find",
+        "enums.directions.count_north",
+        "enums.directions.generate",
+        "enums.task_status.input",
+        "options.find_even",
+        "options.find_name",
+        "options.find_names",
+        "options.find_numbers",
+        "options.find_positive_f64",
+        "primitives.add",
+        "primitives.add_f64",
+        "primitives.echo_bool",
+        "primitives.echo_f64",
+        "primitives.echo_i32",
+        "primitives.inc_u64.by_value",
+        "primitives.inc_u64.in_place",
+        "primitives.multiply",
+        "primitives.negate_bool",
+        "primitives.noop",
+        "records.locations.find",
+        "records.locations.generate",
+        "records.locations.process",
+        "records.locations.sum_ratings",
+        "records.particles.generate",
+        "records.particles.sum_particle_masses",
+        "records.sensor_readings.average_temperature",
+        "records.sensor_readings.generate",
+        "records.trades.generate",
+        "records.trades.sum_trade_volumes",
+        "records.user_profiles.count_active_users",
+        "records.user_profiles.generate",
+        "records.user_profiles.sum_user_scores",
+        "strings.echo",
+        "strings.generate"
+      ],
+      "tools": [
+        "boltffi",
+        "uniffi"
+      ],
+      "machine": {
+        "machine_id": "local-darwin-arm64-apple-m3-max",
+        "label": "Apple M3 Max",
+        "subtitle": "darwin 15.7.3 • arm64 • local • mac.home",
+        "kind": "local",
+        "os": "darwin",
+        "os_version": "15.7.3",
+        "arch": "arm64",
+        "cpu_model": "Apple M3 Max",
+        "hostname": "mac.home",
+        "ci_provider": null,
+        "ci_runner": null,
+        "physical_cores": 14,
+        "logical_cores": 14,
+        "memory_bytes": 38654705664
+      }
+    },
+    {
+      "run_id": "2026-06-05t14-58-13z-kotlin-jvm-jmh-0c5c2f3187f9",
+      "collected_at": "2026-06-05T14:58:13Z",
+      "repository": "mobiFFI_tymon",
+      "branch": "main",
+      "commit_sha": "0c5c2f3187f94013b918e81b9796ae9f61fb8a5b",
+      "suite_name": "kotlin-jvm-jmh",
+      "harness": "jmh",
+      "platform": "jvm",
+      "language": "kotlin",
+      "archive_path": "data/archive/2026/06/05/2026-06-05t14-58-13z-kotlin-jvm-jmh-0c5c2f3187f9--ec51bd0cdd17.json",
+      "content_sha256": "ec51bd0cdd17c62a85fa94a265a3272cb3ddc47d0094c4e072a8d3e19a7b556a",
+      "benchmark_count": 68,
+      "groups": [
+        "async_fns.add",
+        "bytes.echo",
+        "bytes.generate",
+        "callbacks.data_provider.compute_sum",
+        "classes.accumulator.add",
+        "classes.counter.increment",
+        "classes.datastore.add",
+        "collections.f64_vec.generate",
+        "collections.f64_vec.sum",
+        "collections.i32_vec.echo",
+        "collections.i32_vec.generate",
+        "collections.i32_vec.sum",
+        "enums.direction.basic_ops",
+        "enums.direction.echo",
+        "enums.direction.find",
+        "enums.directions.count_north",
+        "enums.directions.generate",
+        "enums.task_status.input",
+        "options.find_even",
+        "options.find_name",
+        "options.find_names",
+        "options.find_numbers",
+        "options.find_positive_f64",
+        "primitives.add",
+        "primitives.add_f64",
+        "primitives.echo_bool",
+        "primitives.echo_f64",
+        "primitives.echo_i32",
+        "primitives.inc_u64.by_value",
+        "primitives.inc_u64.in_place",
+        "primitives.multiply",
+        "primitives.negate_bool",
+        "primitives.noop",
+        "records.locations.find",
+        "records.locations.generate",
+        "records.locations.process",
+        "records.locations.sum_ratings",
+        "records.particles.generate",
+        "records.particles.sum_particle_masses",
+        "records.sensor_readings.average_temperature",
+        "records.sensor_readings.generate",
+        "records.trades.generate",
+        "records.trades.sum_trade_volumes",
+        "records.user_profiles.count_active_users",
+        "records.user_profiles.generate",
+        "records.user_profiles.sum_user_scores",
+        "strings.echo",
+        "strings.generate"
+      ],
+      "tools": [
+        "boltffi",
+        "uniffi"
+      ],
+      "machine": {
+        "machine_id": "local-darwin-arm64-apple-m3-max",
+        "label": "Apple M3 Max",
+        "subtitle": "darwin 15.7.3 • arm64 • local • mac.home",
+        "kind": "local",
+        "os": "darwin",
+        "os_version": "15.7.3",
+        "arch": "arm64",
+        "cpu_model": "Apple M3 Max",
+        "hostname": "mac.home",
+        "ci_provider": null,
+        "ci_runner": null,
+        "physical_cores": 14,
+        "logical_cores": 14,
+        "memory_bytes": 38654705664
+      }
+    },
+    {
+      "run_id": "2026-06-05t14-42-10z-swift-macos-benchmark-0c5c2f3187f9",
+      "collected_at": "2026-06-05T14:42:10Z",
+      "repository": "mobiFFI_tymon",
+      "branch": "main",
+      "commit_sha": "0c5c2f3187f94013b918e81b9796ae9f61fb8a5b",
+      "suite_name": "swift-macos-benchmark",
+      "harness": "swift_benchmark",
+      "platform": "native",
+      "language": "swift",
+      "archive_path": "data/archive/2026/06/05/2026-06-05t14-42-10z-swift-macos-benchmark-0c5c2f3187f9--69d3b0ddb830.json",
+      "content_sha256": "69d3b0ddb8302d9e935b403567a8d1db5639a98e25b208ec553ad37869790436",
+      "benchmark_count": 68,
+      "groups": [
+        "async_fns.add",
+        "bytes.echo",
+        "bytes.generate",
+        "callbacks.data_provider.compute_sum",
+        "classes.accumulator.add",
+        "classes.counter.increment",
+        "classes.datastore.add",
+        "collections.f64_vec.generate",
+        "collections.f64_vec.sum",
+        "collections.i32_vec.echo",
+        "collections.i32_vec.generate",
+        "collections.i32_vec.sum",
+        "enums.direction.basic_ops",
+        "enums.direction.echo",
+        "enums.direction.find",
+        "enums.directions.count_north",
+        "enums.directions.generate",
+        "enums.task_status.input",
+        "options.find_even",
+        "options.find_name",
+        "options.find_names",
+        "options.find_numbers",
+        "options.find_positive_f64",
+        "primitives.add",
+        "primitives.add_f64",
+        "primitives.echo_bool",
+        "primitives.echo_f64",
+        "primitives.echo_i32",
+        "primitives.inc_u64.by_value",
+        "primitives.inc_u64.in_place",
+        "primitives.multiply",
+        "primitives.negate_bool",
+        "primitives.noop",
+        "records.locations.find",
+        "records.locations.generate",
+        "records.locations.process",
+        "records.locations.sum_ratings",
+        "records.particles.generate",
+        "records.particles.sum_particle_masses",
+        "records.sensor_readings.average_temperature",
+        "records.sensor_readings.generate",
+        "records.trades.generate",
+        "records.trades.sum_trade_volumes",
+        "records.user_profiles.count_active_users",
+        "records.user_profiles.generate",
+        "records.user_profiles.sum_user_scores",
+        "strings.echo",
+        "strings.generate"
+      ],
+      "tools": [
+        "boltffi",
+        "uniffi"
+      ],
+      "machine": {
+        "machine_id": "local-darwin-arm64-apple-m3-max",
+        "label": "Apple M3 Max",
+        "subtitle": "darwin 15.7.3 • arm64 • local • mac.home",
+        "kind": "local",
+        "os": "darwin",
+        "os_version": "15.7.3",
+        "arch": "arm64",
+        "cpu_model": "Apple M3 Max",
+        "hostname": "mac.home",
+        "ci_provider": null,
+        "ci_runner": null,
+        "physical_cores": 14,
+        "logical_cores": 14,
+        "memory_bytes": 38654705664
+      }
+    },
     {
       "run_id": "2026-05-31t23-24-49z-csharp-dotnet-benchmarkdotnet-c7eef64668cb",
       "collected_at": "2026-05-31T23:24:49Z",
@@ -1106,13 +1486,139 @@
   ],
   "groups": [
     {
+      "group": "primitives.noop",
+      "title": "Noop",
+      "category": "primitives",
+      "sophistication": "basic",
+      "direction": "mixed",
+      "latest_collected_at": "2026-06-05T15:53:40Z",
+      "run_count": 20,
+      "machine_count": 1,
+      "machine_ids": [
+        "local-darwin-arm64-apple-m3-max"
+      ],
+      "view_path": "data/views/groups/primitives-noop.json"
+    },
+    {
+      "group": "records.point.make",
+      "title": "Make Point",
+      "category": "records",
+      "sophistication": "structured",
+      "direction": "rust_to_host",
+      "latest_collected_at": "2026-06-05T15:53:40Z",
+      "run_count": 6,
+      "machine_count": 1,
+      "machine_ids": [
+        "local-darwin-arm64-apple-m3-max"
+      ],
+      "view_path": "data/views/groups/records-point-make.json"
+    },
+    {
+      "group": "strings.generate",
+      "title": "Generate String 1K",
+      "category": "strings",
+      "sophistication": "basic",
+      "direction": "rust_to_host",
+      "latest_collected_at": "2026-06-05T15:53:40Z",
+      "run_count": 20,
+      "machine_count": 1,
+      "machine_ids": [
+        "local-darwin-arm64-apple-m3-max"
+      ],
+      "view_path": "data/views/groups/strings-generate.json"
+    },
+    {
+      "group": "strings.echo",
+      "title": "Echo String 64K",
+      "category": "strings",
+      "sophistication": "basic",
+      "direction": "mixed",
+      "latest_collected_at": "2026-06-05T15:53:40Z",
+      "run_count": 20,
+      "machine_count": 1,
+      "machine_ids": [
+        "local-darwin-arm64-apple-m3-max"
+      ],
+      "view_path": "data/views/groups/strings-echo.json"
+    },
+    {
+      "group": "records.person.echo",
+      "title": "Echo Person",
+      "category": "records",
+      "sophistication": "structured",
+      "direction": "roundtrip",
+      "latest_collected_at": "2026-06-05T15:53:40Z",
+      "run_count": 6,
+      "machine_count": 1,
+      "machine_ids": [
+        "local-darwin-arm64-apple-m3-max"
+      ],
+      "view_path": "data/views/groups/records-person-echo.json"
+    },
+    {
+      "group": "records.line.echo",
+      "title": "Echo Line",
+      "category": "records",
+      "sophistication": "structured",
+      "direction": "roundtrip",
+      "latest_collected_at": "2026-06-05T15:53:40Z",
+      "run_count": 6,
+      "machine_count": 1,
+      "machine_ids": [
+        "local-darwin-arm64-apple-m3-max"
+      ],
+      "view_path": "data/views/groups/records-line-echo.json"
+    },
+    {
+      "group": "primitives.echo_i32",
+      "title": "Echo I32",
+      "category": "primitives",
+      "sophistication": "basic",
+      "direction": "mixed",
+      "latest_collected_at": "2026-06-05T15:53:40Z",
+      "run_count": 20,
+      "machine_count": 1,
+      "machine_ids": [
+        "local-darwin-arm64-apple-m3-max"
+      ],
+      "view_path": "data/views/groups/primitives-echo-i32.json"
+    },
+    {
+      "group": "records.address.echo",
+      "title": "Echo Address",
+      "category": "records",
+      "sophistication": "structured",
+      "direction": "roundtrip",
+      "latest_collected_at": "2026-06-05T15:53:40Z",
+      "run_count": 6,
+      "machine_count": 1,
+      "machine_ids": [
+        "local-darwin-arm64-apple-m3-max"
+      ],
+      "view_path": "data/views/groups/records-address-echo.json"
+    },
+    {
+      "group": "primitives.add",
+      "title": "Add",
+      "category": "primitives",
+      "sophistication": "basic",
+      "direction": "mixed",
+      "latest_collected_at": "2026-06-05T15:53:40Z",
+      "run_count": 20,
+      "machine_count": 1,
+      "machine_ids": [
+        "local-darwin-arm64-apple-m3-max"
+      ],
+      "view_path": "data/views/groups/primitives-add.json"
+    },
+    {
       "group": "records.user_profiles.sum_user_scores",
       "title": "Sum User Scores 100",
       "category": "records",
       "sophistication": "complex",
       "direction": "host_to_rust",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 9,
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 13,
       "machine_count": 1,
       "machine_ids": [
         "local-darwin-arm64-apple-m3-max"
@@ -1121,12 +1627,12 @@
     },
     {
       "group": "records.trades.sum_trade_volumes",
-      "title": "Sum Trade Volumes 10K",
+      "title": "Sum Trade Volumes 1K",
       "category": "records",
       "sophistication": "structured",
       "direction": "host_to_rust",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 9,
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 13,
       "machine_count": 1,
       "machine_ids": [
         "local-darwin-arm64-apple-m3-max"
@@ -1135,12 +1641,12 @@
     },
     {
       "group": "records.locations.sum_ratings",
-      "title": "Sum Ratings 10K",
+      "title": "Sum Ratings 1K",
       "category": "records",
       "sophistication": "structured",
       "direction": "host_to_rust",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 9,
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 13,
       "machine_count": 1,
       "machine_ids": [
         "local-darwin-arm64-apple-m3-max"
@@ -1149,12 +1655,12 @@
     },
     {
       "group": "records.particles.sum_particle_masses",
-      "title": "Sum Particle Masses 10K",
+      "title": "Sum Particle Masses 1K",
       "category": "records",
       "sophistication": "structured",
       "direction": "host_to_rust",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 9,
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 13,
       "machine_count": 1,
       "machine_ids": [
         "local-darwin-arm64-apple-m3-max"
@@ -1163,12 +1669,12 @@
     },
     {
       "group": "collections.i32_vec.sum",
-      "title": "Sum I32 Vec 100K",
+      "title": "Sum I32 Vec 10K",
       "category": "collections",
       "sophistication": "structured",
       "direction": "host_to_rust",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 11,
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 15,
       "machine_count": 1,
       "machine_ids": [
         "local-darwin-arm64-apple-m3-max"
@@ -1181,8 +1687,8 @@
       "category": "collections",
       "sophistication": "structured",
       "direction": "host_to_rust",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 11,
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 15,
       "machine_count": 1,
       "machine_ids": [
         "local-darwin-arm64-apple-m3-max"
@@ -1195,8 +1701,8 @@
       "category": "enums",
       "sophistication": "basic",
       "direction": "mixed",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 11,
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 15,
       "machine_count": 1,
       "machine_ids": [
         "local-darwin-arm64-apple-m3-max"
@@ -1205,12 +1711,12 @@
     },
     {
       "group": "records.locations.process",
-      "title": "Process Locations 10K",
+      "title": "Process Locations 1K",
       "category": "records",
       "sophistication": "structured",
       "direction": "host_to_rust",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 9,
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 13,
       "machine_count": 1,
       "machine_ids": [
         "local-darwin-arm64-apple-m3-max"
@@ -1218,27 +1724,13 @@
       "view_path": "data/views/groups/records-locations-process.json"
     },
     {
-      "group": "primitives.noop",
-      "title": "Noop",
-      "category": "primitives",
-      "sophistication": "basic",
-      "direction": "mixed",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 15,
-      "machine_count": 1,
-      "machine_ids": [
-        "local-darwin-arm64-apple-m3-max"
-      ],
-      "view_path": "data/views/groups/primitives-noop.json"
-    },
-    {
       "group": "primitives.negate_bool",
       "title": "Negate Bool",
       "category": "primitives",
       "sophistication": "basic",
       "direction": "mixed",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 11,
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 15,
       "machine_count": 1,
       "machine_ids": [
         "local-darwin-arm64-apple-m3-max"
@@ -1251,8 +1743,8 @@
       "category": "primitives",
       "sophistication": "basic",
       "direction": "mixed",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 11,
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 15,
       "machine_count": 1,
       "machine_ids": [
         "local-darwin-arm64-apple-m3-max"
@@ -1260,27 +1752,13 @@
       "view_path": "data/views/groups/primitives-multiply.json"
     },
     {
-      "group": "records.point.make",
-      "title": "Make Point",
-      "category": "records",
-      "sophistication": "structured",
-      "direction": "rust_to_host",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 5,
-      "machine_count": 1,
-      "machine_ids": [
-        "local-darwin-arm64-apple-m3-max"
-      ],
-      "view_path": "data/views/groups/records-point-make.json"
-    },
-    {
       "group": "primitives.inc_u64.in_place",
       "title": "Increment U64 In Place",
       "category": "primitives",
       "sophistication": "basic",
       "direction": "mixed",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 9,
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 13,
       "machine_count": 1,
       "machine_ids": [
         "local-darwin-arm64-apple-m3-max"
@@ -1293,8 +1771,8 @@
       "category": "primitives",
       "sophistication": "basic",
       "direction": "mixed",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 11,
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 15,
       "machine_count": 1,
       "machine_ids": [
         "local-darwin-arm64-apple-m3-max"
@@ -1307,8 +1785,8 @@
       "category": "records",
       "sophistication": "complex",
       "direction": "rust_to_host",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 9,
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 13,
       "machine_count": 1,
       "machine_ids": [
         "local-darwin-arm64-apple-m3-max"
@@ -1317,12 +1795,12 @@
     },
     {
       "group": "records.trades.generate",
-      "title": "Generate Trades 10K",
+      "title": "Generate Trades 1K",
       "category": "records",
       "sophistication": "structured",
       "direction": "rust_to_host",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 9,
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 13,
       "machine_count": 1,
       "machine_ids": [
         "local-darwin-arm64-apple-m3-max"
@@ -1330,27 +1808,13 @@
       "view_path": "data/views/groups/records-trades-generate.json"
     },
     {
-      "group": "strings.generate",
-      "title": "Generate String 1K",
-      "category": "strings",
-      "sophistication": "basic",
-      "direction": "rust_to_host",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 15,
-      "machine_count": 1,
-      "machine_ids": [
-        "local-darwin-arm64-apple-m3-max"
-      ],
-      "view_path": "data/views/groups/strings-generate.json"
-    },
-    {
       "group": "records.sensor_readings.generate",
-      "title": "Generate Sensor Readings 10K",
+      "title": "Generate Sensor Readings 1K",
       "category": "records",
       "sophistication": "structured",
       "direction": "rust_to_host",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 9,
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 13,
       "machine_count": 1,
       "machine_ids": [
         "local-darwin-arm64-apple-m3-max"
@@ -1359,12 +1823,12 @@
     },
     {
       "group": "records.particles.generate",
-      "title": "Generate Particles 10K",
+      "title": "Generate Particles 1K",
       "category": "records",
       "sophistication": "structured",
       "direction": "rust_to_host",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 9,
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 13,
       "machine_count": 1,
       "machine_ids": [
         "local-darwin-arm64-apple-m3-max"
@@ -1373,12 +1837,12 @@
     },
     {
       "group": "records.locations.generate",
-      "title": "Generate Locations 10K",
+      "title": "Generate Locations 1K",
       "category": "records",
       "sophistication": "structured",
       "direction": "rust_to_host",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 9,
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 13,
       "machine_count": 1,
       "machine_ids": [
         "local-darwin-arm64-apple-m3-max"
@@ -1387,12 +1851,12 @@
     },
     {
       "group": "collections.i32_vec.generate",
-      "title": "Generate I32 Vec 100K",
+      "title": "Generate I32 Vec 10K",
       "category": "collections",
       "sophistication": "structured",
       "direction": "rust_to_host",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 11,
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 15,
       "machine_count": 1,
       "machine_ids": [
         "local-darwin-arm64-apple-m3-max"
@@ -1405,8 +1869,8 @@
       "category": "collections",
       "sophistication": "structured",
       "direction": "rust_to_host",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 11,
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 15,
       "machine_count": 1,
       "machine_ids": [
         "local-darwin-arm64-apple-m3-max"
@@ -1415,12 +1879,12 @@
     },
     {
       "group": "enums.directions.generate",
-      "title": "Generate Directions 10K",
+      "title": "Generate Directions 1K",
       "category": "enums",
       "sophistication": "structured",
       "direction": "rust_to_host",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 11,
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 15,
       "machine_count": 1,
       "machine_ids": [
         "local-darwin-arm64-apple-m3-max"
@@ -1433,8 +1897,8 @@
       "category": "bytes",
       "sophistication": "basic",
       "direction": "rust_to_host",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 11,
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 15,
       "machine_count": 1,
       "machine_ids": [
         "local-darwin-arm64-apple-m3-max"
@@ -1447,8 +1911,8 @@
       "category": "options",
       "sophistication": "basic",
       "direction": "mixed",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 9,
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 13,
       "machine_count": 1,
       "machine_ids": [
         "local-darwin-arm64-apple-m3-max"
@@ -1461,8 +1925,8 @@
       "category": "options",
       "sophistication": "basic",
       "direction": "mixed",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 9,
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 13,
       "machine_count": 1,
       "machine_ids": [
         "local-darwin-arm64-apple-m3-max"
@@ -1475,8 +1939,8 @@
       "category": "options",
       "sophistication": "basic",
       "direction": "mixed",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 9,
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 13,
       "machine_count": 1,
       "machine_ids": [
         "local-darwin-arm64-apple-m3-max"
@@ -1489,8 +1953,8 @@
       "category": "options",
       "sophistication": "basic",
       "direction": "mixed",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 9,
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 13,
       "machine_count": 1,
       "machine_ids": [
         "local-darwin-arm64-apple-m3-max"
@@ -1503,8 +1967,8 @@
       "category": "records",
       "sophistication": "structured",
       "direction": "rust_to_host",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 9,
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 13,
       "machine_count": 1,
       "machine_ids": [
         "local-darwin-arm64-apple-m3-max"
@@ -1517,8 +1981,8 @@
       "category": "options",
       "sophistication": "basic",
       "direction": "mixed",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 9,
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 13,
       "machine_count": 1,
       "machine_ids": [
         "local-darwin-arm64-apple-m3-max"
@@ -1531,13 +1995,223 @@
       "category": "enums",
       "sophistication": "basic",
       "direction": "mixed",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 9,
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 13,
       "machine_count": 1,
       "machine_ids": [
         "local-darwin-arm64-apple-m3-max"
       ],
       "view_path": "data/views/groups/enums-direction-find.json"
+    },
+    {
+      "group": "collections.i32_vec.echo",
+      "title": "Echo I32 Vec 10K",
+      "category": "collections",
+      "sophistication": "structured",
+      "direction": "roundtrip",
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 15,
+      "machine_count": 1,
+      "machine_ids": [
+        "local-darwin-arm64-apple-m3-max"
+      ],
+      "view_path": "data/views/groups/collections-i32-vec-echo.json"
+    },
+    {
+      "group": "primitives.echo_f64",
+      "title": "Echo F64",
+      "category": "primitives",
+      "sophistication": "basic",
+      "direction": "mixed",
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 15,
+      "machine_count": 1,
+      "machine_ids": [
+        "local-darwin-arm64-apple-m3-max"
+      ],
+      "view_path": "data/views/groups/primitives-echo-f64.json"
+    },
+    {
+      "group": "enums.direction.echo",
+      "title": "Echo Direction",
+      "category": "enums",
+      "sophistication": "basic",
+      "direction": "mixed",
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 15,
+      "machine_count": 1,
+      "machine_ids": [
+        "local-darwin-arm64-apple-m3-max"
+      ],
+      "view_path": "data/views/groups/enums-direction-echo.json"
+    },
+    {
+      "group": "bytes.echo",
+      "title": "Echo Bytes 64K",
+      "category": "bytes",
+      "sophistication": "basic",
+      "direction": "roundtrip",
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 15,
+      "machine_count": 1,
+      "machine_ids": [
+        "local-darwin-arm64-apple-m3-max"
+      ],
+      "view_path": "data/views/groups/bytes-echo.json"
+    },
+    {
+      "group": "primitives.echo_bool",
+      "title": "Echo Bool",
+      "category": "primitives",
+      "sophistication": "basic",
+      "direction": "mixed",
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 15,
+      "machine_count": 1,
+      "machine_ids": [
+        "local-darwin-arm64-apple-m3-max"
+      ],
+      "view_path": "data/views/groups/primitives-echo-bool.json"
+    },
+    {
+      "group": "classes.datastore.add",
+      "title": "Datastore Add Record 1K",
+      "category": "classes",
+      "sophistication": "complex",
+      "direction": "host_to_rust",
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 13,
+      "machine_count": 1,
+      "machine_ids": [
+        "local-darwin-arm64-apple-m3-max"
+      ],
+      "view_path": "data/views/groups/classes-datastore-add.json"
+    },
+    {
+      "group": "enums.task_status.input",
+      "title": "Data Enum Input",
+      "category": "enums",
+      "sophistication": "basic",
+      "direction": "mixed",
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 13,
+      "machine_count": 1,
+      "machine_ids": [
+        "local-darwin-arm64-apple-m3-max"
+      ],
+      "view_path": "data/views/groups/enums-task-status-input.json"
+    },
+    {
+      "group": "classes.counter.increment",
+      "title": "Counter Increment Mutex",
+      "category": "classes",
+      "sophistication": "complex",
+      "direction": "host_to_rust",
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 13,
+      "machine_count": 1,
+      "machine_ids": [
+        "local-darwin-arm64-apple-m3-max"
+      ],
+      "view_path": "data/views/groups/classes-counter-increment.json"
+    },
+    {
+      "group": "enums.directions.count_north",
+      "title": "Count North 1K",
+      "category": "enums",
+      "sophistication": "structured",
+      "direction": "host_to_rust",
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 15,
+      "machine_count": 1,
+      "machine_ids": [
+        "local-darwin-arm64-apple-m3-max"
+      ],
+      "view_path": "data/views/groups/enums-directions-count-north.json"
+    },
+    {
+      "group": "records.user_profiles.count_active_users",
+      "title": "Count Active Users 100",
+      "category": "records",
+      "sophistication": "complex",
+      "direction": "host_to_rust",
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 13,
+      "machine_count": 1,
+      "machine_ids": [
+        "local-darwin-arm64-apple-m3-max"
+      ],
+      "view_path": "data/views/groups/records-user-profiles-count-active-users.json"
+    },
+    {
+      "group": "callbacks.data_provider.compute_sum",
+      "title": "Callback 100",
+      "category": "callbacks",
+      "sophistication": "callback",
+      "direction": "callback",
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 13,
+      "machine_count": 1,
+      "machine_ids": [
+        "local-darwin-arm64-apple-m3-max"
+      ],
+      "view_path": "data/views/groups/callbacks-data-provider-compute-sum.json"
+    },
+    {
+      "group": "records.sensor_readings.average_temperature",
+      "title": "Average Sensor Temperature 1K",
+      "category": "records",
+      "sophistication": "structured",
+      "direction": "host_to_rust",
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 13,
+      "machine_count": 1,
+      "machine_ids": [
+        "local-darwin-arm64-apple-m3-max"
+      ],
+      "view_path": "data/views/groups/records-sensor-readings-average-temperature.json"
+    },
+    {
+      "group": "async_fns.add",
+      "title": "Async Add",
+      "category": "async_fns",
+      "sophistication": "async",
+      "direction": "mixed",
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 13,
+      "machine_count": 1,
+      "machine_ids": [
+        "local-darwin-arm64-apple-m3-max"
+      ],
+      "view_path": "data/views/groups/async-fns-add.json"
+    },
+    {
+      "group": "primitives.add_f64",
+      "title": "Add F64",
+      "category": "primitives",
+      "sophistication": "basic",
+      "direction": "mixed",
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 15,
+      "machine_count": 1,
+      "machine_ids": [
+        "local-darwin-arm64-apple-m3-max"
+      ],
+      "view_path": "data/views/groups/primitives-add-f64.json"
+    },
+    {
+      "group": "classes.accumulator.add",
+      "title": "Accumulator Mutex",
+      "category": "classes",
+      "sophistication": "complex",
+      "direction": "host_to_rust",
+      "latest_collected_at": "2026-06-05T15:28:37Z",
+      "run_count": 13,
+      "machine_count": 1,
+      "machine_ids": [
+        "local-darwin-arm64-apple-m3-max"
+      ],
+      "view_path": "data/views/groups/classes-accumulator-add.json"
     },
     {
       "group": "enums.task_status.echo",
@@ -1552,300 +2226,6 @@
         "local-darwin-arm64-apple-m3-max"
       ],
       "view_path": "data/views/groups/enums-task-status-echo.json"
-    },
-    {
-      "group": "strings.echo",
-      "title": "Echo String 1K",
-      "category": "strings",
-      "sophistication": "basic",
-      "direction": "mixed",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 15,
-      "machine_count": 1,
-      "machine_ids": [
-        "local-darwin-arm64-apple-m3-max"
-      ],
-      "view_path": "data/views/groups/strings-echo.json"
-    },
-    {
-      "group": "records.person.echo",
-      "title": "Echo Person",
-      "category": "records",
-      "sophistication": "structured",
-      "direction": "roundtrip",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 5,
-      "machine_count": 1,
-      "machine_ids": [
-        "local-darwin-arm64-apple-m3-max"
-      ],
-      "view_path": "data/views/groups/records-person-echo.json"
-    },
-    {
-      "group": "records.line.echo",
-      "title": "Echo Line",
-      "category": "records",
-      "sophistication": "structured",
-      "direction": "roundtrip",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 5,
-      "machine_count": 1,
-      "machine_ids": [
-        "local-darwin-arm64-apple-m3-max"
-      ],
-      "view_path": "data/views/groups/records-line-echo.json"
-    },
-    {
-      "group": "collections.i32_vec.echo",
-      "title": "Echo I32 Vec 10K",
-      "category": "collections",
-      "sophistication": "structured",
-      "direction": "roundtrip",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 11,
-      "machine_count": 1,
-      "machine_ids": [
-        "local-darwin-arm64-apple-m3-max"
-      ],
-      "view_path": "data/views/groups/collections-i32-vec-echo.json"
-    },
-    {
-      "group": "primitives.echo_i32",
-      "title": "Echo I32",
-      "category": "primitives",
-      "sophistication": "basic",
-      "direction": "mixed",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 15,
-      "machine_count": 1,
-      "machine_ids": [
-        "local-darwin-arm64-apple-m3-max"
-      ],
-      "view_path": "data/views/groups/primitives-echo-i32.json"
-    },
-    {
-      "group": "primitives.echo_f64",
-      "title": "Echo F64",
-      "category": "primitives",
-      "sophistication": "basic",
-      "direction": "mixed",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 11,
-      "machine_count": 1,
-      "machine_ids": [
-        "local-darwin-arm64-apple-m3-max"
-      ],
-      "view_path": "data/views/groups/primitives-echo-f64.json"
-    },
-    {
-      "group": "enums.direction.echo",
-      "title": "Echo Direction",
-      "category": "enums",
-      "sophistication": "basic",
-      "direction": "mixed",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 11,
-      "machine_count": 1,
-      "machine_ids": [
-        "local-darwin-arm64-apple-m3-max"
-      ],
-      "view_path": "data/views/groups/enums-direction-echo.json"
-    },
-    {
-      "group": "bytes.echo",
-      "title": "Echo Bytes 64K",
-      "category": "bytes",
-      "sophistication": "basic",
-      "direction": "roundtrip",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 11,
-      "machine_count": 1,
-      "machine_ids": [
-        "local-darwin-arm64-apple-m3-max"
-      ],
-      "view_path": "data/views/groups/bytes-echo.json"
-    },
-    {
-      "group": "primitives.echo_bool",
-      "title": "Echo Bool",
-      "category": "primitives",
-      "sophistication": "basic",
-      "direction": "mixed",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 11,
-      "machine_count": 1,
-      "machine_ids": [
-        "local-darwin-arm64-apple-m3-max"
-      ],
-      "view_path": "data/views/groups/primitives-echo-bool.json"
-    },
-    {
-      "group": "records.address.echo",
-      "title": "Echo Address",
-      "category": "records",
-      "sophistication": "structured",
-      "direction": "roundtrip",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 5,
-      "machine_count": 1,
-      "machine_ids": [
-        "local-darwin-arm64-apple-m3-max"
-      ],
-      "view_path": "data/views/groups/records-address-echo.json"
-    },
-    {
-      "group": "classes.datastore.add",
-      "title": "Datastore Add Record 1K",
-      "category": "classes",
-      "sophistication": "complex",
-      "direction": "host_to_rust",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 9,
-      "machine_count": 1,
-      "machine_ids": [
-        "local-darwin-arm64-apple-m3-max"
-      ],
-      "view_path": "data/views/groups/classes-datastore-add.json"
-    },
-    {
-      "group": "enums.task_status.input",
-      "title": "Data Enum Input",
-      "category": "enums",
-      "sophistication": "basic",
-      "direction": "mixed",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 9,
-      "machine_count": 1,
-      "machine_ids": [
-        "local-darwin-arm64-apple-m3-max"
-      ],
-      "view_path": "data/views/groups/enums-task-status-input.json"
-    },
-    {
-      "group": "classes.counter.increment",
-      "title": "Counter Increment Mutex",
-      "category": "classes",
-      "sophistication": "complex",
-      "direction": "host_to_rust",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 9,
-      "machine_count": 1,
-      "machine_ids": [
-        "local-darwin-arm64-apple-m3-max"
-      ],
-      "view_path": "data/views/groups/classes-counter-increment.json"
-    },
-    {
-      "group": "enums.directions.count_north",
-      "title": "Count North 10K",
-      "category": "enums",
-      "sophistication": "structured",
-      "direction": "host_to_rust",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 11,
-      "machine_count": 1,
-      "machine_ids": [
-        "local-darwin-arm64-apple-m3-max"
-      ],
-      "view_path": "data/views/groups/enums-directions-count-north.json"
-    },
-    {
-      "group": "records.user_profiles.count_active_users",
-      "title": "Count Active Users 100",
-      "category": "records",
-      "sophistication": "complex",
-      "direction": "host_to_rust",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 9,
-      "machine_count": 1,
-      "machine_ids": [
-        "local-darwin-arm64-apple-m3-max"
-      ],
-      "view_path": "data/views/groups/records-user-profiles-count-active-users.json"
-    },
-    {
-      "group": "callbacks.data_provider.compute_sum",
-      "title": "Callback 100",
-      "category": "callbacks",
-      "sophistication": "callback",
-      "direction": "callback",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 9,
-      "machine_count": 1,
-      "machine_ids": [
-        "local-darwin-arm64-apple-m3-max"
-      ],
-      "view_path": "data/views/groups/callbacks-data-provider-compute-sum.json"
-    },
-    {
-      "group": "records.sensor_readings.average_temperature",
-      "title": "Average Sensor Temperature 10K",
-      "category": "records",
-      "sophistication": "structured",
-      "direction": "host_to_rust",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 9,
-      "machine_count": 1,
-      "machine_ids": [
-        "local-darwin-arm64-apple-m3-max"
-      ],
-      "view_path": "data/views/groups/records-sensor-readings-average-temperature.json"
-    },
-    {
-      "group": "async_fns.add",
-      "title": "Async Add",
-      "category": "async_fns",
-      "sophistication": "async",
-      "direction": "mixed",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 9,
-      "machine_count": 1,
-      "machine_ids": [
-        "local-darwin-arm64-apple-m3-max"
-      ],
-      "view_path": "data/views/groups/async-fns-add.json"
-    },
-    {
-      "group": "primitives.add_f64",
-      "title": "Add F64",
-      "category": "primitives",
-      "sophistication": "basic",
-      "direction": "mixed",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 11,
-      "machine_count": 1,
-      "machine_ids": [
-        "local-darwin-arm64-apple-m3-max"
-      ],
-      "view_path": "data/views/groups/primitives-add-f64.json"
-    },
-    {
-      "group": "primitives.add",
-      "title": "Add",
-      "category": "primitives",
-      "sophistication": "basic",
-      "direction": "mixed",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 15,
-      "machine_count": 1,
-      "machine_ids": [
-        "local-darwin-arm64-apple-m3-max"
-      ],
-      "view_path": "data/views/groups/primitives-add.json"
-    },
-    {
-      "group": "classes.accumulator.add",
-      "title": "Accumulator Mutex",
-      "category": "classes",
-      "sophistication": "complex",
-      "direction": "host_to_rust",
-      "latest_collected_at": "2026-05-31T23:24:49Z",
-      "run_count": 9,
-      "machine_count": 1,
-      "machine_ids": [
-        "local-darwin-arm64-apple-m3-max"
-      ],
-      "view_path": "data/views/groups/classes-accumulator-add.json"
     }
   ]
 }
